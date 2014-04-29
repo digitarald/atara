@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 
+var connect = require('connect');
 var express = require('express');
 var glob = require('glob');
 var lodash = require('lodash');
@@ -13,6 +14,7 @@ var app = express();
 app.set('views', __dirname);
 app.set('view engine', 'jade');
 
+app.use(connect.compress());
 app.use(express.static(__dirname));
 
 function normalizeSlug(slug) {
