@@ -1,0 +1,312 @@
+--------- beginning of /dev/log/system
+01-01 09:11:19.740 I/Vold    (   75): Vold 2.1 (the revenge) firing up
+01-01 09:11:19.830 D/Vold    (   75): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+01-01 09:11:19.890 D/Vold    (   75): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+01-01 09:11:19.890 D/Vold    (   75): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+01-01 09:11:24.870 D/VoldCmdListener(   75): volume list
+01-01 09:11:24.880 D/VoldCmdListener(   75): volume mount sdcard
+01-01 09:11:24.880 I/Vold    (   75): /dev/block/vold/179:1 being considered for volume sdcard
+01-01 09:11:24.880 D/Vold    (   75): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+01-01 09:11:24.880 W/Vold    (   75): Skipping fs checks
+01-01 09:11:24.930 I/Vold    (   75): Device /dev/block/vold/179:1, target /mnt/sdcard mounted @ /mnt/secure/staging
+01-01 09:11:24.930 D/Vold    (   75): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+--------- beginning of /dev/log/main
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 32
+01-01 09:11:36.290 D/SPRDENG (  159): 63
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 30
+01-01 09:11:36.290 D/SPRDENG (  159): 1a
+01-01 09:11:36.290 D/SPRDENG (  159): eng_modem2server: use SIM1 /dev/CHNPTY13
+01-01 09:11:36.290 D/SPRDENG (  159): AT < 
+01-01 09:11:36.290 D/SPRDENG (  159): OK
+01-01 09:11:36.290 D/SPRDENG (  159): 
+01-01 09:11:36.290 E/        (   98): nvcal_recv_from_modem: Receive 1 Modem Response
+01-01 09:11:36.290 E/        (   98): write_rf_nvconf_cmd: wifi recv_num =6, response=[
+01-01 09:11:36.290 E/        (   98): OK
+01-01 09:11:36.290 E/        (   98): ]
+01-01 09:11:36.390 E/eng_rf_nv_update(   98): [set_rf_nvconf]: NV updated OK!
+01-01 09:11:36.390 E/eng_rf_nv_update(   98): [save_rf_nv_to_bak_file] NV data save to bake file OK
+01-01 09:11:36.390 E/eng_rf_nv_update(   98): [eng_rf_nv_update]: end eng rf nv update!
+01-01 09:11:36.400 I/logwrapper(   80): /system/bin/eng_rf_nv_update terminated by exit(0)
+01-01 09:11:36.770 I/power   (   81): *** set_screen_state 1
+01-01 09:11:36.770 D/Sensors (   81): activate handle=3; drv=1
+01-01 09:11:36.770 D/Sensors (   81): SensorTMD2771::setEnable=0= en=1; newState=1; what=0; mEnabled=0
+01-01 09:11:36.990 D/Sensors (   81): taos ---Light::TAOS_IOCTL_ALS_ON=== err=0
+01-01 09:11:36.990 D/Sensors (   81): SensorTMD2771::setEnable=1= en=1; newState=1; what=0; mEnabled=1
+01-01 09:11:36.990 D/Sensors (   81): SensorTMD2771::getEnable===mEnabled=0x1; enable=1
+01-01 09:11:37.020 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+01-01 09:11:37.050 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: system-message-listener-ready
+01-01 09:11:37.100 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=2, pid=367] Creating ParticularProcessPriorityManager.
+01-01 09:11:37.110 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=2, pid=367] Done starting up.  mHoldsCPUWakeLock=0, mHoldsHighPriorityWakeLock=0
+01-01 09:11:37.110 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=2, pid=367] Changing priority from UNKNOWN:CPU_NORMAL to MASTER:CPU_NORMAL.
+01-01 09:11:37.110 I/Gonk    (   81): Setting nice for pid 367 to 0
+01-01 09:11:37.110 I/Gonk    (   81): Changed nice for pid 367 from 0 to 0.
+01-01 09:11:37.720 I/Gecko   (   81): 1325427097726	Marionette	INFO	loaded marionette-listener.js
+01-01 09:11:37.720 I/Gecko   (   81): 1325427097728	Marionette	INFO	sendToClient: {"from":"0","value":"3-b2g"}, {8ea9c12c-babb-47cc-9259-73de9104fd47}, {8ea9c12c-babb-47cc-9259-73de9104fd47}
+01-01 09:11:37.900 E/GeckoConsole(   81): [JavaScript Error: "TypeError: widgetFrame is undefined" {file: "app://system.gaiamobile.org/js/cost_control.js" line: 119}]
+01-01 09:11:38.040 E/WifiHW  (   81): Leo ensure_config_file_exists config_file=/data/misc/wifi/wpa_supplicant.conf
+01-01 09:11:38.040 E/WifiHW  (   81): daemon_cmd=wpa_supplicant:-iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
+01-01 09:11:38.540 I/Gecko   (   81): 1325427098545	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{c605c7e7-0cdf-4202-9adc-eb6a50d4af1c}"}}, {c7374bfc-e8cc-4af7-b33b-3c33fda3d2ea}, {c7374bfc-e8cc-4af7-b33b-3c33fda3d2ea}
+01-01 09:11:38.660 I/Gecko   (   81): 1325427098664	Marionette	INFO	sendToClient: {"from":"0","value":false}, {a147cb96-b4a8-44f0-80d2-f9e70fe94924}, {a147cb96-b4a8-44f0-80d2-f9e70fe94924}
+01-01 09:11:38.770 W/WifiHW  (   81): wifi_command: LOG_LEVEL
+01-01 09:11:38.770 W/WifiHW  (   81): wifi_command: STATUS
+01-01 09:11:38.790 W/WifiHW  (   81): wifi_command: LIST_NETWORKS
+01-01 09:11:38.790 W/WifiHW  (   81): wifi_command: DRIVER MACADDR
+01-01 09:11:38.840 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 ssid
+01-01 09:11:38.840 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 bssid
+01-01 09:11:38.840 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 psk
+01-01 09:11:38.840 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key0
+01-01 09:11:38.850 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key1
+01-01 09:11:38.850 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key2
+01-01 09:11:38.850 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key3
+01-01 09:11:38.850 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_tx_keyidx
+01-01 09:11:38.850 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 priority
+01-01 09:11:38.860 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 key_mgmt
+01-01 09:11:38.860 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 scan_ssid
+01-01 09:11:38.860 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 disabled
+01-01 09:11:38.860 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 identity
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 password
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 auth_alg
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 phase1
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 phase2
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 eap
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 pin
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 pcsc
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 ssid
+01-01 09:11:38.870 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 bssid
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 psk
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key0
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key1
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key2
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key3
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_tx_keyidx
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 priority
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 key_mgmt
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 scan_ssid
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 disabled
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 identity
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 password
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 auth_alg
+01-01 09:11:38.880 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 phase1
+01-01 09:11:38.890 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 phase2
+01-01 09:11:38.890 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 eap
+01-01 09:11:38.890 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 pin
+01-01 09:11:38.890 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 pcsc
+01-01 09:11:38.890 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 ssid
+01-01 09:11:38.890 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 bssid
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 psk
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key0
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key1
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key2
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key3
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_tx_keyidx
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 priority
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 key_mgmt
+01-01 09:11:38.900 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 scan_ssid
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 disabled
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 identity
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 password
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 auth_alg
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 phase1
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 phase2
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 eap
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 pin
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 pcsc
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+01-01 09:11:38.910 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+01-01 09:11:38.920 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+01-01 09:11:38.920 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+01-01 09:11:38.920 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+01-01 09:11:38.920 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+01-01 09:11:38.930 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+01-01 09:11:38.980 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 0
+01-01 09:11:38.980 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 1
+01-01 09:11:38.980 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 2
+01-01 09:11:38.980 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 3
+01-01 09:11:38.980 W/WifiHW  (   81): wifi_command: AP_SCAN 1
+01-01 09:11:39.020 W/WifiHW  (   81): wifi_command: SAVE_CONFIG
+01-01 09:11:39.030 I/Gecko   (   81): 1325427099041	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{c605c7e7-0cdf-4202-9adc-eb6a50d4af1c}"}}, {b8f448fd-19a4-492f-9b30-cc61346b199f}, {b8f448fd-19a4-492f-9b30-cc61346b199f}
+01-01 09:11:39.180 I/Gecko   (   81): 1325427099190	Marionette	INFO	sendToClient: {"from":"0","value":false}, {c139a4ad-9777-4426-9bc4-6ef33087547f}, {c139a4ad-9777-4426-9bc4-6ef33087547f}
+01-01 09:11:39.310 I/Gecko   (   81): 1325427099321	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{c605c7e7-0cdf-4202-9adc-eb6a50d4af1c}"}}, {6abcff9a-d503-4b0f-bcf5-68dd290a459f}, {6abcff9a-d503-4b0f-bcf5-68dd290a459f}
+01-01 09:11:39.450 I/Gecko   (   81): 1325427099458	Marionette	INFO	sendToClient: {"from":"0","value":false}, {fbce4ad8-d2a4-4824-9585-b684c967defc}, {fbce4ad8-d2a4-4824-9585-b684c967defc}
+01-01 09:11:39.620 I/Gecko   (   81): 1325427099626	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{c605c7e7-0cdf-4202-9adc-eb6a50d4af1c}"}}, {9f7a1705-82ba-4e4c-84d2-d050bd9661e5}, {9f7a1705-82ba-4e4c-84d2-d050bd9661e5}
+01-01 09:11:39.780 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: accessibility-screenreader
+01-01 09:11:39.870 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+01-01 09:11:39.880 I/Gecko   (   81): 1325427099892	Marionette	INFO	sendToClient: {"from":"0","value":false}, {3c8badf9-9427-4337-9192-e47b284fd055}, {3c8badf9-9427-4337-9192-e47b284fd055}
+01-01 09:11:40.350 W/WifiHW  (   81): wifi_command: DRIVER SCAN-ACTIVE
+01-01 09:11:40.430 W/WifiHW  (   81): wifi_command: SCAN
+01-01 09:11:40.470 W/WifiHW  (   81): wifi_command: DRIVER SCAN-PASSIVE
+01-01 09:11:40.520 I/Gecko   (   81): 1325427100526	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{c605c7e7-0cdf-4202-9adc-eb6a50d4af1c}"}}, {5e455891-7fae-4361-8262-7ca26eb56029}, {5e455891-7fae-4361-8262-7ca26eb56029}
+01-01 09:11:40.750 I/Gecko   (   81): 1325427100760	Marionette	INFO	sendToClient: {"from":"0","value":true}, {058b24e1-a598-4344-991d-e68f2233db5a}, {058b24e1-a598-4344-991d-e68f2233db5a}
+01-01 09:11:40.980 I/FMRadio (   81): FMRadio is initialized.
+01-01 09:11:41.080 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:23 in set_vpm_error: Error setting voice privacy.
+01-01 09:11:41.080 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:23 in set_vpm_error: Error setting voice privacy.
+01-01 09:11:41.150 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:42 in set_vpm_error: Error roaming preference.
+01-01 09:11:41.160 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:42 in set_vpm_error: Error roaming preference.
+01-01 09:11:41.170 W/WifiHW  (   81): wifi_command: SCAN_RESULTS
+01-01 09:11:41.170 W/WifiHW  (   81): wifi_command: DRIVER SCAN-PASSIVE
+01-01 09:11:41.340 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=2, pid=367] Changing priority from MASTER:CPU_NORMAL to FOREGROUND:CPU_NORMAL.
+01-01 09:11:41.340 I/Gonk    (   81): Setting nice for pid 367 to 1
+01-01 09:11:41.340 I/Gonk    (   81): Changed nice for pid 367 from 0 to 1.
+01-01 09:11:41.340 I/Gecko:ProcessPriorityManager(   81): Making background LRU pool with size(3)
+01-01 09:11:41.340 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+01-01 09:11:41.340 I/Gecko   (   81): [Parent 81] WARNING: waitpid failed pid:367 errno:10: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+01-01 09:11:41.510 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x467e3510 coming from different process: 81
+01-01 09:11:41.510 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x467e35b0 coming from different process: 81
+01-01 09:11:41.610 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x47bbfab0 coming from different process: 81
+01-01 09:11:41.610 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x47bbfb50 coming from different process: 81
+01-01 09:11:41.750 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+01-01 09:11:41.970 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: inputmethod-update-layouts
+01-01 09:11:42.030 I/Gecko   (   81): ############################### browserElementPanning.js loaded
+01-01 09:11:42.060 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+01-01 09:11:42.060 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+01-01 09:11:42.060 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+01-01 09:11:42.060 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+01-01 09:11:42.070 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+01-01 09:11:42.080 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+01-01 09:11:42.080 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+01-01 09:11:42.080 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+01-01 09:11:42.080 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+01-01 09:11:42.090 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+01-01 09:11:42.090 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+01-01 09:11:42.090 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+01-01 09:11:42.130 I/Gecko   (   81): ######################## BrowserElementChildPreload.js loaded
+01-01 09:11:42.260 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: inputmethod-update-layouts
+01-01 09:11:42.450 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+01-01 09:11:42.460 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+01-01 09:11:42.470 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+01-01 09:11:42.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+01-01 09:11:43.060 E/GeckoConsole(   81): [JavaScript Warning: "Error in parsing value for 'font-weight'.  Declaration dropped." {file: "app://keyboard.gaiamobile.org/style/keyboard.css" line: 132 column: 15 source: "  font-weight: medium;"}]
+01-01 09:11:43.930 I/Gecko   (   81): 1325427103937	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {a743e65c-bd89-4488-a483-b594d29f33ae}, {a743e65c-bd89-4488-a483-b594d29f33ae}
+01-01 09:11:44.040 I/Gecko   (  367): ###################################### forms.js loaded
+01-01 09:11:44.040 I/Gecko   (   81): 1325427104048	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {6bac5d92-0a8a-4d19-b8d8-d3d7aff76242}
+01-01 09:11:44.090 I/Gecko   (   81): 1325427104101	Marionette	INFO	Switched to frame: {"frameValue":null}
+01-01 09:11:44.170 I/Gecko   (  367): ############################### browserElementPanning.js loaded
+01-01 09:11:44.260 I/Gecko   (   81): 1325427104272	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {6bac5d92-0a8a-4d19-b8d8-d3d7aff76242}, {6bac5d92-0a8a-4d19-b8d8-d3d7aff76242}
+01-01 09:11:44.520 I/Gecko   (   81): 1325427104529	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"GaiaLockScreen.unlock()","line":810}}, id: {dc0c874c-8047-4cf3-bfdc-587a94901c44}
+01-01 09:11:44.600 E/Profiler(   81): BPUnw: [1 total] thread_unregister_for_profiling(me=0x293038)  (NOT REGISTERED) 
+01-01 09:11:44.800 I/Gecko   (  367): ######################## BrowserElementChildPreload.js loaded
+01-01 09:11:44.930 I/Gecko   (   81): 1325427104940	Marionette	INFO	sendToClient: {"from":"0","value":{"passed":0,"failed":0,"failures":[]}}, {dc0c874c-8047-4cf3-bfdc-587a94901c44}, {dc0c874c-8047-4cf3-bfdc-587a94901c44}
+01-01 09:11:45.460 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x479fa9c0 coming from different process: 81
+01-01 09:11:45.460 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x479faba0 coming from different process: 81
+01-01 09:11:45.530 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x479fac40 coming from different process: 81
+01-01 09:11:45.530 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x479face0 coming from different process: 81
+01-01 09:11:45.530 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x47a19920 coming from different process: 81
+01-01 09:11:45.530 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x47a199c0 coming from different process: 81
+01-01 09:11:45.810 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+01-01 09:11:45.830 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+01-01 09:11:46.010 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x47bbfb50 from process 81 that was not created in current process: 81
+01-01 09:11:46.010 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x47bbfab0 from process 81 that was not created in current process: 81
+01-01 09:11:46.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x479faba0 from process 81 that was not created in current process: 81
+01-01 09:11:46.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x479fa9c0 from process 81 that was not created in current process: 81
+01-01 09:11:46.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x479face0 from process 81 that was not created in current process: 81
+01-01 09:11:46.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x479fac40 from process 81 that was not created in current process: 81
+01-01 09:11:46.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x47a199c0 from process 81 that was not created in current process: 81
+01-01 09:11:46.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x47a19920 from process 81 that was not created in current process: 81
+01-01 09:11:46.140 I/Gecko   (   81): 1325427106145	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {af0e9370-ad64-4729-948c-4048d5325fff}, {af0e9370-ad64-4729-948c-4048d5325fff}
+01-01 09:11:46.240 I/Gecko   (   81): 1325427106246	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {c48b732e-300e-464f-a3c6-5db929ce82c2}
+01-01 09:11:46.250 I/Gecko   (   81): 1325427106256	Marionette	INFO	Switched to frame: {"frameValue":null}
+01-01 09:11:46.520 I/Gecko   (   81): 1325427106533	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {c48b732e-300e-464f-a3c6-5db929ce82c2}, {c48b732e-300e-464f-a3c6-5db929ce82c2}
+01-01 09:11:46.560 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=3, pid=419] Creating ParticularProcessPriorityManager.
+01-01 09:11:46.560 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=3, pid=419] Done starting up.  mHoldsCPUWakeLock=0, mHoldsHighPriorityWakeLock=0
+01-01 09:11:46.570 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=3, pid=419] Changing priority from UNKNOWN:CPU_NORMAL to MASTER:CPU_NORMAL.
+01-01 09:11:46.570 I/Gonk    (   81): Setting nice for pid 419 to 0
+01-01 09:11:46.570 I/Gonk    (   81): Changed nice for pid 419 from 0 to 0.
+01-01 09:11:46.570 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=2, pid=367] Changing priority from FOREGROUND:CPU_NORMAL to FOREGROUND:CPU_LOW.
+01-01 09:11:46.570 I/Gonk    (   81): Setting nice for pid 367 to 18
+01-01 09:11:46.570 I/Gonk    (   81): Changed nice for pid 367 from 1 to 18.
+01-01 09:11:46.570 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+01-01 09:11:46.900 I/Gecko   (   81): 1325427106910	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('https://marketplace.firefox.com/app/f25e4b9b-17e2-49c2-a00a-7134db8a0b00/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {e291c721-456b-47f1-96ef-6faf84429221}
+01-01 09:11:46.910 D/DHCP    (   81): failed to set prefixLength 0: Cannot assign requested address
+01-01 09:11:46.940 D/DHCP    (   81): socket() failed: Address family not supported by protocol
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+01-01 09:11:46.940 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+01-01 09:11:46.950 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+01-01 09:11:47.020 D/NetUtils(   81): failed to remove default route for wlan0: No such process
+01-01 09:11:47.020 D/NetUtils(   81): failed to add 10.252.32.1 as default route for wlan0: No such process
+01-01 09:11:47.250 I/Gecko   (   81): 1325427107262	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"TypeError: app is null","status":17,"stacktrace":"execute_async_script @app_checker.py, line 129\ninline javascript, line 221\nsrc: \"      appName = app.manifest.name;\""}}, {e291c721-456b-47f1-96ef-6faf84429221}, {e291c721-456b-47f1-96ef-6faf84429221}

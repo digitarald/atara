@@ -1,0 +1,714 @@
+--------- beginning of /dev/log/system
+12-31 21:58:06.290 I/Vold    (   75): Vold 2.1 (the revenge) firing up
+12-31 21:58:06.360 D/Vold    (   75): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+12-31 21:58:06.460 D/Vold    (   75): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+12-31 21:58:06.460 D/Vold    (   75): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+12-31 21:58:11.380 D/VoldCmdListener(   75): volume list
+12-31 21:58:11.380 D/VoldCmdListener(   75): volume mount sdcard
+12-31 21:58:11.380 I/Vold    (   75): /dev/block/vold/179:1 being considered for volume sdcard
+12-31 21:58:11.380 D/Vold    (   75): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+12-31 21:58:11.380 W/Vold    (   75): Skipping fs checks
+12-31 21:58:11.430 I/Vold    (   75): Device /dev/block/vold/179:1, target /mnt/sdcard mounted @ /mnt/secure/staging
+12-31 21:58:11.440 D/Vold    (   75): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+--------- beginning of /dev/log/main
+12-31 21:58:22.650 D/SPRDENG (  158): 65
+12-31 21:58:22.650 D/SPRDENG (  158): 36
+12-31 21:58:22.650 D/SPRDENG (  158): 61
+12-31 21:58:22.650 D/SPRDENG (  158): 38
+12-31 21:58:22.650 D/SPRDENG (  158): 66
+12-31 21:58:22.650 D/SPRDENG (  158): 38
+12-31 21:58:22.650 D/SPRDENG (  158): 63
+12-31 21:58:22.650 D/SPRDENG (  158): 37
+12-31 21:58:22.650 D/SPRDENG (  158): 64
+12-31 21:58:22.650 D/SPRDENG (  158): 36
+12-31 21:58:22.650 D/SPRDENG (  158): 61
+12-31 21:58:22.650 D/SPRDENG (  158): 61
+12-31 21:58:22.650 D/SPRDENG (  158): 30
+12-31 21:58:22.650 D/SPRDENG (  158): 39
+12-31 21:58:22.650 D/SPRDENG (  158): 38
+12-31 21:58:22.650 D/SPRDENG (  158): 37
+12-31 21:58:22.650 D/SPRDENG (  158): 64
+12-31 21:58:22.650 D/SPRDENG (  158): 36
+12-31 21:58:22.650 D/SPRDENG (  158): 61
+12-31 21:58:22.650 D/SPRDENG (  158): 1a
+12-31 21:58:22.650 D/SPRDENG (  158): eng_modem2server: use SIM1 /dev/CHNPTY13
+12-31 21:58:22.650 D/SPRDENG (  158): AT < 
+12-31 21:58:22.650 D/SPRDENG (  158): OK
+12-31 21:58:22.650 D/SPRDENG (  158): 
+12-31 21:58:22.650 E/        (  101): nvcal_recv_from_modem: Receive 1 Modem Response
+12-31 21:58:22.650 E/        (  101): write_rf_nvconf_cmd: wifi recv_num =6, response=[
+12-31 21:58:22.650 E/        (  101): OK
+12-31 21:58:22.650 E/        (  101): ]
+12-31 21:58:22.750 E/        (  101): write_rf_nvconf_cmd
+12-31 21:58:22.750 E/        (  101): write_rf_nvconf_cmd: send [39,1,AT+SNVM=1,417]
+12-31 21:58:22.750 E/        (  101): write data cmdbuf:[39,1,AT+SNVM=1,417]
+12-31 21:58:22.750 E/        (  101): nvcal_send_to_modem
+12-31 21:58:22.750 E/        (  101): nvcal_recv_from_modem: Waiting modem response ... fd=7
+12-31 21:58:22.750 D/SPRDENG (  158): eng_servermodem_comm: use SIM1 /dev/CHNPTY13
+12-31 21:58:22.750 D/SPRDENG (  158): AT > AT+SNVM=1,417
+12-31 21:58:22.750 D/SPRDENG (  158): 41
+12-31 21:58:22.750 D/SPRDENG (  158): 54
+12-31 21:58:22.750 D/SPRDENG (  158): 2b
+12-31 21:58:22.750 D/SPRDENG (  158): 53
+12-31 21:58:22.750 D/SPRDENG (  158): 4e
+12-31 21:58:22.750 D/SPRDENG (  158): 56
+12-31 21:58:22.750 D/SPRDENG (  158): 4d
+12-31 21:58:22.750 D/SPRDENG (  158): 3d
+12-31 21:58:22.750 D/SPRDENG (  158): 31
+12-31 21:58:22.750 D/SPRDENG (  158): 2c
+12-31 21:58:22.750 D/SPRDENG (  158): 34
+12-31 21:58:22.750 D/SPRDENG (  158): 31
+12-31 21:58:22.750 D/SPRDENG (  158): 37
+12-31 21:58:22.750 D/SPRDENG (  158): eng_modem2server: use SIM1 /dev/CHNPTY13
+12-31 21:58:22.750 D/SPRDENG (  158): AT < 
+12-31 21:58:22.750 D/SPRDENG (  158): > 
+12-31 21:58:22.750 D/SPRDENG (  158): 
+12-31 21:58:22.750 E/        (  101): nvcal_recv_from_modem: Receive 1 Modem Response
+12-31 21:58:22.750 E/        (  101): recv from modem cmdbuf=[
+12-31 21:58:22.750 E/        (  101): > 
+12-31 21:58:22.750 E/        (  101): ]
+12-31 21:58:22.860 E/        (  101): (strstr(cmdbuf, ">") != NULL)
+12-31 21:58:22.860 E/        (  101): write_rf_nvconf_cmd: cmd_len[406], nv_len[400]
+12-31 21:58:22.860 E/        (  101): write_rf_nvconf_cmd: cmd_buf:[39,1,1b0050021f00500221005002030050023d0050022000500224005002280050023d0050022000500224005002280050021c1c00001c1c000040020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbec2c61a231c2300000000000000001a231c2300000000000000001b231c2300000000000000001b231c2300000000000000001b231c2300000000000000000000000000000000000000002c000000]
+12-31 21:58:22.860 E/        (  101): nvcal_send_to_modem
+12-31 21:58:22.860 E/        (  101): nvcal_recv_from_modem: Waiting modem response ... fd=7
+12-31 21:58:22.860 D/SPRDENG (  158): eng_servermodem_comm: use SIM1 /dev/CHNPTY13
+12-31 21:58:22.860 D/SPRDENG (  158): AT > 1b0050021f00500221005002030050023d0050022000500224005002280050023d0050022000500224005002280050021c1c00001c1c000040020000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000bbbec2c61a231c2300000000000000001a231c2300000000000000001b231c2300000000000000001b231c2300000000000000001b231c2300000000000000000000000000000000000000002c000000
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 66
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 64
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 34
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 38
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 64
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 34
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 38
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 35
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 34
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 65
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 36
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 61
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 61
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 62
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 31
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 33
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 32
+12-31 21:58:22.860 D/SPRDENG (  158): 63
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 30
+12-31 21:58:22.860 D/SPRDENG (  158): 1a
+12-31 21:58:22.860 D/SPRDENG (  158): eng_modem2server: use SIM1 /dev/CHNPTY13
+12-31 21:58:22.860 D/SPRDENG (  158): AT < 
+12-31 21:58:22.860 D/SPRDENG (  158): OK
+12-31 21:58:22.860 D/SPRDENG (  158): 
+12-31 21:58:22.860 E/        (  101): nvcal_recv_from_modem: Receive 1 Modem Response
+12-31 21:58:22.860 E/        (  101): write_rf_nvconf_cmd: wifi recv_num =6, response=[
+12-31 21:58:22.860 E/        (  101): OK
+12-31 21:58:22.860 E/        (  101): ]
+12-31 21:58:22.960 E/eng_rf_nv_update(  101): [set_rf_nvconf]: NV updated OK!
+12-31 21:58:22.960 E/eng_rf_nv_update(  101): [save_rf_nv_to_bak_file] NV data save to bake file OK
+12-31 21:58:22.960 E/eng_rf_nv_update(  101): [eng_rf_nv_update]: end eng rf nv update!
+12-31 21:58:22.960 I/logwrapper(   80): /system/bin/eng_rf_nv_update terminated by exit(0)
+12-31 21:58:23.080 I/power   (   81): *** set_screen_state 1
+12-31 21:58:23.080 D/Sensors (   81): activate handle=3; drv=1
+12-31 21:58:23.080 D/Sensors (   81): SensorTMD2771::setEnable=0= en=1; newState=1; what=0; mEnabled=0
+12-31 21:58:23.260 D/Sensors (   81): taos ---Light::TAOS_IOCTL_ALS_ON=== err=0
+12-31 21:58:23.260 D/Sensors (   81): SensorTMD2771::setEnable=1= en=1; newState=1; what=0; mEnabled=1
+12-31 21:58:23.260 D/Sensors (   81): SensorTMD2771::getEnable===mEnabled=0x1; enable=1
+12-31 21:58:23.290 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+12-31 21:58:23.350 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: system-message-listener-ready
+12-31 21:58:23.430 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=2, pid=367] Creating ParticularProcessPriorityManager.
+12-31 21:58:23.430 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=2, pid=367] Done starting up.  mHoldsCPUWakeLock=0, mHoldsHighPriorityWakeLock=0
+12-31 21:58:23.430 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=2, pid=367] Changing priority from UNKNOWN:CPU_NORMAL to MASTER:CPU_NORMAL.
+12-31 21:58:23.430 I/Gonk    (   81): Setting nice for pid 367 to 0
+12-31 21:58:23.430 I/Gonk    (   81): Changed nice for pid 367 from 0 to 0.
+12-31 21:58:23.880 D/Sensors (   81): SensorTMD2771::readEvents()======data_fd=54,count=16
+12-31 21:58:23.880 D/Sensors (   81): SensorTMD2771::processEvent()=====code=40::value=71 
+12-31 21:58:23.880 D/Sensors (   81): SensorTMD2771: mPendingEvents[Light].light = 71.000000
+12-31 21:58:24.120 I/Gecko   (   81): 1325386704124	Marionette	INFO	loaded marionette-listener.js
+12-31 21:58:24.120 I/Gecko   (   81): 1325386704126	Marionette	INFO	sendToClient: {"from":"0","value":"3-b2g"}, {89be0b93-d1a8-4b42-8dd6-0d5a74345030}, {89be0b93-d1a8-4b42-8dd6-0d5a74345030}
+12-31 21:58:24.250 E/GeckoConsole(   81): [JavaScript Error: "TypeError: widgetFrame is undefined" {file: "app://system.gaiamobile.org/js/cost_control.js" line: 119}]
+12-31 21:58:24.640 I/Gecko   (   81): 1325386704651	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{a1af56c6-3d12-4293-9ba3-db12db7ea527}"}}, {193525f1-0c4a-42e1-b6da-0afa433d9315}, {193525f1-0c4a-42e1-b6da-0afa433d9315}
+12-31 21:58:24.720 I/Gecko   (   81): 1325386704732	Marionette	INFO	sendToClient: {"from":"0","value":false}, {29e74c6a-31e9-47c6-a896-663a3838148f}, {29e74c6a-31e9-47c6-a896-663a3838148f}
+12-31 21:58:24.900 I/Gecko   (   81): 1325386704912	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{a1af56c6-3d12-4293-9ba3-db12db7ea527}"}}, {6231e133-7d9b-45d8-91de-f0b6c96a7aa4}, {6231e133-7d9b-45d8-91de-f0b6c96a7aa4}
+12-31 21:58:25.000 I/Gecko   (   81): 1325386705004	Marionette	INFO	sendToClient: {"from":"0","value":false}, {6bab632c-4faa-4294-8e1b-8d1a354c1f24}, {6bab632c-4faa-4294-8e1b-8d1a354c1f24}
+12-31 21:58:25.120 I/Gecko   (   81): 1325386705130	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{a1af56c6-3d12-4293-9ba3-db12db7ea527}"}}, {be8c52c0-c8c7-4c1d-aafd-6cb373ed98bf}, {be8c52c0-c8c7-4c1d-aafd-6cb373ed98bf}
+12-31 21:58:25.190 I/Gecko   (   81): 1325386705197	Marionette	INFO	sendToClient: {"from":"0","value":false}, {c4beae01-0f63-4a57-b174-ed4fd25795a2}, {c4beae01-0f63-4a57-b174-ed4fd25795a2}
+12-31 21:58:25.290 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: accessibility-screenreader
+12-31 21:58:25.350 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+12-31 21:58:25.640 E/WifiHW  (   81): Leo ensure_config_file_exists config_file=/data/misc/wifi/wpa_supplicant.conf
+12-31 21:58:25.640 E/WifiHW  (   81): daemon_cmd=wpa_supplicant:-iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
+12-31 21:58:25.730 I/Gecko   (   81): 1325386705740	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{a1af56c6-3d12-4293-9ba3-db12db7ea527}"}}, {ce311194-d306-4e73-829a-bc806835b62c}, {ce311194-d306-4e73-829a-bc806835b62c}
+12-31 21:58:25.850 I/Gecko   (   81): 1325386705854	Marionette	INFO	sendToClient: {"from":"0","value":true}, {ffd32b84-009a-4577-a185-9b2470cf3779}, {ffd32b84-009a-4577-a185-9b2470cf3779}
+12-31 21:58:26.060 I/FMRadio (   81): FMRadio is initialized.
+12-31 21:58:26.200 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:23 in set_vpm_error: Error setting voice privacy.
+12-31 21:58:26.200 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:23 in set_vpm_error: Error setting voice privacy.
+12-31 21:58:26.420 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:42 in set_vpm_error: Error roaming preference.
+12-31 21:58:26.420 E/GeckoConsole(   81): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:42 in set_vpm_error: Error roaming preference.
+12-31 21:58:26.430 W/WifiHW  (   81): wifi_command: LOG_LEVEL
+12-31 21:58:26.430 W/WifiHW  (   81): wifi_command: STATUS
+12-31 21:58:26.460 W/WifiHW  (   81): wifi_command: LIST_NETWORKS
+12-31 21:58:26.470 W/WifiHW  (   81): wifi_command: DRIVER MACADDR
+12-31 21:58:26.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 ssid
+12-31 21:58:26.480 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 bssid
+12-31 21:58:26.490 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 psk
+12-31 21:58:26.490 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key0
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key1
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key2
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_key3
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 wep_tx_keyidx
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 priority
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 key_mgmt
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 scan_ssid
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 disabled
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 identity
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 password
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 auth_alg
+12-31 21:58:26.500 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 phase1
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 phase2
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 eap
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 pin
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 0 pcsc
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 ssid
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 bssid
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 psk
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key0
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key1
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key2
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_key3
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 wep_tx_keyidx
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 priority
+12-31 21:58:26.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 key_mgmt
+12-31 21:58:26.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 scan_ssid
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 disabled
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 identity
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 password
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 auth_alg
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 phase1
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 phase2
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 eap
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 pin
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 1 pcsc
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 ssid
+12-31 21:58:26.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 bssid
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 psk
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key0
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key1
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key2
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_key3
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 wep_tx_keyidx
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 priority
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 key_mgmt
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 scan_ssid
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 disabled
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 identity
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 password
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 auth_alg
+12-31 21:58:26.540 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 phase1
+12-31 21:58:26.550 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 phase2
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 eap
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 pin
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 2 pcsc
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+12-31 21:58:26.560 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+12-31 21:58:26.570 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+12-31 21:58:26.570 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+12-31 21:58:26.580 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+12-31 21:58:26.650 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 0
+12-31 21:58:26.650 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 1
+12-31 21:58:26.650 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 2
+12-31 21:58:26.650 W/WifiHW  (   81): wifi_command: ENABLE_NETWORK 3
+12-31 21:58:26.650 W/WifiHW  (   81): wifi_command: AP_SCAN 1
+12-31 21:58:26.670 W/WifiHW  (   81): wifi_command: SAVE_CONFIG
+12-31 21:58:26.850 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=2, pid=367] Changing priority from MASTER:CPU_NORMAL to FOREGROUND:CPU_NORMAL.
+12-31 21:58:26.850 I/Gonk    (   81): Setting nice for pid 367 to 1
+12-31 21:58:26.850 I/Gonk    (   81): Changed nice for pid 367 from 0 to 1.
+12-31 21:58:26.850 I/Gecko:ProcessPriorityManager(   81): Making background LRU pool with size(3)
+12-31 21:58:26.860 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+12-31 21:58:26.860 I/Gecko   (   81): [Parent 81] WARNING: waitpid failed pid:367 errno:10: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+12-31 21:58:27.110 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x461b4ce0 coming from different process: 81
+12-31 21:58:27.120 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46227ab0 coming from different process: 81
+12-31 21:58:27.210 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x468261a0 coming from different process: 81
+12-31 21:58:27.210 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x468a1600 coming from different process: 81
+12-31 21:58:27.470 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: inputmethod-update-layouts
+12-31 21:58:27.560 I/Gecko   (   81): ############################### browserElementPanning.js loaded
+12-31 21:58:27.600 I/Gecko   (   81): ######################## BrowserElementChildPreload.js loaded
+12-31 21:58:27.700 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: inputmethod-update-layouts
+12-31 21:58:28.340 E/GeckoConsole(   81): [JavaScript Warning: "Error in parsing value for 'font-weight'.  Declaration dropped." {file: "app://keyboard.gaiamobile.org/style/keyboard.css" line: 132 column: 15 source: "  font-weight: medium;"}]
+12-31 21:58:29.110 I/Gecko   (   81): 1325386709118	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {cadf4712-d296-4e74-8eaf-09e5872993db}, {cadf4712-d296-4e74-8eaf-09e5872993db}
+12-31 21:58:29.140 I/Gecko   (   81): 1325386709149	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {6176dbba-b7d3-4a88-8d91-5bbb7dc53dac}
+12-31 21:58:29.160 I/Gecko   (   81): 1325386709164	Marionette	INFO	Switched to frame: {"frameValue":null}
+12-31 21:58:29.210 W/WifiHW  (   81): wifi_command: SCAN_RESULTS
+12-31 21:58:29.220 W/WifiHW  (   81): wifi_command: DRIVER SCAN-PASSIVE
+12-31 21:58:29.280 I/Gecko   (  367): ###################################### forms.js loaded
+12-31 21:58:29.310 I/Gecko   (   81): 1325386709317	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {6176dbba-b7d3-4a88-8d91-5bbb7dc53dac}, {6176dbba-b7d3-4a88-8d91-5bbb7dc53dac}
+12-31 21:58:29.330 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+12-31 21:58:29.340 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+12-31 21:58:29.350 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+12-31 21:58:29.360 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+12-31 21:58:29.360 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+12-31 21:58:29.360 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+12-31 21:58:29.360 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+12-31 21:58:29.360 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+12-31 21:58:29.360 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+12-31 21:58:29.390 I/Gecko   (  367): ############################### browserElementPanning.js loaded
+12-31 21:58:29.490 I/Gecko   (   81): 1325386709502	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"GaiaLockScreen.unlock()","line":810}}, id: {a3ef3ba1-97c7-4855-a6ce-283f07c73ba6}
+12-31 21:58:29.500 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+12-31 21:58:29.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 ssid
+12-31 21:58:29.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 bssid
+12-31 21:58:29.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 psk
+12-31 21:58:29.510 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key0
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key1
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key2
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_key3
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 wep_tx_keyidx
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 priority
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 key_mgmt
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 scan_ssid
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 disabled
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 identity
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 password
+12-31 21:58:29.520 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 auth_alg
+12-31 21:58:29.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase1
+12-31 21:58:29.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 phase2
+12-31 21:58:29.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 eap
+12-31 21:58:29.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pin
+12-31 21:58:29.530 W/WifiHW  (   81): wifi_command: GET_NETWORK 3 pcsc
+12-31 21:58:30.080 I/Gecko   (  367): ######################## BrowserElementChildPreload.js loaded
+12-31 21:58:30.160 I/Gecko   (   81): 1325386710172	Marionette	INFO	sendToClient: {"from":"0","value":{"passed":0,"failed":0,"failures":[]}}, {a3ef3ba1-97c7-4855-a6ce-283f07c73ba6}, {a3ef3ba1-97c7-4855-a6ce-283f07c73ba6}
+12-31 21:58:30.370 E/Profiler(   81): BPUnw: [1 total] thread_unregister_for_profiling(me=0xcb9038)  (NOT REGISTERED) 
+12-31 21:58:30.720 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4658eec0 coming from different process: 81
+12-31 21:58:30.720 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46594bf0 coming from different process: 81
+12-31 21:58:30.750 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46823420 coming from different process: 81
+12-31 21:58:30.750 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x468a1970 coming from different process: 81
+12-31 21:58:30.760 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x468f91f0 coming from different process: 81
+12-31 21:58:30.760 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x468f9600 coming from different process: 81
+12-31 21:58:30.910 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x468a1600 from process 81 that was not created in current process: 81
+12-31 21:58:30.910 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x468261a0 from process 81 that was not created in current process: 81
+12-31 21:58:31.100 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+12-31 21:58:31.120 I/GeckoDump(   81): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+12-31 21:58:31.380 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46594bf0 from process 81 that was not created in current process: 81
+12-31 21:58:31.390 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4658eec0 from process 81 that was not created in current process: 81
+12-31 21:58:31.390 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x468a1970 from process 81 that was not created in current process: 81
+12-31 21:58:31.390 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46823420 from process 81 that was not created in current process: 81
+12-31 21:58:31.390 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x468f91f0 from process 81 that was not created in current process: 81
+12-31 21:58:31.400 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x468f9600 from process 81 that was not created in current process: 81
+12-31 21:58:31.400 I/Gecko   (   81): 1325386711408	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {7083f046-5069-4ca6-8bf8-21c84303a5f1}, {7083f046-5069-4ca6-8bf8-21c84303a5f1}
+12-31 21:58:31.630 I/Gecko   (   81): 1325386711639	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {181fe320-91d1-43aa-b526-0b03fa902515}
+12-31 21:58:31.690 I/Gecko   (   81): 1325386711695	Marionette	INFO	Switched to frame: {"frameValue":null}
+12-31 21:58:31.890 I/Gecko   (   81): 1325386711900	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {181fe320-91d1-43aa-b526-0b03fa902515}, {181fe320-91d1-43aa-b526-0b03fa902515}
+12-31 21:58:32.100 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=3, pid=416] Creating ParticularProcessPriorityManager.
+12-31 21:58:32.100 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=3, pid=416] Done starting up.  mHoldsCPUWakeLock=0, mHoldsHighPriorityWakeLock=0
+12-31 21:58:32.100 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=3, pid=416] Changing priority from UNKNOWN:CPU_NORMAL to MASTER:CPU_NORMAL.
+12-31 21:58:32.100 I/Gonk    (   81): Setting nice for pid 416 to 0
+12-31 21:58:32.100 I/Gonk    (   81): Changed nice for pid 416 from 0 to 0.
+12-31 21:58:32.100 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=2, pid=367] Changing priority from FOREGROUND:CPU_NORMAL to FOREGROUND:CPU_LOW.
+12-31 21:58:32.100 I/Gonk    (   81): Setting nice for pid 367 to 18
+12-31 21:58:32.100 I/Gonk    (   81): Changed nice for pid 367 from 1 to 18.
+12-31 21:58:32.110 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+12-31 21:58:32.230 I/Gecko   (   81): 1325386712236	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('https://marketplace.firefox.com/app/d7675076-924f-4a7c-b9bd-990ab773881f/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {4cb862d3-4d1f-4087-b551-6fd26a642571}
+12-31 21:58:32.260 I/Gecko   (   81): 1325386712265	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"TypeError: app is null","status":17,"stacktrace":"execute_async_script @app_checker.py, line 129\ninline javascript, line 221\nsrc: \"      appName = app.manifest.name;\""}}, {4cb862d3-4d1f-4087-b551-6fd26a642571}, {4cb862d3-4d1f-4087-b551-6fd26a642571}

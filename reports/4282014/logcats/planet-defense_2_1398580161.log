@@ -1,0 +1,202 @@
+--------- beginning of /dev/log/main
+04-26 23:29:22.208 I/Gecko   (   84): 1398580162224	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {d336ad66-a699-459b-8a2b-2f6d76553533}, {d336ad66-a699-459b-8a2b-2f6d76553533}
+04-26 23:29:22.298 I/Gecko   (   84): 1398580162317	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {bf7c9216-0381-4e70-aef6-a2d88a4ad471}
+04-26 23:29:22.308 I/Gecko   (   84): 1398580162322	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:22.488 I/Gecko   (   84): 1398580162507	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {bf7c9216-0381-4e70-aef6-a2d88a4ad471}, {bf7c9216-0381-4e70-aef6-a2d88a4ad471}
+04-26 23:29:22.498 I/Gecko   (   84): 1398580162515	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {0e1342ac-2aac-4bd9-84c3-ef560f1f3611}
+04-26 23:29:23.218 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'http://planet-defense.tresensa.com' is displayed
+04-26 23:29:23.248 I/Gecko   (   84): 1398580163265	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{0899bb63-46dd-4046-9d19-5f0e70692843}"},"src":"http://planet-defense.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa","name":"Planet Defense","origin":"http://planet-defense.tresensa.com"}}, {0e1342ac-2aac-4bd9-84c3-ef560f1f3611}, {0e1342ac-2aac-4bd9-84c3-ef560f1f3611}
+04-26 23:29:23.318 I/Gecko   (   84): 1398580163332	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {41120038-33b2-458c-8f9a-39dcba6258d8}
+04-26 23:29:23.318 I/Gecko   (   84): 1398580163335	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:23.488 I/Gecko   (   84): 1398580163503	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {41120038-33b2-458c-8f9a-39dcba6258d8}, {41120038-33b2-458c-8f9a-39dcba6258d8}
+04-26 23:29:23.508 I/Gecko   (   84): 1398580163521	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {12ef9984-22d2-4799-a2fe-7eaefbe09ec6}
+04-26 23:29:23.768 I/Gonk    (   84): Setting nice for pid 1182 to 18
+04-26 23:29:23.768 I/Gonk    (   84): Changed nice for pid 1182 from 18 to 18.
+04-26 23:29:23.768 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1182 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 23:29:23.808 I/Gonk    (   84): Setting nice for pid 1182 to 1
+04-26 23:29:23.808 I/Gonk    (   84): Changed nice for pid 1182 from 18 to 1.
+04-26 23:29:23.838 I/Gonk    (   84): Setting nice for pid 1105 to 18
+04-26 23:29:23.838 I/Gonk    (   84): Changed nice for pid 1105 from 1 to 18.
+04-26 23:29:23.968 D/Sensors (   84): activate handle=0; drv=0
+04-26 23:29:23.978 D/Sensors (   84): Lis3dhSensor: Control set 0
+04-26 23:29:23.978 D/Sensors (   84): Lis3dhSensor: mEnabled = 0
+04-26 23:29:24.098 I/log     ( 1209): <4>0[ 503.605495] select 1105 (Planet Defense), adj 10, size 8642, to kill 
+04-26 23:29:24.478 I/Gecko   (   84): 
+04-26 23:29:24.478 I/Gecko   (   84): ###!!! [Parent][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+04-26 23:29:24.478 I/Gecko   (   84): 
+04-26 23:29:24.498 I/Gecko   (   84): 
+04-26 23:29:24.498 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 23:29:24.498 I/Gecko   (   84): 
+04-26 23:29:24.638 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-26 23:29:24.788 I/Gecko   (   84): 1398580164799	Marionette	INFO	sendToClient: {"from":"0","value":null}, {12ef9984-22d2-4799-a2fe-7eaefbe09ec6}, {12ef9984-22d2-4799-a2fe-7eaefbe09ec6}
+04-26 23:29:24.948 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1105 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 23:29:24.978 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4ac34d30 from process 84 that was not created in current process: 84
+04-26 23:29:24.978 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4ac34c90 from process 84 that was not created in current process: 84
+04-26 23:29:24.978 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:25.308 I/Gecko   (   84): 1398580165323	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {08bbc8b0-18f3-4860-aca8-2495616f607c}
+04-26 23:29:25.318 I/Gecko   (   84): 1398580165337	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:25.458 I/Gecko   (   84): 1398580165473	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {08bbc8b0-18f3-4860-aca8-2495616f607c}, {08bbc8b0-18f3-4860-aca8-2495616f607c}
+04-26 23:29:25.478 I/Gecko   (   84): 1398580165497	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {835aa9b3-4d50-45ac-b960-9f9e441520eb}
+04-26 23:29:25.608 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-26 23:29:25.608 I/Gecko   (   84): 1398580165625	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{f4b77c97-182e-4fa4-9955-4429ce2dcdd4}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {835aa9b3-4d50-45ac-b960-9f9e441520eb}, {835aa9b3-4d50-45ac-b960-9f9e441520eb}
+04-26 23:29:25.628 I/Gecko   (   84): 1398580165640	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {716bdfd5-d88d-486b-bc36-3cbffba8faef}
+04-26 23:29:25.638 I/Gecko   (   84): 1398580165653	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:25.778 I/Gecko   (   84): 1398580165792	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {716bdfd5-d88d-486b-bc36-3cbffba8faef}, {716bdfd5-d88d-486b-bc36-3cbffba8faef}
+04-26 23:29:25.788 I/Gecko   (   84): 1398580165802	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {f3e89645-8bed-4b1a-aa04-4a5e20ee5198}
+04-26 23:29:25.788 I/Gecko   (   84): 1398580165804	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:25.918 I/Gecko   (   84): 1398580165929	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {f3e89645-8bed-4b1a-aa04-4a5e20ee5198}, {f3e89645-8bed-4b1a-aa04-4a5e20ee5198}
+04-26 23:29:25.928 I/Gecko   (   84): 1398580165943	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {0655e1e1-7468-451c-9501-827d40a82b07}
+04-26 23:29:26.008 I/Gecko   (   84): 1398580166018	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{f4b77c97-182e-4fa4-9955-4429ce2dcdd4}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {0655e1e1-7468-451c-9501-827d40a82b07}, {0655e1e1-7468-451c-9501-827d40a82b07}
+04-26 23:29:26.008 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-26 23:29:26.018 I/Gecko   ( 1182): ###################################### forms.js loaded
+04-26 23:29:26.048 I/Gecko   (   84): 1398580166063	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{f4b77c97-182e-4fa4-9955-4429ce2dcdd4}"}}, id: {7a0412d1-aadf-49ec-b2dd-a40f585aafee}
+04-26 23:29:26.068 I/Gecko   (   84): 1398580166085	Marionette	INFO	Switched to frame: {"frameValue":"{f4b77c97-182e-4fa4-9955-4429ce2dcdd4}"}
+04-26 23:29:26.088 I/Gecko   (   84): 1398580166100	Marionette	INFO	trying remote frame 0
+04-26 23:29:26.088 I/Gecko   (   84): 1398580166102	Marionette	INFO	trying remote frame 1
+04-26 23:29:26.088 I/Gecko   (   84): 1398580166103	Marionette	INFO	deleting frame
+04-26 23:29:26.098 I/Gecko   ( 1182): ############################### browserElementPanning.js loaded
+04-26 23:29:26.098 I/Gecko   (   84): 1398580166113	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-26 23:29:26.118 I/Gecko   ( 1182): ######################## BrowserElementChildPreload.js loaded
+04-26 23:29:26.948 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1105 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 23:29:26.948 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1105!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-26 23:29:27.368 I/Gecko   (   84): 1398580167379	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {7a0412d1-aadf-49ec-b2dd-a40f585aafee}, {7a0412d1-aadf-49ec-b2dd-a40f585aafee}
+04-26 23:29:27.588 I/Gecko   (   84): 1398580167607	Marionette	INFO	sendToClient: {"from":"0","value":[]}, {27cf6460-f5b4-424c-a152-1933a3a79b09}, {27cf6460-f5b4-424c-a152-1933a3a79b09}
+04-26 23:29:27.638 I/Gecko   (   84): 1398580167654	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {719b31e7-4fee-4b08-af8d-54a0bd82b5cd}, {719b31e7-4fee-4b08-af8d-54a0bd82b5cd}
+04-26 23:29:27.648 I/Gecko   (   84): 1398580167660	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {310741ec-03fe-4989-9c10-d15e4b639fa9}
+04-26 23:29:27.658 I/Gecko   (   84): 1398580167671	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:27.768 I/Gecko   (   84): 1398580167783	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {310741ec-03fe-4989-9c10-d15e4b639fa9}, {310741ec-03fe-4989-9c10-d15e4b639fa9}
+04-26 23:29:27.778 I/Gecko   (   84): 1398580167791	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {3b034ee1-9033-481d-a33f-b44815f1074a}
+04-26 23:29:27.788 I/Gecko   (   84): 1398580167800	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:29:27.948 I/Gecko   (   84): 1398580167966	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {3b034ee1-9033-481d-a33f-b44815f1074a}, {3b034ee1-9033-481d-a33f-b44815f1074a}
+04-26 23:29:27.998 I/Gecko   (   84): 1398580168009	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":30000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"GaiaApps.launchWithManifestURL('http://planet-defense.tresensa.com/manifest.webapp')","line":106}}, id: {46ea3913-c272-4171-8c01-a81e9b6c5810}
+04-26 23:29:28.128 E/GeckoConsole(   84): Content JS LOG at dummy file:334 in GaiaApps.launch: launching app with name 'Planet Defense'
+04-26 23:29:28.688 I/Gonk    (   84): Setting nice for pid 1218 to 18
+04-26 23:29:28.688 I/Gonk    (   84): Changed nice for pid 1218 from 0 to 18.
+04-26 23:29:28.878 I/Gonk    (   84): Setting nice for pid 1218 to 18
+04-26 23:29:28.878 I/Gonk    (   84): Changed nice for pid 1218 from 18 to 18.
+04-26 23:29:28.878 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1218 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 23:29:28.878 I/Gonk    (   84): Setting nice for pid 1218 to 1
+04-26 23:29:28.878 I/Gonk    (   84): Changed nice for pid 1218 from 18 to 1.
+04-26 23:29:28.888 D/Sensors (   84): activate handle=0; drv=0
+04-26 23:29:28.898 D/Sensors (   84): Lis3dhSensor: Control set 1
+04-26 23:29:28.898 D/Sensors (   84): Lis3dhSensor: mEnabled = 1
+04-26 23:29:29.008 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x45b027e0 coming from different process: 84
+04-26 23:29:29.018 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x45b028d0 coming from different process: 84
+04-26 23:29:29.198 I/Gonk    (   84): Setting nice for pid 1182 to 18
+04-26 23:29:29.198 I/Gonk    (   84): Changed nice for pid 1182 from 1 to 18.
+04-26 23:29:29.988 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:30.108 I/Gecko   (   84): 
+04-26 23:29:30.108 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 23:29:30.108 I/Gecko   (   84): 
+04-26 23:29:30.218 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-26 23:29:30.218 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1182 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 23:29:30.638 I/Gecko   ( 1218): ###################################### forms.js loaded
+04-26 23:29:30.648 I/Gecko   ( 1218): ############################### browserElementPanning.js loaded
+04-26 23:29:30.678 I/Gecko   ( 1218): ######################## BrowserElementChildPreload.js loaded
+04-26 23:29:31.228 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 9 column: 22 source: "    -moz-border-radius: 8px;"}]
+04-26 23:29:31.238 E/GeckoConsole( 1218): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 58 column: 16 source: "    background: 009aff;"}]
+04-26 23:29:31.238 E/GeckoConsole( 1218): [JavaScript Warning: "Expected color but found 'bottom'.  Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 59 column: 38 source: "    background-image: linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 66%);"}]
+04-26 23:29:31.238 E/GeckoConsole( 1218): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 60 column: 22 source: "    background-image: -o-linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 66%);"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 62 column: 22 source: "    background-image: -webkit-linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 66%);"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 63 column: 22 source: "    background-image: -ms-linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 66%);"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 64 column: 22 source: "    background-image: -webkit-gradient("}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 72 column: 22 source: "    -moz-border-radius: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius-topleft'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 93 column: 30 source: "    -moz-border-radius-topleft: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius-topright'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 94 column: 31 source: "    -moz-border-radius-topright: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 117 column: 22 source: "    -moz-border-radius: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 134 column: 22 source: "    -moz-border-radius: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius-topleft'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 190 column: 30 source: "    -moz-border-radius-topleft: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius-topright'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 191 column: 31 source: "    -moz-border-radius-topright: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 238 column: 22 source: "    -moz-border-radius: 8px;"}]
+04-26 23:29:31.248 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://planetdefense.tresensa.com/2.1.2/leaderboard/css/game_specific.css" line: 260 column: 22 source: "    -moz-border-radius: 8px;"}]
+04-26 23:29:31.398 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-tap-highlight-color'.  Declaration dropped." {file: "http://planet-defense.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa" line: 58 column: 312 source: "html,body{margin:0;padding:0;font-family:Arial;font-size:12px;color:#fff;background:#000 url(background.jpg);-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent}#game_canvas{z-index:1;overflow:hidden;image-rendering:optimizeSpeed;-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-webkit-user-select:none;-webkit-transform:translateZ(0);-ms-touch-action:none}#wrong_orientation{background:#000;position:absolute;top:0;left:0;z-index:2;width:100%;height:100%;display:none}#wrong_orientation img{display:block;margin:0 auto;width:80%}"}]
+04-26 23:29:32.008 E/GeckoConsole( 1218): Security Error: Content at http://planetdefense.tresensa.com/2.1.2/cache.manifest may not load data from http://planet-defense.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa.
+04-26 23:29:32.218 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1182 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 23:29:32.218 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1182!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-26 23:29:32.298 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: GameLoader started
+04-26 23:29:32.308 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Google Analytics loaded
+04-26 23:29:32.328 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Loading minified game code from js/game.min.js
+04-26 23:29:32.328 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Calling head.js.apply to load all javascript libraries
+04-26 23:29:32.558 E/GeckoConsole(   84): [JavaScript Error: "cdn.flurry.com : server does not support RFC 5746, see CVE-2009-3555"]
+04-26 23:29:34.048 I/Gonk    (   84): Setting nice for pid 1237 to 18
+04-26 23:29:34.058 I/Gonk    (   84): Changed nice for pid 1237 from 0 to 18.
+04-26 23:29:34.688 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: All javascript libraries loaded
+04-26 23:29:34.688 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: loading partner adapter and 3rd party libs...
+04-26 23:29:34.718 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-filter'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 47 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-bottom:10px;height:55px;line-height:55px;backgrou
+04-26 23:29:34.718 E/GeckoConsole( 1218): [JavaScript Warning: "Expected 'none' or URL but found 'blur('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 109 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-
+04-26 23:29:34.718 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 779 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-bottom:10px;height:55px;line-height:55px;backgrou
+04-26 23:29:34.998 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:36.348 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: creating generic adapter...
+04-26 23:29:36.358 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: detected Facebook library...
+04-26 23:29:36.358 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: PartnerBridge.onFacebookLibraryLoaded called, Facebook library loaded successfully
+04-26 23:29:37.278 E/GeckoConsole( 1218): [JavaScript Warning: "Unknown property '-moz-tap-highlight-color'.  Declaration dropped." {file: "http://planet-defense.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa" line: 0 column: 147 source: " z-index: 1; overflow: hidden; -webkit-user-select: none; -ms-touch-action:none; -webkit-tap-highlight-color: transparent; -moz-tap-highlight-color: transparent; -webkit-transform: translateZ(0);"}]
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: game-partner info received
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: initiating connection to partner...
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: Calling FB.init, appId = 300540706713439
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS WARN at http://connect.facebook.net/en_US/all.js:53 in i: The "fb-root" div has not been created, auto-creating
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: user id is: 04567acb-3b56-4026-93ef-c00ce07bd670
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: fetching complete game state...
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: there was no local TGS.DataStore data
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: automatically instantiating GoogleAnalytics object with label 'Planet Defense'
+04-26 23:29:37.708 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Launching BubbleShot
+04-26 23:29:37.998 E/GeckoConsole( 1218): [JavaScript Warning: "Content Security Policy: allow directive is deprecated, use the equivalent default-src directive instead"]
+04-26 23:29:38.058 E/GeckoConsole( 1218): [JavaScript Warning: "The X-Content-Security-Policy and X-Content-Security-Report-Only headers will be deprecated in the future. Please use the Content-Security-Policy and Content-Security-Report-Only headers with CSP spec compliant syntax instead." {file: "https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=ff31acd6ed445a&origin=http%3A%2F%2Fplanet-defense.tresensa.com" line: 0}]
+04-26 23:29:40.328 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:44.798 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-26 23:29:45.358 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:50.998 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:58.388 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:29:58.598 I/GonkMemoryPressure( 1218): Checking to see if memory pressure is over.
+04-26 23:29:58.598 I/GonkMemoryPressure( 1218): Memory pressure is over.
+04-26 23:29:58.598 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-26 23:29:58.598 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-26 23:29:58.728 I/GonkMemoryPressure( 1237): Checking to see if memory pressure is over.
+04-26 23:29:58.928 I/Gecko   (   84): 1398580198826	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"timed out","status":28,"stacktrace":null}}, {46ea3913-c272-4171-8c01-a81e9b6c5810}, {46ea3913-c272-4171-8c01-a81e9b6c5810}
+04-26 23:29:58.998 I/GonkMemoryPressure( 1237): Memory pressure is over.
+04-26 23:29:59.368 I/Gecko   (   84): 1398580199381	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {40db4924-ee78-43f8-8968-5e1754f211e3}
+04-26 23:29:59.398 I/Gecko   (   84): 1398580199416	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 23:30:00.008 E/Profiler( 1261): BEGIN mozilla_sampler_init
+04-26 23:30:00.038 E/Profiler( 1261): BPUnw: [1 total] thread_register_for_profiling(me=0x40142488, stacktop=0xbefce9b7)
+04-26 23:30:00.048 E/Profiler( 1261): SPS:
+04-26 23:30:00.048 E/Profiler( 1261): SPS: Unwind mode       = pseudo
+04-26 23:30:00.048 E/Profiler( 1261): SPS: Sampling interval = 0 ms (zero means "platform default")
+04-26 23:30:00.048 E/Profiler( 1261): SPS: Entry store size  = 0 (zero means "platform default")
+04-26 23:30:00.048 E/Profiler( 1261): SPS: UnwindStackScan   = 0 (max dubious frames per unwind).
+04-26 23:30:00.048 E/Profiler( 1261): SPS: Use env var MOZ_PROFILER_MODE=help for further information.
+04-26 23:30:00.048 E/Profiler( 1261): SPS:
+04-26 23:30:00.048 E/Profiler( 1261): Registering start signal
+04-26 23:30:00.858 I/Gecko   (   84): 1398580200857	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {40db4924-ee78-43f8-8968-5e1754f211e3}, {40db4924-ee78-43f8-8968-5e1754f211e3}
+04-26 23:30:00.988 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: finished loading required game assets
+04-26 23:30:01.028 E/GeckoConsole( 1218): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: starting game...
+04-26 23:30:01.668 E/GeckoConsole( 1261): Could not read chrome manifest 'file:///system/b2g/chrome.manifest'.
+04-26 23:30:02.118 I/Gecko   (   84): 1398580202137	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('http://planet-defense.tresensa.com/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {e96e1415-2fee-43d2-af4a-3ee1100341b6}
+04-26 23:30:03.498 I/Gecko   (   84): -- webapps.js uninstall http://planet-defense.tresensa.com/manifest.webapp
+04-26 23:30:08.398 I/GonkMemoryPressure( 1218): Checking to see if memory pressure is over.
+04-26 23:30:08.428 I/GonkMemoryPressure( 1237): Checking to see if memory pressure is over.
+04-26 23:30:08.428 I/GonkMemoryPressure( 1237): Memory pressure is over.
+04-26 23:30:08.438 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-26 23:30:08.438 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-26 23:30:08.458 I/GonkMemoryPressure( 1218): Memory pressure is over.
+04-26 23:30:12.888 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:30:13.488 I/GonkMemoryPressure( 1218): Checking to see if memory pressure is over.
+04-26 23:30:13.488 I/GonkMemoryPressure( 1218): Memory pressure is over.
+04-26 23:30:13.508 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-26 23:30:13.508 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-26 23:30:14.258 I/GonkMemoryPressure( 1237): Checking to see if memory pressure is over.
+04-26 23:30:14.298 I/GonkMemoryPressure( 1237): Memory pressure is over.
+04-26 23:30:18.648 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-26 23:30:18.648 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-26 23:30:18.648 I/GonkMemoryPressure( 1218): Checking to see if memory pressure is over.
+04-26 23:30:18.648 I/GonkMemoryPressure( 1218): Memory pressure is over.
+04-26 23:30:19.338 I/GonkMemoryPressure( 1237): Checking to see if memory pressure is over.
+04-26 23:30:19.378 I/GonkMemoryPressure( 1237): Memory pressure is over.
+04-26 23:30:23.508 I/Gecko   (   84): 1398580223505	Marionette	INFO	sendToClient: {"from":"0","value":true}, {e96e1415-2fee-43d2-af4a-3ee1100341b6}, {e96e1415-2fee-43d2-af4a-3ee1100341b6}
+04-26 23:30:23.668 I/GonkMemoryPressure( 1218): Checking to see if memory pressure is over.
+04-26 23:30:23.668 I/GonkMemoryPressure( 1218): Memory pressure is over.
+04-26 23:30:23.678 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-26 23:30:23.678 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-26 23:30:24.488 I/GonkMemoryPressure( 1237): Checking to see if memory pressure is over.
+04-26 23:30:24.598 I/GonkMemoryPressure( 1237): Memory pressure is over.
+04-26 23:30:25.148 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 23:30:25.268 E/GeckoConsole(   84): [JavaScript Error: "DOMApplicationRegistry: Could not read from json file /data/local/webapps/{f772affe-5dd7-416f-a683-c12a34e93854}/manifest.webapp" {file: "resource://gre/modules/Webapps.jsm" line: 109}]
+04-26 23:30:25.368 E/GeckoConsole(   84): [JavaScript Error: "root is null" {file: "resource://gre/modules/Webapps.jsm" line: 100}]

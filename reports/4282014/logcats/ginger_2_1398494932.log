@@ -1,0 +1,349 @@
+--------- beginning of /dev/log/main
+04-25 23:48:52.393 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1255 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:48:52.393 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1255!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-25 23:48:52.533 I/Gecko   (   84): 1398494932543	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {7f8ea28b-bab8-4bc7-9ca8-2bade1503e9c}, {7f8ea28b-bab8-4bc7-9ca8-2bade1503e9c}
+04-25 23:48:52.833 I/Gecko   (   84): 1398494932843	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {fb144508-d6ec-4fa5-a77a-583958a97458}
+04-25 23:48:52.843 I/Gecko   (   84): 1398494932848	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:52.963 I/Gecko   (   84): 1398494932975	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {fb144508-d6ec-4fa5-a77a-583958a97458}, {fb144508-d6ec-4fa5-a77a-583958a97458}
+04-25 23:48:52.973 I/Gecko   (   84): 1398494932982	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {4dc64907-9d2d-4db3-8e7c-fa04e63f12f9}
+04-25 23:48:53.103 I/Gecko   (   84): 1398494933115	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {4dc64907-9d2d-4db3-8e7c-fa04e63f12f9}, {4dc64907-9d2d-4db3-8e7c-fa04e63f12f9}
+04-25 23:48:53.143 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 23:48:53.153 I/Gecko   (   84): 1398494933161	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {85a89c4e-0d93-4a05-906d-b0b1560c7a9b}
+04-25 23:48:53.173 I/Gecko   (   84): 1398494933178	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:53.193 E/GeckoConsole( 1342): Content JS ERROR at app://homescreen.gaiamobile.org/gaia_build_defer_index.js:390 in loadSVConfFileError: Failed parsing singleVariant configuration file [js/singlevariantconf.json]:  [Exception... "File error: Not found"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: app://homescreen.gaiamobile.org/gaia_build_defer_index.js :: loadFile :: line 382"  data: no]
+04-25 23:48:53.283 I/Gecko   (   84): 1398494933289	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {85a89c4e-0d93-4a05-906d-b0b1560c7a9b}, {85a89c4e-0d93-4a05-906d-b0b1560c7a9b}
+04-25 23:48:53.303 I/Gecko   (   84): 1398494933307	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {640e4dcf-dc1d-4f25-ac3c-ea54217fc9c8}
+04-25 23:48:53.303 I/Gecko   (   84): 1398494933308	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:53.343 V/AudioPolicyManagerBase(   91): startOutput() output 1, stream 1, session 4
+04-25 23:48:53.343 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 1
+04-25 23:48:53.343 V/AudioPolicyManagerBase(   91): getDeviceForStrategy() from cache strategy 0, device 2
+04-25 23:48:53.343 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 2
+04-25 23:48:53.343 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 2 delayMs 0
+04-25 23:48:53.343 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 2 or null device for output 1
+04-25 23:48:53.343 E/AudioPolicyManagerBase(   91): checkAndSetVolume stream=1, index=0, output=1, device=2
+04-25 23:48:53.343 E/AudioPolicyManagerBase(   91): computeVolume, streamDesc=0x906bb8
+04-25 23:48:53.443 W/AudioFlinger(   91): Thread AudioOut_1 cannot connect to the power manager service
+04-25 23:48:53.443 V/AudioPolicyManagerBase(   91): stopOutput() output 1, stream 1, session 4
+04-25 23:48:53.443 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 0
+04-25 23:48:53.443 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 0
+04-25 23:48:53.443 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 0 delayMs 290
+04-25 23:48:53.443 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 0 or null device for output 1
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): startOutput() output 1, stream 1, session 4
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 1
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): getDeviceForStrategy() from cache strategy 0, device 2
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 2
+04-25 23:48:53.453 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 2 delayMs 0
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 2 or null device for output 1
+04-25 23:48:53.453 E/AudioPolicyManagerBase(   91): checkAndSetVolume stream=1, index=0, output=1, device=2
+04-25 23:48:53.453 E/AudioPolicyManagerBase(   91): computeVolume, streamDesc=0x906bb8
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): stopOutput() output 1, stream 1, session 4
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 0
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 0
+04-25 23:48:53.453 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 0 delayMs 290
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 0 or null device for output 1
+04-25 23:48:53.453 V/AudioPolicyManagerBase(   91): releaseOutput() 1
+04-25 23:48:53.553 I/Gecko   (   84): 1398494933556	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {640e4dcf-dc1d-4f25-ac3c-ea54217fc9c8}, {640e4dcf-dc1d-4f25-ac3c-ea54217fc9c8}
+04-25 23:48:53.613 I/Gecko   (   84): 1398494933625	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {ce6ba772-2df1-4c2b-a677-30929404e07e}
+04-25 23:48:53.703 I/Gecko   (   84): 1398494933708	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {ce6ba772-2df1-4c2b-a677-30929404e07e}, {ce6ba772-2df1-4c2b-a677-30929404e07e}
+04-25 23:48:53.713 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 23:48:53.713 I/Gecko   (   84): 1398494933722	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"}}, id: {3cff5c80-f518-4b36-b3fe-98578bb8996b}
+04-25 23:48:53.723 I/Gecko   (   84): 1398494933730	Marionette	INFO	Switched to frame: {"frameValue":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"}
+04-25 23:48:53.733 I/Gecko   (   84): 1398494933737	Marionette	INFO	trying remote frame 0
+04-25 23:48:53.733 I/Gecko   (   84): 1398494933738	Marionette	INFO	trying remote frame 1
+04-25 23:48:53.733 I/Gecko   (   84): 1398494933739	Marionette	INFO	trying remote frame 2
+04-25 23:48:53.733 I/Gecko   (   84): 1398494933740	Marionette	INFO	deleting frame
+04-25 23:48:53.733 I/Gecko   (   84): 1398494933745	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-25 23:48:54.203 I/Gecko   (   84): 1398494934215	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {3cff5c80-f518-4b36-b3fe-98578bb8996b}, {3cff5c80-f518-4b36-b3fe-98578bb8996b}
+04-25 23:48:54.383 I/Gecko   (   84): 1398494934395	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{45d2d760-3374-4354-91a9-7e4c807a4451}"}}, {1d524c55-671b-404f-ba62-e5125756119d}, {1d524c55-671b-404f-ba62-e5125756119d}
+04-25 23:48:54.573 E/GeckoConsole( 1342): [JavaScript Warning: "Use of getAttributeNode() is deprecated. Use getAttribute() instead." {file: "chrome://marionette/content/atoms.js" line: 25}]
+04-25 23:48:54.583 E/GeckoConsole( 1342): [JavaScript Warning: "Use of attributes' specified attribute is deprecated. It always returns true." {file: "chrome://marionette/content/atoms.js" line: 25}]
+04-25 23:48:54.583 I/Gecko   (   84): 1398494934594	Marionette	INFO	sendToClient: {"from":"0","value":"normal"}, {575ff908-1d2a-4fbf-aee9-fe9099dfa7db}, {575ff908-1d2a-4fbf-aee9-fe9099dfa7db}
+04-25 23:48:54.593 I/Gecko   (   84): 1398494934601	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {63f5885c-a32b-4950-b5cb-66c6ca7b1bc5}
+04-25 23:48:54.613 I/Gecko   (   84): 1398494934618	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:54.633 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:48:54.713 I/Gecko   (   84): 1398494934721	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {63f5885c-a32b-4950-b5cb-66c6ca7b1bc5}, {63f5885c-a32b-4950-b5cb-66c6ca7b1bc5}
+04-25 23:48:54.723 I/Gecko   (   84): 1398494934728	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {637aa5ba-4cb6-4a4d-b953-5995171984e6}
+04-25 23:48:54.833 I/Gecko   (   84): 1398494934841	Marionette	INFO	sendToClient: {"from":"0","value":null}, {637aa5ba-4cb6-4a4d-b953-5995171984e6}, {637aa5ba-4cb6-4a4d-b953-5995171984e6}
+04-25 23:48:54.843 I/Gecko   (   84): 1398494934848	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {23683be3-8981-419a-b1d0-12e1a0e1fa82}
+04-25 23:48:54.853 I/Gecko   (   84): 1398494934857	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:54.963 I/Gecko   (   84): 1398494934970	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {23683be3-8981-419a-b1d0-12e1a0e1fa82}, {23683be3-8981-419a-b1d0-12e1a0e1fa82}
+04-25 23:48:54.973 I/Gecko   (   84): 1398494934977	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {dc19d371-e561-469d-8592-b9580e18ce06}
+04-25 23:48:54.973 I/Gecko   (   84): 1398494934979	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:55.073 I/Gecko   (   84): 1398494935083	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {dc19d371-e561-469d-8592-b9580e18ce06}, {dc19d371-e561-469d-8592-b9580e18ce06}
+04-25 23:48:55.083 I/Gecko   (   84): 1398494935090	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {e96b0b19-7d0b-4c6d-a94b-64f89442f867}
+04-25 23:48:55.153 I/Gecko   (   84): 1398494935160	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"},"src":"app://homescreen.gaiamobile.org/index.html#rootFri%20Apr%2025%202014%2023:48:54%20GMT-0700%20(UTC)","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {e96b0b19-7d0b-4c6d-a94b-64f89442f867}, {e96b0b19-7d0b-4c6d-a94b-64f89442f867}
+04-25 23:48:55.163 I/Gecko   (   84): 1398494935171	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"}}, id: {7786afc0-0b0a-40a8-a8a9-7b8745f42fdc}
+04-25 23:48:55.163 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 23:48:55.183 I/Gecko   (   84): 1398494935188	Marionette	INFO	Switched to frame: {"frameValue":"{88ec3c66-d55e-4afe-a619-ba38c1db235c}"}
+04-25 23:48:55.183 I/Gecko   (   84): 1398494935190	Marionette	INFO	trying remote frame 0
+04-25 23:48:55.183 I/Gecko   (   84): 1398494935191	Marionette	INFO	trying remote frame 1
+04-25 23:48:55.183 I/Gecko   (   84): 1398494935192	Marionette	INFO	trying remote frame 2
+04-25 23:48:55.683 I/Gecko   (   84): 1398494935687	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {7786afc0-0b0a-40a8-a8a9-7b8745f42fdc}, {7786afc0-0b0a-40a8-a8a9-7b8745f42fdc}
+04-25 23:48:55.693 I/Gecko   (   84): 1398494935705	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return window.wrappedJSObject.GridManager.pageHelper.getCurrentPageNumber();","line":784}}, id: {c57b7e4e-466b-4d8e-8fde-f5ba2b989962}
+04-25 23:48:55.983 I/Gecko   (   84): 1398494935991	Marionette	INFO	sendToClient: {"from":"0","value":0}, {c57b7e4e-466b-4d8e-8fde-f5ba2b989962}, {c57b7e4e-466b-4d8e-8fde-f5ba2b989962}
+04-25 23:48:56.223 I/Gecko   (   84): 1398494936233	Marionette	INFO	sendToClient: {"from":"0","value":["{e7c5d1e8-4388-490f-939c-a6ddd057e965}","{3ad4f6e9-4d1f-4b56-bce0-16a29cc1abf0}","{b9bb52ca-0841-4155-bd6e-2e6cdc27b1ab}","{6e2887af-1af0-41f3-8047-97cd8f1019c1}","{16f08d3d-a5ab-4f3d-b350-63131cea6d0f}","{d4275d43-78fc-4e42-9145-f77c19b4e20a}","{ece0b977-c640-4ae0-b4b6-ccfeff2cc280}","{54ec8aa6-68ab-45a9-8ebe-54d048a5efda}","{8c942d59-e7d9-4f11-9a40-bcd18f46c626}","{ea481f5e-b7f9-42e6-b77b-65900a325e1e}","{dc8ac18b-0656-49cf-845d-3e8fcf10f59a}","{f1a9ad09-cb5a-4938-9991-9c9494b33584}","{69ee6f19-a3c4-4c9c-81dc-8851ad53f7a6}","{0c680929-0f97-4d1a-a462-2c3bad2da1b8}","{02d01cbb-8135-4303-87d1-aee78c3b11e2}","{566be2be-a4a5-4ed7-90b8-aefbd3d5eee8}","{2a56098e-66fd-4845-bcb5-b02794e3eb8b}","{82955c1a-7ad1-4386-9cdc-e98848e82238}","{58378b1e-b322-4bed-b052-fc7fa22a6771}","{538fcf2c-f911-4197-89f4-41ebd8433768}","{1dd34081-0f02-464d-9b84-8af135d983de}","{1ca8853b-695c-4f15-acb3-d6f269b8470d}","{875feda9-9f31-46f8-9255-6c26c1962aba}","{dda7c4cd-d6d1
+04-25 23:48:56.273 I/Gecko   (   84): 1398494936283	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#rootFri%20Apr%2025%202014%2023:48:54%20GMT-0700%20(UTC)"}, {1217bc8c-95be-4524-9539-23a48f6879fb}, {1217bc8c-95be-4524-9539-23a48f6879fb}
+04-25 23:48:56.293 I/Gecko   (   84): 1398494936304	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {9526fd38-b73c-4f0b-9e62-f01db97dec5c}
+04-25 23:48:56.313 I/Gecko   (   84): 1398494936319	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:56.423 I/Gecko   (   84): 1398494936430	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {9526fd38-b73c-4f0b-9e62-f01db97dec5c}, {9526fd38-b73c-4f0b-9e62-f01db97dec5c}
+04-25 23:48:56.463 I/Gecko   (   84): 1398494936466	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {a88e3ce4-daff-4dc0-af3e-5c511015e0bd}
+04-25 23:48:56.463 I/Gecko   (   84): 1398494936468	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:48:56.563 I/Gecko   (   84): 1398494936574	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {a88e3ce4-daff-4dc0-af3e-5c511015e0bd}, {a88e3ce4-daff-4dc0-af3e-5c511015e0bd}
+04-25 23:48:56.573 I/Gecko   (   84): 1398494936582	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":30000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"GaiaApps.launchWithManifestURL('https://gingerhq.com/static/manifest.webapp')","line":106}}, id: {fac1a596-c135-4025-8e86-17feb73c75bd}
+04-25 23:48:56.893 I/Gonk    (   84): Setting nice for pid 1363 to 18
+04-25 23:48:56.893 I/Gonk    (   84): Changed nice for pid 1363 from 18 to 18.
+04-25 23:48:56.903 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1363 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:48:56.933 I/Gonk    (   84): Setting nice for pid 1363 to 1
+04-25 23:48:56.933 I/Gonk    (   84): Changed nice for pid 1363 from 18 to 1.
+04-25 23:48:56.983 E/GeckoConsole(   84): Content JS LOG at dummy file:334 in GaiaApps.launch: launching app with name 'Ginger'
+04-25 23:48:58.103 D/Sensors (   84): activate handle=0; drv=0
+04-25 23:48:58.133 D/Sensors (   84): Lis3dhSensor: Control set 1
+04-25 23:48:58.133 D/Sensors (   84): Lis3dhSensor: mEnabled = 1
+04-25 23:48:58.383 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46b0f830 coming from different process: 84
+04-25 23:48:58.423 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46b0f8d0 coming from different process: 84
+04-25 23:48:58.523 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46b0f970 coming from different process: 84
+04-25 23:48:58.543 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x46b0fa10 coming from different process: 84
+04-25 23:48:58.833 E/GeckoConsole(   84): [JavaScript Error: "An error occurred during a connection to gingerhq.com:80.
+04-25 23:48:58.833 E/GeckoConsole(   84): 
+04-25 23:48:58.833 E/GeckoConsole(   84): SSL received a record that exceeded the maximum permissible length.
+04-25 23:48:58.833 E/GeckoConsole(   84): 
+04-25 23:48:58.833 E/GeckoConsole(   84): (Error code: ssl_error_rx_record_too_long)
+04-25 23:48:58.833 E/GeckoConsole(   84): "]
+04-25 23:48:59.093 I/Gonk    (   84): Setting nice for pid 1342 to 18
+04-25 23:48:59.103 I/Gonk    (   84): Changed nice for pid 1342 from 1 to 18.
+04-25 23:48:59.173 I/Gonk    (   84): Setting nice for pid 1417 to 18
+04-25 23:48:59.173 I/Gonk    (   84): Changed nice for pid 1417 from 0 to 18.
+04-25 23:48:59.383 E/GeckoConsole(   84): [JavaScript Error: "An error occurred during a connection to gingerhq.com:80.
+04-25 23:48:59.383 E/GeckoConsole(   84): 
+04-25 23:48:59.383 E/GeckoConsole(   84): SSL received a record that exceeded the maximum permissible length.
+04-25 23:48:59.383 E/GeckoConsole(   84): 
+04-25 23:48:59.383 E/GeckoConsole(   84): (Error code: ssl_error_rx_record_too_long)
+04-25 23:48:59.383 E/GeckoConsole(   84): "]
+04-25 23:48:59.643 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:49:00.083 I/Gecko   (   84): 
+04-25 23:49:00.083 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-25 23:49:00.083 I/Gecko   (   84): 
+04-25 23:49:00.153 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-25 23:49:00.173 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1342 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:00.613 I/Gecko   ( 1363): ###################################### forms.js loaded
+04-25 23:49:00.633 I/Gecko   ( 1363): ############################### browserElementPanning.js loaded
+04-25 23:49:00.663 I/Gecko   ( 1363): ######################## BrowserElementChildPreload.js loaded
+04-25 23:49:01.923 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 90 column: 12 source: "  box-sizing: content-box;"}]
+04-25 23:49:01.933 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 211 column: 12 source: "  box-sizing: border-box;"}]
+04-25 23:49:01.933 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 220 column: 12 source: "  box-sizing: content-box;"}]
+04-25 23:49:01.933 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown pseudo-class or pseudo-element '-webkit-search-cancel-button'.  Ruleset ignored due to bad selector." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 224 column: 22 source: "input[type="search"]::-webkit-search-cancel-button,"}]
+04-25 23:49:01.943 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 369 column: 12 source: "  box-sizing: border-box;"}]
+04-25 23:49:01.943 E/GeckoConsole( 1363): [JavaScript Warning: "Expected color but found 'auto'.  Expected color but found '-webkit-focus-ring-color'.  Expected end of value but found '-webkit-focus-ring-color'.  Error in parsing value for 'outline'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 410 column: 15 source: "  outline: 5px auto -webkit-focus-ring-color;"}]
+04-25 23:49:01.963 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2237 column: 12 source: "  box-sizing: border-box;"}]
+04-25 23:49:01.963 E/GeckoConsole( 1363): [JavaScript Warning: "Expected end of value but found '\9 '.  Error in parsing value for 'margin-top'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2244 column: 18 source: "  margin-top: 1px \9;"}]
+04-25 23:49:01.963 E/GeckoConsole( 1363): [JavaScript Warning: "Expected color but found 'auto'.  Expected color but found '-webkit-focus-ring-color'.  Expected end of value but found '-webkit-focus-ring-color'.  Error in parsing value for 'outline'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2272 column: 15 source: "  outline: 5px auto -webkit-focus-ring-color;"}]
+04-25 23:49:01.963 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown pseudo-class or pseudo-element '-webkit-outer-spin-button'.  Ruleset ignored due to bad selector." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2277 column: 22 source: "input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {"}]
+04-25 23:49:01.963 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown pseudo-class or pseudo-element '-ms-input-placeholder'.  Ruleset ignored due to bad selector." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2326 column: 14 source: ".form-control:-ms-input-placeholder, input[type="text"]:-ms-input-placeholder, input[type="password"]:-ms-input-placeholder, input[type="email"]:-ms-input-placeholder, select:-ms-input-placeholder, body.landing .promotion input[type="email"]:-ms-input-placeholder {"}]
+04-25 23:49:01.963 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown pseudo-class or pseudo-element '-webkit-input-placeholder'.  Ruleset ignored due to bad selector." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2330 column: 15 source: ".form-control::-webkit-input-placeholder, input[type="text"]::-webkit-input-placeholder, input[type="password"]::-webkit-input-placeholder, input[type="email"]::-webkit-input-placeholder, select::-webkit-input-placeholder, body.landing .promotion input[type="email"]::-webkit-input-placeholder {"}]
+04-25 23:49:01.973 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'user-select'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2665 column: 13 source: "  user-select: none;"}]
+04-25 23:49:01.973 E/GeckoConsole( 1363): [JavaScript Warning: "Expected color but found 'auto'.  Expected color but found '-webkit-focus-ring-color'.  Expected end of value but found '-webkit-focus-ring-color'.  Error in parsing value for 'outline'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2670 column: 15 source: "  outline: 5px auto -webkit-focus-ring-color;"}]
+04-25 23:49:01.973 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 2690 column: 10 source: "  filter: alpha(opacity=65);"}]
+04-25 23:49:01.983 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-osx-font-smoothing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 3007 column: 25 source: "  -moz-osx-font-smoothing: grayscale;"}]
+04-25 23:49:01.993 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 4106 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);"}]
+04-25 23:49:02.013 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5945 column: 20 source: "  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));"}]
+04-25 23:49:02.013 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5946 column: 20 source: "  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);"}]
+04-25 23:49:02.013 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5964 column: 20 source: "  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));"}]
+04-25 23:49:02.013 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5965 column: 20 source: "  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);"}]
+04-25 23:49:02.013 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5976 column: 20 source: "  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5977 column: 20 source: "  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5988 column: 20 source: "  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 5989 column: 20 source: "  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6000 column: 20 source: "  background-image: -webkit-gradient(linear, 0 100%, 100% 0, color-stop(0.25, rgba(255, 255, 255, 0.15)), color-stop(0.25, transparent), color-stop(0.5, transparent), color-stop(0.5, rgba(255, 255, 255, 0.15)), color-stop(0.75, rgba(255, 255, 255, 0.15)), color-stop(0.75, transparent), to(transparent));"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6001 column: 20 source: "  background-image: -webkit-linear-gradient(45deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property 'zoom'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6010 column: 6 source: "  zoom: 1;"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6469 column: 10 source: "  filter: alpha(opacity=20);"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6477 column: 10 source: "  filter: alpha(opacity=50);"}]
+04-25 23:49:02.023 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6559 column: 10 source: "  filter: alpha(opacity=0);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6564 column: 10 source: "  filter: alpha(opacity=50);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6646 column: 10 source: "  filter: alpha(opacity=0);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6651 column: 10 source: "  filter: alpha(opacity=90);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6971 column: 10 source: "  filter: alpha(opacity=50);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6979 column: 20 source: "  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.0001)));"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6980 column: 20 source: "  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.5) 0%), color-stop(rgba(0, 0, 0, 0.0001) 100%));"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6984 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#80000000', endColorstr='#00000000', GradientType=1);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6990 column: 20 source: "  background-image: -webkit-gradient(linear, 0% top, 100% top, from(rgba(0, 0, 0, 0.0001)), to(rgba(0, 0, 0, 0.5)));"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6991 column: 20 source: "  background-image: -webkit-linear-gradient(left, color-stop(rgba(0, 0, 0, 0.0001) 0%), color-stop(rgba(0, 0, 0, 0.5) 100%));"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 6995 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#80000000', GradientType=1);"}]
+04-25 23:49:02.033 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7002 column: 10 source: "  filter: alpha(opacity=90);"}]
+04-25 23:49:02.043 E/GeckoConsole( 1363): [JavaScript Warning: "Expected end of value but found '\9 '.  Error in parsing value for 'background-color'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7064 column: 25 source: "  background-color: #000 \9;"}]
+04-25 23:49:02.043 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-osx-font-smoothing'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7791 column: 25 source: "  -moz-osx-font-smoothing: grayscale;"}]
+04-25 23:49:02.053 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7948 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);"}]
+04-25 23:49:02.053 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7958 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);"}]
+04-25 23:49:02.053 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7968 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);"}]
+04-25 23:49:02.053 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7978 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);"}]
+04-25 23:49:02.053 E/GeckoConsole( 1363): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 7988 column: 10 source: "  filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=$rotation);"}]
+04-25 23:49:02.113 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9921 column: 17 source: "  -moz-box-shadow: 0 0 8px #dddddd;"}]
+04-25 23:49:02.113 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9933 column: 14 source: "  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #f9f9f9), color-stop(100%, #d9d9d9));"}]
+04-25 23:49:02.113 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9934 column: 14 source: "  background: -webkit-linear-gradient(#f9f9f9, #d9d9d9);"}]
+04-25 23:49:02.113 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9936 column: 14 source: "  background: -o-linear-gradient(#f9f9f9, #d9d9d9);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9939 column: 17 source: "  -moz-box-shadow: 0 0 3px #dddddd;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9946 column: 17 source: "  -moz-box-shadow: 0 0 3px #777777;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9953 column: 14 source: "  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #567fef), color-stop(100%, #4162b5));"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9954 column: 14 source: "  background: -webkit-linear-gradient(#567fef, #4162b5);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9956 column: 14 source: "  background: -o-linear-gradient(#567fef, #4162b5);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9960 column: 17 source: "  -moz-box-shadow: none;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9975 column: 14 source: "  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #5d8ea3), color-stop(100%, #046380));"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9976 column: 14 source: "  background: -webkit-linear-gradient(#5d8ea3, #046380);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 9978 column: 14 source: "  background: -o-linear-gradient(#5d8ea3, #046380);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10140 column: 17 source: "  -moz-box-shadow: none;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10154 column: 14 source: "  background: -webkit-gradient(radial, 50% 50%, 0, 50% 50%, 1000, color-stop(0%, #0f8fb8), color-stop(100%, #193441));"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10155 column: 14 source: "  background: -webkit-radial-gradient(#0f8fb8, #193441 1000px);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10157 column: 14 source: "  background: -o-radial-gradient(#0f8fb8, #193441 1000px);"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10160 column: 17 source: "  -moz-box-shadow: inset 0 0 30px #002f2f;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10286 column: 20 source: "  -moz-border-radius: 40px;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10313 column: 20 source: "  -moz-border-radius: 2px;"}]
+04-25 23:49:02.123 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10318 column: 17 source: "  -moz-box-shadow: 0 0 0 1px #dddddd;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10345 column: 17 source: "  -moz-box-shadow: 0 0 8px #dddddd;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10348 column: 20 source: "  -moz-border-radius: 6px 6px 0 0;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10357 column: 17 source: "  -moz-box-shadow: 0 0 20px #0e7a0e;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10363 column: 20 source: "  -moz-border-radius: 0;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10403 column: 14 source: "  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #046380), color-stop(100%, #193441));"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10404 column: 14 source: "  background: -webkit-linear-gradient(#046380, #193441);"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10406 column: 14 source: "  background: -o-linear-gradient(#046380, #193441);"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10409 column: 20 source: "  -moz-border-radius: 4px 4px 0 0;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10424 column: 20 source: "  -moz-border-radius: 0 0 4px 4px;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10501 column: 20 source: "  -moz-border-radius: 2px;"}]
+04-25 23:49:02.133 E/GeckoConsole( 1363): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "https://gingerhq.com/static/css/bootscreen.css" line: 10506 column: 17 source: "  -moz-box-shadow: 0 0 3px #dddddd;"}]
+04-25 23:49:02.173 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1342 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:02.173 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1342!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-25 23:49:04.663 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:49:09.763 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:49:14.813 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:49:16.053 I/Gonk    (   84): Setting nice for pid 1417 to 18
+04-25 23:49:16.053 I/Gonk    (   84): Changed nice for pid 1417 from 18 to 18.
+04-25 23:49:16.053 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1417 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:16.063 I/Gonk    (   84): Setting nice for pid 1417 to 1
+04-25 23:49:16.063 I/Gonk    (   84): Changed nice for pid 1417 from 18 to 1.
+04-25 23:49:16.123 I/Gonk    (   84): Setting nice for pid 1417 to 18
+04-25 23:49:16.123 I/Gonk    (   84): Changed nice for pid 1417 from 1 to 18.
+04-25 23:49:16.473 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46b0f8d0 from process 84 that was not created in current process: 84
+04-25 23:49:16.543 I/Gecko   (   84): [Parent 84] WARNING: pipe error (158): Connection reset by peer: file ../../../gecko/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 446
+04-25 23:49:16.913 I/Gecko   (   84): 
+04-25 23:49:16.913 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-25 23:49:16.913 I/Gecko   (   84): 
+04-25 23:49:16.913 I/Gecko   (   84): [Parent 84] WARNING: FileDescriptorSet destroyed with unconsumed descriptors: file ../../../gecko/ipc/chromium/src/chrome/common/file_descriptor_set_posix.cc, line 20
+04-25 23:49:16.963 E/GeckoConsole(   84): Content JS LOG at dummy file:326 in GaiaApps.launch/appOpen/<: app with origin 'https://gingerhq.com' has launched
+04-25 23:49:16.963 I/Gecko   (   84): 1398494956969	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{aecd2377-de39-42c3-abe2-2a20092e1179}"},"src":"https://gingerhq.com/","name":"Ginger","origin":"https://gingerhq.com"}}, {fac1a596-c135-4025-8e86-17feb73c75bd}, {fac1a596-c135-4025-8e86-17feb73c75bd}
+04-25 23:49:16.983 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46b0f830 from process 84 that was not created in current process: 84
+04-25 23:49:16.983 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46b0f970 from process 84 that was not created in current process: 84
+04-25 23:49:16.983 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46b0fa10 from process 84 that was not created in current process: 84
+04-25 23:49:16.983 I/Gecko   (   84): 
+04-25 23:49:16.983 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-25 23:49:16.983 I/Gecko   (   84): 
+04-25 23:49:17.053 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-25 23:49:17.063 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1417 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:17.203 I/Gecko   (   84): 1398494957212	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{aecd2377-de39-42c3-abe2-2a20092e1179}"}}, id: {c91564b3-9504-42e0-b2c7-70f8ac0217bb}
+04-25 23:49:17.233 I/Gecko   (   84): 1398494957243	Marionette	INFO	Switched to frame: {"frameValue":"{aecd2377-de39-42c3-abe2-2a20092e1179}"}
+04-25 23:49:17.303 I/Gecko   (   84): 1398494957307	Marionette	INFO	trying remote frame 0
+04-25 23:49:17.303 I/Gecko   (   84): 1398494957308	Marionette	INFO	trying remote frame 1
+04-25 23:49:17.303 I/Gecko   (   84): 1398494957309	Marionette	INFO	trying remote frame 2
+04-25 23:49:17.303 I/Gecko   (   84): 1398494957310	Marionette	INFO	deleting frame
+04-25 23:49:17.303 I/Gecko   (   84): 1398494957315	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-25 23:49:18.063 I/Gecko   (   84): 1398494958073	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {c91564b3-9504-42e0-b2c7-70f8ac0217bb}, {c91564b3-9504-42e0-b2c7-70f8ac0217bb}
+04-25 23:49:18.083 I/Gecko   (   84): 1398494958087	Marionette	INFO	sendToClient: {"from":"0","value":"https://gingerhq.com/"}, {a81999d9-7f16-42c1-8679-4058157337e3}, {a81999d9-7f16-42c1-8679-4058157337e3}
+04-25 23:49:18.083 I/Gecko   (   84): 1398494958093	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"return window.document.readyState;","line":191}}, id: {7378b4ce-0464-4778-b5d8-09c8ba13bdb6}
+04-25 23:49:18.173 I/Gecko   (   84): 1398494958179	Marionette	INFO	sendToClient: {"from":"0","value":"complete"}, {7378b4ce-0464-4778-b5d8-09c8ba13bdb6}, {7378b4ce-0464-4778-b5d8-09c8ba13bdb6}
+04-25 23:49:18.183 I/Gecko   (   84): 1398494958187	Marionette	INFO	sendToClient: {"from":"0","value":"https://gingerhq.com/"}, {5ab72fc2-6827-4bcc-92c4-df4a6afabeea}, {5ab72fc2-6827-4bcc-92c4-df4a6afabeea}
+04-25 23:49:18.203 I/Gecko   ( 1363): Attempting load of libEGL.so
+04-25 23:49:18.303 D/libEGL  ( 1363): loaded /system/lib/egl/libEGL_mali.so
+04-25 23:49:18.323 D/libEGL  ( 1363): loaded /system/lib/egl/libGLESv1_CM_mali.so
+04-25 23:49:18.323 D/libEGL  ( 1363): loaded /system/lib/egl/libGLESv2_mali.so
+04-25 23:49:18.383 I/Gecko   ( 1363): SharedSurface_Gralloc::Create -------
+04-25 23:49:18.413 I/Gecko   ( 1363): SharedSurface_Gralloc::Create: success -- surface 0x4543b9c0, GraphicBuffer 0x4540fe00.
+04-25 23:49:19.063 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1417 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:19.063 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1417!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-25 23:49:19.623 I/Gecko   (   84): 1398494959627	Marionette	INFO	sendToClient: {"from":"0","value":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAHMCAYAAACk4nEJAAAgAElEQVR4nOzdd1gT2RoHYJReAyJgr6u7q+vqtfeGvfeGBUWxYAMsSO9FUeyKFJGiVFHRtYu9994LoigIKCA9+d0/0ibJZDIJCQF0nud77l2EJDNzzpvvO+fMjIqa+Siom4+G+qCxUB8yDupDxkNj+CRoDJ/MjpFToTFyGjRHz4DmaAtojpkJzbGzoDluDjTHW0JrvCW0xs9lx4R50JpoBa2J86E1aQE7JltDa/JCdkxZCO3JnJjCjUXQnrIIWlMW82OqNLFEtphW0bBRTkyv6rFUwaHs/ZMQymoXFW3PsvYjafoqoY9z+z3PAY4LWlMW8r2YbM13ZOJ8ti0T5vG9GW8JzfGWbIvGzmLbNNoCmqNnQGPkNLZdXMeGT4L6kPFs4waNhbr5aKiZj4IKH7/xUB86ARrDJrL/YMQUaIycCs1R09n4EeEbN4eAHgc8Lnoc8Hi4TV1MiCXsmMYNG35MX1p5MWNZBWN55YdFVYsVVSyUfTyEQhltpKLtujL7ILHvcz3g+kA0g4OkAIhcbyZY8RziusSHcAY0R01nIzhiCtu0YROhPnQC2zoOgioi+I2YAo0RwlkfCXwTrQhZHjerI4DHBW66jRh82CdNR7gz0e70SuhkM1fKMWx/x+8ghBzbVlX7AhLo0/y/0bEgwVsASgKQRBC5GSIvOySBcMwswWxwBAdCIQRV1IeME8SPV/IKlrsC8HGyPe3J1qLoCUDHBk6H+78WK6BjsRI6M7khoVHMEhd2lR+z7X+xWFXDQtnHs5JDGX1EXH+l6OM6M235Hlis5BjBN4OHIy9zFMbQWrBEJkJIKIt5JbEAguOgoj5kvCB+o6aT4zeBn/Hx4JuySBC96csI2PGR05lpC51ZdvyYbQ+dWYSYvYoQq9kxR85huaYKxFp6MVdZ4f
+04-25 23:49:20.123 I/Gecko   (   84): 1398494960131	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {0043175f-d9f6-4da2-ab07-66711566ee87}, {0043175f-d9f6-4da2-ab07-66711566ee87}
+04-25 23:49:20.143 I/Gecko   (   84): 1398494960152	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {af89d6e1-8dc4-4685-9099-438fee889e18}
+04-25 23:49:20.143 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:49:20.183 I/Gecko   (   84): 1398494960192	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:20.333 I/Gecko   (   84): 1398494960336	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {af89d6e1-8dc4-4685-9099-438fee889e18}, {af89d6e1-8dc4-4685-9099-438fee889e18}
+04-25 23:49:20.333 I/Gecko   (   84): 1398494960343	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {becd0f09-7f31-4cc5-90e3-8e2a076480a8}
+04-25 23:49:20.553 I/Gecko   (   84): 1398494960561	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{aecd2377-de39-42c3-abe2-2a20092e1179}"},"src":"https://gingerhq.com/","name":"Ginger","origin":"https://gingerhq.com"}}, {becd0f09-7f31-4cc5-90e3-8e2a076480a8}, {becd0f09-7f31-4cc5-90e3-8e2a076480a8}
+04-25 23:49:20.593 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'https://gingerhq.com' is displayed
+04-25 23:49:20.603 I/Gecko   (   84): 1398494960611	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {9c9fa4f3-2313-45f9-a573-ae77c14b3ab1}
+04-25 23:49:20.603 I/Gecko   (   84): 1398494960613	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:20.713 I/Gecko   (   84): 1398494960725	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {9c9fa4f3-2313-45f9-a573-ae77c14b3ab1}, {9c9fa4f3-2313-45f9-a573-ae77c14b3ab1}
+04-25 23:49:20.743 I/Gecko   (   84): 1398494960749	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {a4daaf09-bca2-4afc-ad89-985f4621d302}
+04-25 23:49:21.113 D/Sensors (   84): activate handle=0; drv=0
+04-25 23:49:21.113 D/Sensors (   84): Lis3dhSensor: Control set 0
+04-25 23:49:21.123 D/Sensors (   84): Lis3dhSensor: mEnabled = 0
+04-25 23:49:21.383 I/Gonk    (   84): Setting nice for pid 1445 to 18
+04-25 23:49:21.383 I/Gonk    (   84): Changed nice for pid 1445 from 0 to 18.
+04-25 23:49:21.393 I/Gecko   (   84): 1398494961401	Marionette	INFO	sendToClient: {"from":"0","value":null}, {a4daaf09-bca2-4afc-ad89-985f4621d302}, {a4daaf09-bca2-4afc-ad89-985f4621d302}
+04-25 23:49:21.523 I/Gonk    (   84): Setting nice for pid 1445 to 18
+04-25 23:49:21.523 I/Gonk    (   84): Changed nice for pid 1445 from 18 to 18.
+04-25 23:49:21.523 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1445 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:21.523 I/Gonk    (   84): Setting nice for pid 1445 to 1
+04-25 23:49:21.523 I/Gonk    (   84): Changed nice for pid 1445 from 18 to 1.
+04-25 23:49:21.693 I/Gonk    (   84): Setting nice for pid 1453 to 18
+04-25 23:49:21.693 I/Gonk    (   84): Changed nice for pid 1453 from 0 to 18.
+04-25 23:49:21.883 I/Gecko   (   84): 1398494961888	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {1f59f5ab-bf97-4fe2-a98a-0a7086412b1c}
+04-25 23:49:21.903 I/Gecko   (   84): 1398494961912	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:24.033 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x12201e8)  (NOT REGISTERED) 
+04-25 23:49:24.053 I/Gecko   (   84): 1398494964030	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {1f59f5ab-bf97-4fe2-a98a-0a7086412b1c}, {1f59f5ab-bf97-4fe2-a98a-0a7086412b1c}
+04-25 23:49:24.143 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x435bb560 coming from different process: 84
+04-25 23:49:24.143 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x435bb880 coming from different process: 84
+04-25 23:49:24.383 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x120d238)  (NOT REGISTERED) 
+04-25 23:49:24.653 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x435bb880 from process 84 that was not created in current process: 84
+04-25 23:49:24.653 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x435bb560 from process 84 that was not created in current process: 84
+04-25 23:49:24.653 I/Gecko   (   84): 1398494964664	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {0afc2943-8fc9-4d1f-880a-cbfe8a39c66a}
+04-25 23:49:25.113 I/Gonk    (   84): Setting nice for pid 1363 to 18
+04-25 23:49:25.113 I/Gonk    (   84): Changed nice for pid 1363 from 1 to 18.
+04-25 23:49:25.153 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 23:49:25.153 I/Gecko   (   84): 1398494965158	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{d9856413-2f0a-4c22-b6d2-e12d3949d22c}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {0afc2943-8fc9-4d1f-880a-cbfe8a39c66a}, {0afc2943-8fc9-4d1f-880a-cbfe8a39c66a}
+04-25 23:49:25.193 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 23:49:25.283 I/Gecko   (   84): 1398494965287	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {3aec484b-b41f-42a0-b126-0e70af8ec767}
+04-25 23:49:25.283 I/Gecko   (   84): 1398494965290	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:25.403 I/Gecko   (   84): 1398494965414	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {3aec484b-b41f-42a0-b126-0e70af8ec767}, {3aec484b-b41f-42a0-b126-0e70af8ec767}
+04-25 23:49:25.423 I/Gecko   (   84): 1398494965429	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {e9077cef-23f7-4169-b09a-d5e2431fe3f4}
+04-25 23:49:25.423 I/Gecko   (   84): 1398494965431	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:25.533 I/Gecko   (   84): 1398494965540	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {e9077cef-23f7-4169-b09a-d5e2431fe3f4}, {e9077cef-23f7-4169-b09a-d5e2431fe3f4}
+04-25 23:49:25.543 I/Gecko   (   84): 1398494965548	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {ff8e3453-2064-4c55-bc8b-e936d52029c4}
+04-25 23:49:25.653 I/Gecko   (   84): 1398494965664	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{d9856413-2f0a-4c22-b6d2-e12d3949d22c}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {ff8e3453-2064-4c55-bc8b-e936d52029c4}, {ff8e3453-2064-4c55-bc8b-e936d52029c4}
+04-25 23:49:25.703 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 23:49:25.713 I/Gecko   (   84): 1398494965726	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{d9856413-2f0a-4c22-b6d2-e12d3949d22c}"}}, id: {274dbeb8-030a-4d4e-ae51-d472169b7aad}
+04-25 23:49:25.813 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x12106d0)  (NOT REGISTERED) 
+04-25 23:49:25.953 I/Gecko   (   84): 1398494965959	Marionette	INFO	Switched to frame: {"frameValue":"{d9856413-2f0a-4c22-b6d2-e12d3949d22c}"}
+04-25 23:49:25.963 I/Gecko   (   84): 1398494965974	Marionette	INFO	trying remote frame 0
+04-25 23:49:25.973 I/Gecko   (   84): 1398494965977	Marionette	INFO	trying remote frame 1
+04-25 23:49:25.983 I/Gecko   (   84): 1398494965987	Marionette	INFO	trying remote frame 2
+04-25 23:49:25.993 I/Gecko   (   84): 1398494965997	Marionette	INFO	deleting frame
+04-25 23:49:25.993 I/Gecko   (   84): 1398494966003	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-25 23:49:26.493 I/Gecko   (   84): 
+04-25 23:49:26.493 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-25 23:49:26.493 I/Gecko   (   84): 
+04-25 23:49:26.633 I/Gecko   ( 1445): ###################################### forms.js loaded
+04-25 23:49:26.653 I/Gecko   ( 1445): ############################### browserElementPanning.js loaded
+04-25 23:49:26.673 I/Gecko   ( 1445): ######################## BrowserElementChildPreload.js loaded
+04-25 23:49:26.683 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-25 23:49:26.723 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1363 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:27.003 I/GonkMemoryPressure( 1445): Checking to see if memory pressure is over.
+04-25 23:49:27.003 I/GonkMemoryPressure( 1445): Memory pressure is over.
+04-25 23:49:27.013 I/GonkMemoryPressure( 1453): Checking to see if memory pressure is over.
+04-25 23:49:27.013 I/GonkMemoryPressure( 1453): Memory pressure is over.
+04-25 23:49:27.013 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-25 23:49:27.013 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-25 23:49:27.653 I/Gecko   (   84): 1398494967660	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {274dbeb8-030a-4d4e-ae51-d472169b7aad}, {274dbeb8-030a-4d4e-ae51-d472169b7aad}
+04-25 23:49:28.023 I/Gecko   (   84): 1398494968028	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {50dd2c4a-468c-46b7-98f0-0892145e5611}, {50dd2c4a-468c-46b7-98f0-0892145e5611}
+04-25 23:49:28.053 I/Gecko   (   84): 1398494968065	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {ff6a4626-8cff-4894-ba11-f0ed681101ca}
+04-25 23:49:28.063 I/Gecko   (   84): 1398494968072	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:28.173 I/Gecko   (   84): 1398494968178	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {ff6a4626-8cff-4894-ba11-f0ed681101ca}, {ff6a4626-8cff-4894-ba11-f0ed681101ca}
+04-25 23:49:28.173 I/Gecko   (   84): 1398494968183	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {9ab05ff9-496d-4a40-859b-05dc46f0cc6b}
+04-25 23:49:28.183 I/Gecko   (   84): 1398494968186	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:28.313 I/Gecko   (   84): 1398494968318	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {9ab05ff9-496d-4a40-859b-05dc46f0cc6b}, {9ab05ff9-496d-4a40-859b-05dc46f0cc6b}
+04-25 23:49:28.313 I/Gecko   (   84): 1398494968324	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"GaiaApps.killAll()","line":91}}, id: {e5741eda-ee81-498b-818a-1463de305f75}
+04-25 23:49:28.363 I/Gecko   (   84): 1398494968368	Marionette	INFO	sendToClient: {"from":"0","value":true}, {e5741eda-ee81-498b-818a-1463de305f75}, {e5741eda-ee81-498b-818a-1463de305f75}
+04-25 23:49:28.363 I/Gecko   (   84): 1398494968374	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {a26dc549-b879-470d-b27a-92911a74212b}
+04-25 23:49:28.363 I/Gecko   (   84): 1398494968375	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 23:49:28.473 I/Gecko   (   84): 1398494968478	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {a26dc549-b879-470d-b27a-92911a74212b}, {a26dc549-b879-470d-b27a-92911a74212b}
+04-25 23:49:28.473 I/Gecko   (   84): 1398494968485	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('https://gingerhq.com/static/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {845318d8-0ffb-4c96-9471-b8b062d229e1}
+04-25 23:49:28.533 I/Gecko   (   84): -- webapps.js uninstall https://gingerhq.com/static/manifest.webapp
+04-25 23:49:28.723 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1363 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 23:49:28.723 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1363!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-25 23:49:29.093 I/Gecko   (   84): 1398494969097	Marionette	INFO	sendToClient: {"from":"0","value":true}, {845318d8-0ffb-4c96-9471-b8b062d229e1}, {845318d8-0ffb-4c96-9471-b8b062d229e1}

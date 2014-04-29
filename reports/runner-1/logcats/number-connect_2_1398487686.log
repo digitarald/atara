@@ -1,0 +1,158 @@
+--------- beginning of /dev/log/main
+04-25 21:48:06.643 I/Gecko   (   83): 1398487686646	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {9911cebf-1443-4cac-bcbe-c2c0b18c12e3}, {9911cebf-1443-4cac-bcbe-c2c0b18c12e3}
+04-25 21:48:06.753 I/Gecko   (   83): 1398487686762	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {27819739-6b45-474e-8dd0-777cc1853e36}
+04-25 21:48:06.783 I/Gecko   (   83): 1398487686775	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:07.003 I/Gecko   (   83): 1398487687014	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {27819739-6b45-474e-8dd0-777cc1853e36}, {27819739-6b45-474e-8dd0-777cc1853e36}
+04-25 21:48:07.023 I/Gecko   (   83): 1398487687035	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {3e20bfe8-fb5c-409a-89f5-fbdee58ca54a}
+04-25 21:48:08.163 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:08.173 E/GeckoConsole(   83): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'http://number-connect.tresensa.com' is displayed
+04-25 21:48:08.193 I/Gecko   (   83): 1398487688200	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{9b8662de-dac2-42b6-a778-d8c92af5a1ea}"},"src":"http://number-connect.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa","name":"Number Connect","origin":"http://number-connect.tresensa.com"}}, {3e20bfe8-fb5c-409a-89f5-fbdee58ca54a}, {3e20bfe8-fb5c-409a-89f5-fbdee58ca54a}
+04-25 21:48:08.303 I/Gecko   (   83): 1398487688315	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {b51c943e-da10-4f13-b34b-4dfd11c43b93}
+04-25 21:48:08.353 I/Gecko   (   83): 1398487688356	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:08.453 I/Gecko   (   83): 1398487688460	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {b51c943e-da10-4f13-b34b-4dfd11c43b93}, {b51c943e-da10-4f13-b34b-4dfd11c43b93}
+04-25 21:48:08.463 I/Gecko   (   83): 1398487688474	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {fd751675-00cb-4b1d-aa69-3ad24b5e7d15}
+04-25 21:48:08.793 I/Gonk    (   83): Setting nice for pid 1508 to 18
+04-25 21:48:08.793 I/Gonk    (   83): Changed nice for pid 1508 from 0 to 18.
+04-25 21:48:08.803 I/Gecko   (   83): [Parent 83] WARNING: waitpid failed pid:1508 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 21:48:08.823 I/Gonk    (   83): Setting nice for pid 1508 to 1
+04-25 21:48:08.823 I/Gonk    (   83): Changed nice for pid 1508 from 18 to 1.
+04-25 21:48:08.873 I/Gonk    (   83): Setting nice for pid 1481 to 18
+04-25 21:48:08.873 I/Gonk    (   83): Changed nice for pid 1481 from 1 to 18.
+04-25 21:48:08.923 D/Sensors (   83): activate handle=0; drv=0
+04-25 21:48:08.923 D/Sensors (   83): Lis3dhSensor: Control set 0
+04-25 21:48:08.923 D/Sensors (   83): Lis3dhSensor: mEnabled = 0
+04-25 21:48:09.023 I/log     ( 1544): <4>0[ 443.853603] select 1481 (Number Connect), adj 10, size 9237, to kill 
+04-25 21:48:09.393 I/Gecko   (   83): 1398487689395	Marionette	INFO	sendToClient: {"from":"0","value":null}, {fd751675-00cb-4b1d-aa69-3ad24b5e7d15}, {fd751675-00cb-4b1d-aa69-3ad24b5e7d15}
+04-25 21:48:09.423 I/Gecko   (   83): 
+04-25 21:48:09.423 I/Gecko   (   83): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-25 21:48:09.423 I/Gecko   (   83): 
+04-25 21:48:09.543 E/[Gralloc-ERROR](   83): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4ae23600 from process 83 that was not created in current process: 83
+04-25 21:48:09.583 E/[Gralloc-ERROR](   83): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x43cff560 coming from different process: 83
+04-25 21:48:09.583 E/[Gralloc-ERROR](   83): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x43cff7e0 coming from different process: 83
+04-25 21:48:09.593 E/[Gralloc-ERROR](   83): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4accbbf0 from process 83 that was not created in current process: 83
+04-25 21:48:09.593 I/Gecko   (   83): [Parent 83] WARNING: waitpid failed pid:1481 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 21:48:09.623 I/Gecko   (   83): 1398487689627	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {01a53294-8983-414d-814e-2e5d7acd6892}
+04-25 21:48:09.643 I/Gecko   (   83): 1398487689649	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:09.743 I/Gecko   (   83): 1398487689754	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {01a53294-8983-414d-814e-2e5d7acd6892}, {01a53294-8983-414d-814e-2e5d7acd6892}
+04-25 21:48:09.783 I/Gecko   (   83): 1398487689794	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {ea08c3aa-bf73-4c8a-a95c-0158f1e98323}
+04-25 21:48:09.883 I/Gecko   (   83): 1398487689886	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{528c14df-114f-405f-b72c-b979da318100}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {ea08c3aa-bf73-4c8a-a95c-0158f1e98323}, {ea08c3aa-bf73-4c8a-a95c-0158f1e98323}
+04-25 21:48:09.893 E/GeckoConsole(   83): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 21:48:09.923 I/Gecko   (   83): 1398487689926	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {13600d7a-e7b3-42d9-bed7-f553210df94f}
+04-25 21:48:09.923 I/Gecko   (   83): 1398487689933	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:09.983 E/[Gralloc-ERROR](   83): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x43cff7e0 from process 83 that was not created in current process: 83
+04-25 21:48:09.983 E/[Gralloc-ERROR](   83): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x43cff560 from process 83 that was not created in current process: 83
+04-25 21:48:10.033 I/Gecko   (   83): 1398487690041	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {13600d7a-e7b3-42d9-bed7-f553210df94f}, {13600d7a-e7b3-42d9-bed7-f553210df94f}
+04-25 21:48:10.043 I/Gecko   (   83): 1398487690052	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {2beb3cec-de29-469f-9255-a81605ba7adc}
+04-25 21:48:10.053 I/Gecko   (   83): 1398487690058	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:10.163 I/Gecko   (   83): 1398487690166	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {2beb3cec-de29-469f-9255-a81605ba7adc}, {2beb3cec-de29-469f-9255-a81605ba7adc}
+04-25 21:48:10.173 I/Gecko   (   83): 1398487690177	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {efef4e87-08dc-4179-a0ee-36cd7e36501a}
+04-25 21:48:10.243 I/Gecko   (   83): 1398487690246	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{528c14df-114f-405f-b72c-b979da318100}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {efef4e87-08dc-4179-a0ee-36cd7e36501a}, {efef4e87-08dc-4179-a0ee-36cd7e36501a}
+04-25 21:48:10.253 E/GeckoConsole(   83): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-25 21:48:10.263 I/Gecko   (   83): 1398487690271	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{528c14df-114f-405f-b72c-b979da318100}"}}, id: {d3f57e3e-1d29-4178-b18f-ac298c419715}
+04-25 21:48:10.273 I/Gecko   (   83): 1398487690283	Marionette	INFO	Switched to frame: {"frameValue":"{528c14df-114f-405f-b72c-b979da318100}"}
+04-25 21:48:10.303 I/Gecko   (   83): 1398487690309	Marionette	INFO	trying remote frame 0
+04-25 21:48:10.313 I/Gecko   (   83): 1398487690317	Marionette	INFO	trying remote frame 1
+04-25 21:48:10.313 I/Gecko   (   83): 1398487690318	Marionette	INFO	trying remote frame 2
+04-25 21:48:10.313 I/Gecko   (   83): 1398487690325	Marionette	INFO	trying remote frame 3
+04-25 21:48:10.323 I/Gecko   (   83): 1398487690326	Marionette	INFO	deleting frame
+04-25 21:48:10.323 I/Gecko   (   83): 1398487690332	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-25 21:48:10.913 I/Gecko   (   83): 1398487690917	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {d3f57e3e-1d29-4178-b18f-ac298c419715}, {d3f57e3e-1d29-4178-b18f-ac298c419715}
+04-25 21:48:11.003 I/Gecko   (   83): 1398487691008	Marionette	INFO	sendToClient: {"from":"0","value":[]}, {7f5ae41f-877e-4162-bc49-2e5ecabe3e4c}, {7f5ae41f-877e-4162-bc49-2e5ecabe3e4c}
+04-25 21:48:11.303 I/Gecko   (   83): 1398487691309	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {2962a4d3-d424-43d7-8888-70a4c63733c9}, {2962a4d3-d424-43d7-8888-70a4c63733c9}
+04-25 21:48:11.313 I/Gecko   (   83): 1398487691315	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {3f8c18d6-c2dc-4a64-bc5c-6637f9d1d0c7}
+04-25 21:48:11.323 I/Gecko   (   83): 1398487691326	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:11.423 I/Gecko   (   83): 1398487691434	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {3f8c18d6-c2dc-4a64-bc5c-6637f9d1d0c7}, {3f8c18d6-c2dc-4a64-bc5c-6637f9d1d0c7}
+04-25 21:48:11.433 I/Gecko   (   83): 1398487691439	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {a5235986-c411-4063-b71e-28cf49b0b975}
+04-25 21:48:11.433 I/Gecko   (   83): 1398487691441	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:11.533 I/Gecko   (   83): 1398487691543	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {a5235986-c411-4063-b71e-28cf49b0b975}, {a5235986-c411-4063-b71e-28cf49b0b975}
+04-25 21:48:11.543 I/Gecko   (   83): 1398487691549	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":30000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"GaiaApps.launchWithManifestURL('http://number-connect.tresensa.com/manifest.webapp')","line":106}}, id: {7f9fe145-253e-4421-9c57-dcbb96536def}
+04-25 21:48:11.593 I/Gecko   (   83): [Parent 83] WARNING: waitpid failed pid:1481 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 21:48:11.593 I/Gecko   (   83): [Parent 83] WARNING: Failed to deliver SIGKILL to 1481!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-25 21:48:11.643 E/GeckoConsole(   83): Content JS LOG at dummy file:334 in GaiaApps.launch: launching app with name 'Number Connect'
+04-25 21:48:11.963 I/Gonk    (   83): Setting nice for pid 1547 to 18
+04-25 21:48:11.963 I/Gonk    (   83): Changed nice for pid 1547 from 0 to 18.
+04-25 21:48:12.033 I/Gonk    (   83): Setting nice for pid 1547 to 18
+04-25 21:48:12.033 I/Gonk    (   83): Changed nice for pid 1547 from 18 to 18.
+04-25 21:48:12.033 I/Gecko   (   83): [Parent 83] WARNING: waitpid failed pid:1547 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 21:48:12.043 I/Gonk    (   83): Setting nice for pid 1547 to 1
+04-25 21:48:12.043 I/Gonk    (   83): Changed nice for pid 1547 from 18 to 1.
+04-25 21:48:12.083 D/Sensors (   83): activate handle=0; drv=0
+04-25 21:48:12.083 D/Sensors (   83): Lis3dhSensor: Control set 1
+04-25 21:48:12.083 D/Sensors (   83): Lis3dhSensor: mEnabled = 1
+04-25 21:48:12.133 E/[Gralloc-ERROR](   83): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x45465e70 coming from different process: 83
+04-25 21:48:12.133 E/[Gralloc-ERROR](   83): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4548e420 coming from different process: 83
+04-25 21:48:12.223 I/Gonk    (   83): Setting nice for pid 1508 to 18
+04-25 21:48:12.223 I/Gonk    (   83): Changed nice for pid 1508 from 1 to 18.
+04-25 21:48:13.173 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:13.723 I/Gecko   ( 1547): ###################################### forms.js loaded
+04-25 21:48:13.743 I/Gecko   ( 1547): ############################### browserElementPanning.js loaded
+04-25 21:48:13.783 I/Gecko   ( 1547): ######################## BrowserElementChildPreload.js loaded
+04-25 21:48:13.883 I/Gonk    (   83): Setting nice for pid 1559 to 18
+04-25 21:48:13.883 I/Gonk    (   83): Changed nice for pid 1559 from 0 to 18.
+04-25 21:48:14.823 E/GeckoConsole( 1547): [JavaScript Warning: "Unknown property '-moz-tap-highlight-color'.  Declaration dropped." {file: "http://number-connect.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa" line: 58 column: 312 source: "html,body{margin:0;padding:0;font-family:Arial;font-size:12px;color:#fff;background:#000 url(background.jpg);-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent}#game_canvas{z-index:1;overflow:hidden;image-rendering:optimizeSpeed;-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-webkit-user-select:none;-webkit-transform:translateZ(0);-ms-touch-action:none}#wrong_orientation{background:#000;position:absolute;top:0;left:0;z-index:2;width:100%;height:100%;display:none}#wrong_orientation img{display:block;margin:0 auto;width:80%}"}]
+04-25 21:48:15.753 E/GeckoConsole(   83): [JavaScript Error: "cdn.flurry.com : server does not support RFC 5746, see CVE-2009-3555"]
+04-25 21:48:15.813 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: GameLoader started
+04-25 21:48:15.833 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Google Analytics loaded
+04-25 21:48:15.833 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Loading minified game code from js/game.min.js
+04-25 21:48:15.833 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Calling head.js.apply to load all javascript libraries
+04-25 21:48:17.953 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: All javascript libraries loaded
+04-25 21:48:17.953 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: loading partner adapter and 3rd party libs...
+04-25 21:48:17.953 E/GeckoConsole( 1547): [JavaScript Warning: "Unknown property '-moz-filter'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 47 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-bottom:10px;height:55px;line-height:55px;backgrou
+04-25 21:48:17.953 E/GeckoConsole( 1547): [JavaScript Warning: "Expected 'none' or URL but found 'blur('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 109 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-
+04-25 21:48:17.953 E/GeckoConsole( 1547): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 779 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-bottom:10px;height:55px;line-height:55px;backgrou
+04-25 21:48:18.183 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:18.973 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: creating generic adapter...
+04-25 21:48:18.983 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: detected Facebook library...
+04-25 21:48:18.983 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: PartnerBridge.onFacebookLibraryLoaded called, Facebook library loaded successfully
+04-25 21:48:19.403 E/GeckoConsole( 1547): [JavaScript Warning: "Unknown property '-moz-tap-highlight-color'.  Declaration dropped." {file: "http://number-connect.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa" line: 0 column: 147 source: " z-index: 1; overflow: hidden; -webkit-user-select: none; -ms-touch-action:none; -webkit-tap-highlight-color: transparent; -moz-tap-highlight-color: transparent; -webkit-transform: translateZ(0);"}]
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: game-partner info received
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: initiating connection to partner...
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: Calling FB.init, appId = 143577932503913
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS WARN at http://connect.facebook.net/en_US/all.js:53 in i: The "fb-root" div has not been created, auto-creating
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: user id is: 524b03b4-bec8-48e5-9bfd-daa85315527e
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: fetching complete game state...
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: there was no local TGS.DataStore data
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: automatically instantiating GoogleAnalytics object with label 'Number Connect'
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'enthusiasticKey', using default
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'obsessedKey', using default
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'audioEnabled', using default
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'hintsLeft', using default
+04-25 21:48:19.643 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'curiousBest', using default
+04-25 21:48:19.653 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'enthusiasticBest', using default
+04-25 21:48:19.653 E/GeckoConsole( 1547): Content JS WARN at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: **WARNING** no value stored for 'obsessedBest', using default
+04-25 21:48:19.653 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Launching NumberConnect
+04-25 21:48:19.783 E/GeckoConsole( 1547): [JavaScript Warning: "Content Security Policy: allow directive is deprecated, use the equivalent default-src directive instead"]
+04-25 21:48:19.823 E/GeckoConsole( 1547): [JavaScript Warning: "The X-Content-Security-Policy and X-Content-Security-Report-Only headers will be deprecated in the future. Please use the Content-Security-Policy and Content-Security-Report-Only headers with CSP spec compliant syntax instead." {file: "https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=f323f0c760c7a5c&origin=http%3A%2F%2Fnumber-connect.tresensa.com" line: 0}]
+04-25 21:48:20.713 I/log     ( 1581): <4>0[ 455.464143] select 1508 (Homescreen), adj 8, size 5901, to kill 
+04-25 21:48:21.213 I/Gecko   (   83): 
+04-25 21:48:21.213 I/Gecko   (   83): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-25 21:48:21.213 I/Gecko   (   83): 
+04-25 21:48:21.483 I/Gecko   (   83): [Parent 83] WARNING: waitpid failed pid:1508 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 21:48:23.353 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:23.483 I/Gecko   (   83): [Parent 83] WARNING: waitpid failed pid:1508 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 21:48:23.483 I/Gecko   (   83): [Parent 83] WARNING: Failed to deliver SIGKILL to 1508!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-25 21:48:28.703 I/GonkMemoryPressure( 1547): Checking to see if memory pressure is over.
+04-25 21:48:28.703 I/GonkMemoryPressure( 1547): Memory pressure is over.
+04-25 21:48:28.713 I/GonkMemoryPressure(   83): Checking to see if memory pressure is over.
+04-25 21:48:28.713 I/GonkMemoryPressure(   83): Memory pressure is over.
+04-25 21:48:28.733 I/GonkMemoryPressure( 1559): Checking to see if memory pressure is over.
+04-25 21:48:28.743 I/GonkMemoryPressure( 1559): Memory pressure is over.
+04-25 21:48:29.913 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:36.273 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:38.633 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: finished loading required game assets
+04-25 21:48:38.643 E/GeckoConsole( 1547): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: starting game...
+04-25 21:48:39.793 I/GonkMemoryPressure( 1547): Checking to see if memory pressure is over.
+04-25 21:48:39.793 I/GonkMemoryPressure( 1547): Memory pressure is over.
+04-25 21:48:39.793 I/GonkMemoryPressure( 1559): Checking to see if memory pressure is over.
+04-25 21:48:39.793 I/GonkMemoryPressure( 1559): Memory pressure is over.
+04-25 21:48:39.803 I/GonkMemoryPressure(   83): Checking to see if memory pressure is over.
+04-25 21:48:39.803 I/GonkMemoryPressure(   83): Memory pressure is over.
+04-25 21:48:41.303 W/WifiHW  (   83): wifi_command: SIGNAL_POLL
+04-25 21:48:41.633 I/Gecko   (   83): 1398487721642	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"timed out","status":28,"stacktrace":null}}, {7f9fe145-253e-4421-9c57-dcbb96536def}, {7f9fe145-253e-4421-9c57-dcbb96536def}
+04-25 21:48:41.693 I/Gecko   (   83): 1398487721705	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {d339806f-0372-4edd-9d5f-c3be04ad3c41}
+04-25 21:48:41.723 I/Gecko   (   83): 1398487721731	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 21:48:41.893 I/Gecko   (   83): 1398487721902	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {d339806f-0372-4edd-9d5f-c3be04ad3c41}, {d339806f-0372-4edd-9d5f-c3be04ad3c41}
+04-25 21:48:41.903 I/Gecko   (   83): 1398487721909	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('http://number-connect.tresensa.com/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {1c5aa06a-ac68-4708-ac3b-4c8bdd440054}
+04-25 21:48:42.253 I/Gecko   (   83): -- webapps.js uninstall http://number-connect.tresensa.com/manifest.webapp
+04-25 21:48:42.413 E/Profiler(   83): BPUnw: [1 total] thread_unregister_for_profiling(me=0x3821e0)  (NOT REGISTERED) 
+04-25 21:48:43.373 I/Gecko   (   83): 1398487723380	Marionette	INFO	sendToClient: {"from":"0","value":true}, {1c5aa06a-ac68-4708-ac3b-4c8bdd440054}, {1c5aa06a-ac68-4708-ac3b-4c8bdd440054}

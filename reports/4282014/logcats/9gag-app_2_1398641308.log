@@ -1,0 +1,141 @@
+--------- beginning of /dev/log/main
+04-27 16:28:27.915 I/GonkMemoryPressure( 1502): Checking to see if memory pressure is over.
+04-27 16:28:28.035 I/GonkMemoryPressure( 1502): Memory pressure is over.
+04-27 16:28:28.405 I/Gecko   (   84): 1398641308420	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {e2a33fd2-486c-4cca-bb1e-9898342d7686}, {e2a33fd2-486c-4cca-bb1e-9898342d7686}
+04-27 16:28:30.175 I/Gecko   (   84): 1398641310192	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {4938f806-562d-4956-889c-cf8d90fccbd2}
+04-27 16:28:30.305 I/Gecko   (   84): 1398641310319	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:30.455 I/Gecko   (   84): 1398641310468	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {4938f806-562d-4956-889c-cf8d90fccbd2}, {4938f806-562d-4956-889c-cf8d90fccbd2}
+04-27 16:28:30.465 I/Gecko   (   84): 1398641310481	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {1f6fe740-99d0-4acc-afa0-befcb6237432}
+04-27 16:28:30.715 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://{c2db1542-7294-497a-97f8-5fc29e5739a4}' is displayed
+04-27 16:28:30.735 I/Gecko   (   84): 1398641310746	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{b01ec11b-f8a0-4b31-8a4c-4bff022f2c75}"},"src":"app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html","name":"9gag app","origin":"app://{c2db1542-7294-497a-97f8-5fc29e5739a4}"}}, {1f6fe740-99d0-4acc-afa0-befcb6237432}, {1f6fe740-99d0-4acc-afa0-befcb6237432}
+04-27 16:28:30.755 I/Gecko   (   84): 1398641310770	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {b807aee3-5d1d-48e0-9cc3-8d9cb8cd6267}
+04-27 16:28:30.775 I/Gecko   (   84): 1398641310787	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:30.885 I/Gecko   (   84): 1398641310896	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {b807aee3-5d1d-48e0-9cc3-8d9cb8cd6267}, {b807aee3-5d1d-48e0-9cc3-8d9cb8cd6267}
+04-27 16:28:30.885 I/Gecko   (   84): 1398641310902	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {54ae66cb-ba8e-405e-af47-c8c66a29c2f4}
+04-27 16:28:31.585 I/Gonk    (   84): Setting nice for pid 1502 to 18
+04-27 16:28:31.605 I/Gonk    (   84): Changed nice for pid 1502 from 18 to 18.
+04-27 16:28:31.625 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1502 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 16:28:31.645 I/Gonk    (   84): Setting nice for pid 1502 to 1
+04-27 16:28:31.645 I/Gonk    (   84): Changed nice for pid 1502 from 18 to 1.
+04-27 16:28:31.715 I/Gonk    (   84): Setting nice for pid 1392 to 18
+04-27 16:28:31.735 I/Gonk    (   84): Changed nice for pid 1392 from 1 to 18.
+04-27 16:28:31.755 D/Sensors (   84): activate handle=0; drv=0
+04-27 16:28:31.785 D/Sensors (   84): Lis3dhSensor: Control set 0
+04-27 16:28:31.785 D/Sensors (   84): Lis3dhSensor: mEnabled = 0
+04-27 16:28:32.175 I/log     ( 1535): <4>0[ 504.386666] select 1392 (9gag app), adj 10, size 7222, to kill 
+04-27 16:28:32.205 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:28:32.215 I/Gecko   (   84): 1398641312229	Marionette	INFO	sendToClient: {"from":"0","value":null}, {54ae66cb-ba8e-405e-af47-c8c66a29c2f4}, {54ae66cb-ba8e-405e-af47-c8c66a29c2f4}
+04-27 16:28:32.375 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4a2537e0 from process 84 that was not created in current process: 84
+04-27 16:28:32.385 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4a253740 from process 84 that was not created in current process: 84
+04-27 16:28:32.385 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4a2536a0 from process 84 that was not created in current process: 84
+04-27 16:28:32.385 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4a2539c0 from process 84 that was not created in current process: 84
+04-27 16:28:32.565 I/Gecko   (   84): 1398641312581	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {f44c11bd-e8a2-4d6c-9dbe-efde7844a14a}
+04-27 16:28:32.575 I/Gecko   (   84): 1398641312586	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:32.875 I/Gecko   (   84): [Parent 84] WARNING: pipe error (100): Connection reset by peer: file ../../../gecko/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 446
+04-27 16:28:32.925 I/Gecko   (   84): 
+04-27 16:28:32.925 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-27 16:28:32.925 I/Gecko   (   84): 
+04-27 16:28:32.935 I/Gecko   (   84): 1398641312945	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {f44c11bd-e8a2-4d6c-9dbe-efde7844a14a}, {f44c11bd-e8a2-4d6c-9dbe-efde7844a14a}
+04-27 16:28:33.085 I/Gecko   (   84): 
+04-27 16:28:33.085 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-27 16:28:33.085 I/Gecko   (   84): 
+04-27 16:28:33.185 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-27 16:28:33.335 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1392 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 16:28:33.375 I/Gecko   (   84): 1398641313391	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {efbe4d88-beb2-4078-99f4-24e91eb34b14}
+04-27 16:28:33.505 I/Gecko   (   84): 1398641313519	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{49c44aa2-8cb4-48e2-8c21-4f9919aae7e9}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {efbe4d88-beb2-4078-99f4-24e91eb34b14}, {efbe4d88-beb2-4078-99f4-24e91eb34b14}
+04-27 16:28:33.505 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-27 16:28:33.515 I/Gecko   (   84): 1398641313530	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {d35e313a-a1ec-4937-86c9-b727336bc625}
+04-27 16:28:33.515 I/Gecko   (   84): 1398641313532	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:33.625 I/Gecko   (   84): 1398641313636	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {d35e313a-a1ec-4937-86c9-b727336bc625}, {d35e313a-a1ec-4937-86c9-b727336bc625}
+04-27 16:28:33.625 I/Gecko   (   84): 1398641313642	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {5d34e65c-e66b-4adb-98a7-4d3a28829873}
+04-27 16:28:33.625 I/Gecko   (   84): 1398641313643	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:33.745 I/Gecko   (   84): 1398641313758	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {5d34e65c-e66b-4adb-98a7-4d3a28829873}, {5d34e65c-e66b-4adb-98a7-4d3a28829873}
+04-27 16:28:33.755 I/Gecko   (   84): 1398641313771	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {bc4559d8-b5d9-48dd-baa0-1bdbe108ea3f}
+04-27 16:28:33.825 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-27 16:28:33.835 I/Gecko   (   84): 1398641313845	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{49c44aa2-8cb4-48e2-8c21-4f9919aae7e9}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {bc4559d8-b5d9-48dd-baa0-1bdbe108ea3f}, {bc4559d8-b5d9-48dd-baa0-1bdbe108ea3f}
+04-27 16:28:33.885 I/Gecko   (   84): 1398641313894	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{49c44aa2-8cb4-48e2-8c21-4f9919aae7e9}"}}, id: {ed65d505-0604-44ca-a263-4c0496417fec}
+04-27 16:28:33.915 I/Gecko   (   84): 1398641313925	Marionette	INFO	Switched to frame: {"frameValue":"{49c44aa2-8cb4-48e2-8c21-4f9919aae7e9}"}
+04-27 16:28:33.945 I/Gecko   (   84): 1398641313956	Marionette	INFO	trying remote frame 0
+04-27 16:28:33.955 I/Gecko   (   84): 1398641313964	Marionette	INFO	trying remote frame 1
+04-27 16:28:33.955 I/Gecko   (   84): 1398641313965	Marionette	INFO	deleting frame
+04-27 16:28:33.955 I/Gecko   (   84): 1398641313970	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-27 16:28:34.075 I/Gecko   ( 1502): ###################################### forms.js loaded
+04-27 16:28:34.095 I/Gecko   ( 1502): ############################### browserElementPanning.js loaded
+04-27 16:28:34.125 I/Gecko   ( 1502): ######################## BrowserElementChildPreload.js loaded
+04-27 16:28:35.335 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1392 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 16:28:35.335 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1392!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-27 16:28:35.425 I/Gecko   (   84): 1398641315436	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {ed65d505-0604-44ca-a263-4c0496417fec}, {ed65d505-0604-44ca-a263-4c0496417fec}
+04-27 16:28:35.625 I/Gecko   (   84): 1398641315642	Marionette	INFO	sendToClient: {"from":"0","value":[]}, {3bbb9d0e-2905-4750-9893-ee3cc60ed403}, {3bbb9d0e-2905-4750-9893-ee3cc60ed403}
+04-27 16:28:35.695 I/Gecko   (   84): 1398641315711	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {b02fdd61-fb71-49b3-985a-c0d240823ade}, {b02fdd61-fb71-49b3-985a-c0d240823ade}
+04-27 16:28:35.705 I/Gecko   (   84): 1398641315717	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {33130d04-376c-4ed9-9ccf-32caa0410bbc}
+04-27 16:28:35.725 I/Gecko   (   84): 1398641315736	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:35.825 I/Gecko   (   84): 1398641315840	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {33130d04-376c-4ed9-9ccf-32caa0410bbc}, {33130d04-376c-4ed9-9ccf-32caa0410bbc}
+04-27 16:28:35.835 I/Gecko   (   84): 1398641315846	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {10664d48-fed1-4ff8-a579-6d1f194fecd6}
+04-27 16:28:35.835 I/Gecko   (   84): 1398641315848	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:28:35.935 I/Gecko   (   84): 1398641315952	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {10664d48-fed1-4ff8-a579-6d1f194fecd6}, {10664d48-fed1-4ff8-a579-6d1f194fecd6}
+04-27 16:28:35.945 I/Gecko   (   84): 1398641315958	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":30000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"GaiaApps.launchWithManifestURL('https://marketplace.firefox.com/app/5457e232-f0a8-4f1d-8703-bbc4c63e0718/manifest.webapp')","line":106}}, id: {cfb00c41-2459-41ac-936c-79a7ed2f37df}
+04-27 16:28:36.055 E/GeckoConsole(   84): Content JS LOG at dummy file:334 in GaiaApps.launch: launching app with name '9gag app'
+04-27 16:28:36.385 I/Gonk    (   84): Setting nice for pid 1544 to 18
+04-27 16:28:36.405 I/Gonk    (   84): Changed nice for pid 1544 from 0 to 18.
+04-27 16:28:36.445 I/Gonk    (   84): Setting nice for pid 1544 to 18
+04-27 16:28:36.455 I/Gonk    (   84): Changed nice for pid 1544 from 18 to 18.
+04-27 16:28:36.455 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1544 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 16:28:36.455 I/Gonk    (   84): Setting nice for pid 1544 to 1
+04-27 16:28:36.455 I/Gonk    (   84): Changed nice for pid 1544 from 18 to 1.
+04-27 16:28:36.545 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x44d641f0 coming from different process: 84
+04-27 16:28:36.555 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x44d64290 coming from different process: 84
+04-27 16:28:36.565 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x44d64330 coming from different process: 84
+04-27 16:28:36.615 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x44d643d0 coming from different process: 84
+04-27 16:28:36.915 D/Sensors (   84): activate handle=0; drv=0
+04-27 16:28:36.925 D/Sensors (   84): Lis3dhSensor: Control set 1
+04-27 16:28:36.925 D/Sensors (   84): Lis3dhSensor: mEnabled = 1
+04-27 16:28:37.115 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x434a4240 coming from different process: 84
+04-27 16:28:37.115 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x43d0e1a0 coming from different process: 84
+04-27 16:28:37.135 I/Gonk    (   84): Setting nice for pid 1552 to 18
+04-27 16:28:37.145 I/Gonk    (   84): Changed nice for pid 1552 from 0 to 18.
+04-27 16:28:37.175 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x44d643d0 from process 84 that was not created in current process: 84
+04-27 16:28:37.185 I/Gonk    (   84): Setting nice for pid 1502 to 18
+04-27 16:28:37.185 I/Gonk    (   84): Changed nice for pid 1502 from 1 to 18.
+04-27 16:28:37.225 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x44d64330 from process 84 that was not created in current process: 84
+04-27 16:28:37.245 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:28:37.985 I/Gecko   (   84): 
+04-27 16:28:37.985 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-27 16:28:37.985 I/Gecko   (   84): 
+04-27 16:28:38.035 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-27 16:28:38.055 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1502 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 16:28:38.385 I/Gecko   ( 1544): ###################################### forms.js loaded
+04-27 16:28:38.405 I/Gecko   ( 1544): ############################### browserElementPanning.js loaded
+04-27 16:28:38.455 I/Gecko   ( 1544): ######################## BrowserElementChildPreload.js loaded
+04-27 16:28:40.055 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1502 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 16:28:40.055 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1502!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-27 16:28:42.795 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:28:44.795 E/GeckoConsole( 1544): [JavaScript Error: "ReferenceError: Recaptcha is not defined" {file: "http://www.google.com/recaptcha/api/challenge?k=6Lf0iMkSAAAAALGZpEfzpO13sqJNiEgr6znqfm9r&ajax=1&cachestop=0.9370590129401535&lang=en" line: 17}]
+04-27 16:28:45.655 E/GeckoConsole( 1544): [JavaScript Warning: "Error in parsing value for 'background-repeat'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 91 column: 143 source: "a.PIN_1379576285396_pin_it_button {  background-image: url(http://passets.pinterest.com/images/pidgets/bps1.png)!important; background-repeat: none!important; background-size: 40px 60px!important; height: 20px!important; margin: 0!important; padding: 0!important; vertical-align: baseline!important; text-decoration: none!important; width: 40px!important; background-position: 0 -20px }"}]
+04-27 16:28:45.975 E/GeckoConsole( 1544): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 165 column: 51 source: ".fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}"}]
+04-27 16:28:45.995 E/GeckoConsole( 1544): [JavaScript Warning: "Error in parsing value for 'top'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 167 column: 308 source: ".fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}"}]
+04-27 16:28:45.995 E/GeckoConsole( 1544): [JavaScript Warning: "Error in parsing value for 'right'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 167 column: 320 source: ".fb_dialog_close_icon{background:url(http://static.ak.fbcdn.net/rsrc.php/v2/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(http://static.ak.fbcdn.net/rsrc.php/v2/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px;top:8px\9;right:7px\9}"}]
+04-27 16:28:46.005 E/GeckoConsole( 1544): [JavaScript Warning: "Expected 'none' or URL but found 'alpha('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 184 column: 68 source: ".fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}"}]
+04-27 16:28:46.015 E/GeckoConsole( 1544): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 205 column: 91 source: ".fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0 0, 0 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}"}]
+04-27 16:28:46.015 E/GeckoConsole( 1544): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 212 column: 48 source: ".fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0 0, 0 100%, from(#4966A6),"}]
+04-27 16:28:46.045 E/GeckoConsole( 1544): [JavaScript Warning: "Unknown property 'zoom'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 230 column: 62 source: ".fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}"}]
+04-27 16:28:46.055 E/GeckoConsole( 1544): [JavaScript Warning: "Error in parsing value for 'top'.  Declaration dropped." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 238 column: 52 source: ".fb_connect_bar_container_ie6{position:absolute;top:expression(document.compatMode=="CSS1Compat"? document.documentElement.scrollTop+"px":body.scrollTop+"px")}"}]
+04-27 16:28:46.055 E/GeckoConsole( 1544): [JavaScript Warning: "Expected declaration but found '*'.  Skipped to next declaration." {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 246 column: 47 source: ".fb_edge_widget_with_comment{position:relative;*z-index:1000}"}]
+04-27 16:28:46.215 E/GeckoConsole( 1544): [JavaScript Error: "ReferenceError: GAG is not defined" {file: "app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html" line: 912}]
+04-27 16:28:48.175 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:28:50.775 E/GeckoConsole( 1544): [JavaScript Error: "TypeError: c is undefined" {file: "https://apis.google.com/_/scs/apps-static/_/js/k=oz.gapi.en_US.Ws-60Sm6XX8.O/m=client,plusone/rt=j/sv=1/d=1/ed=1/am=AQ/rs=AItRSTMEMkUvdtb1Xec1d52qbhKPb7WBlg/cb=gapi.loaded_0" line: 6}]
+04-27 16:28:51.285 E/GeckoConsole( 1544): Security Error: Content at http://9gag.com/ may not load data from app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html.
+04-27 16:28:51.305 E/GeckoConsole( 1544): Security Error: Content at http://9gag.com/ may not load data from app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html.
+04-27 16:28:52.255 E/GeckoConsole( 1544): Security Error: Content at http://9gag.com/ may not load data from app://{c2db1542-7294-497a-97f8-5fc29e5739a4}/9gag.html.
+04-27 16:28:53.255 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:28:53.685 I/Gecko   ( 1552): ###################################### forms.js loaded
+04-27 16:28:53.705 I/Gecko   ( 1552): ############################### browserElementPanning.js loaded
+04-27 16:28:53.745 I/Gecko   ( 1552): ######################## BrowserElementChildPreload.js loaded
+04-27 16:28:58.285 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:29:03.275 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 16:29:05.995 I/Gecko   (   84): 1398641345998	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"timed out","status":28,"stacktrace":null}}, {cfb00c41-2459-41ac-936c-79a7ed2f37df}, {cfb00c41-2459-41ac-936c-79a7ed2f37df}
+04-27 16:29:06.015 I/Gecko   (   84): 1398641346032	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {55036818-730a-48d3-ae19-1824c713b7d8}
+04-27 16:29:06.025 I/Gecko   (   84): 1398641346039	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 16:29:06.145 I/Gecko   (   84): 1398641346164	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {55036818-730a-48d3-ae19-1824c713b7d8}, {55036818-730a-48d3-ae19-1824c713b7d8}
+04-27 16:29:06.165 I/Gecko   (   84): 1398641346177	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('https://marketplace.firefox.com/app/5457e232-f0a8-4f1d-8703-bbc4c63e0718/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {be3e53ad-9912-4992-b2d0-1cdec4a58dcf}
+04-27 16:29:06.295 I/Gecko   (   84): -- webapps.js uninstall https://marketplace.firefox.com/app/5457e232-f0a8-4f1d-8703-bbc4c63e0718/manifest.webapp
+04-27 16:29:06.805 I/Gecko   (   84): 1398641346816	Marionette	INFO	sendToClient: {"from":"0","value":true}, {be3e53ad-9912-4992-b2d0-1cdec4a58dcf}, {be3e53ad-9912-4992-b2d0-1cdec4a58dcf}

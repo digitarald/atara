@@ -2,7 +2,9 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 	var resultList = new List('results', {
-		valueNames: ['idx', 'name', 'status']
+		valueNames: ['idx', 'name', 'status'],
+		page: 5000,
+		indexAsync: true
 	});
 
 	var statusFilter = {};

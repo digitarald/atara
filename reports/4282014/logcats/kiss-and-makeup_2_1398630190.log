@@ -1,0 +1,199 @@
+--------- beginning of /dev/log/main
+04-27 13:23:10.827 I/Gecko   (   84): 1398630190842	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {81e1031d-c014-486d-aa43-2504f01cece2}, {81e1031d-c014-486d-aa43-2504f01cece2}
+04-27 13:23:11.277 I/Gecko   (   84): 1398630191289	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {afc02bcc-170d-4547-af6a-8eb8c7190a62}
+04-27 13:23:11.287 I/Gecko   (   84): 1398630191301	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:11.487 I/Gecko   (   84): 1398630191498	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {afc02bcc-170d-4547-af6a-8eb8c7190a62}, {afc02bcc-170d-4547-af6a-8eb8c7190a62}
+04-27 13:23:11.517 I/Gecko   (   84): 1398630191530	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {adc6f196-d4ba-4586-9ed5-f65f3663e641}
+04-27 13:23:11.967 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'http://25.mippin.com' is displayed
+04-27 13:23:12.007 I/Gecko   (   84): 1398630192017	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{bcc4cf2c-0dba-43a4-8757-59f032e1794e}"},"src":"http://25.mippin.com/mip/raw/mippins/2/5/html5","name":"Kiss And Makeup","origin":"http://25.mippin.com"}}, {adc6f196-d4ba-4586-9ed5-f65f3663e641}, {adc6f196-d4ba-4586-9ed5-f65f3663e641}
+04-27 13:23:12.017 I/Gecko   (   84): 1398630192033	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {b430f4b4-7364-48cb-895b-ed75b6953a82}
+04-27 13:23:12.027 I/Gecko   (   84): 1398630192039	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:12.137 I/Gecko   (   84): 1398630192151	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {b430f4b4-7364-48cb-895b-ed75b6953a82}, {b430f4b4-7364-48cb-895b-ed75b6953a82}
+04-27 13:23:12.187 I/Gecko   (   84): 1398630192200	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {aaa6b337-39a0-4630-ae9c-9bc1151ca562}
+04-27 13:23:12.637 I/Gonk    (   84): Setting nice for pid 2483 to 18
+04-27 13:23:12.647 I/Gonk    (   84): Changed nice for pid 2483 from 0 to 18.
+04-27 13:23:12.667 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:2483 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 13:23:12.807 I/Gonk    (   84): Setting nice for pid 2483 to 1
+04-27 13:23:12.807 I/Gonk    (   84): Changed nice for pid 2483 from 18 to 1.
+04-27 13:23:13.257 I/Gonk    (   84): Setting nice for pid 2379 to 18
+04-27 13:23:13.267 I/Gonk    (   84): Changed nice for pid 2379 from 1 to 18.
+04-27 13:23:13.647 D/Sensors (   84): activate handle=0; drv=0
+04-27 13:23:13.647 D/Sensors (   84): Lis3dhSensor: Control set 0
+04-27 13:23:13.647 D/Sensors (   84): Lis3dhSensor: mEnabled = 0
+04-27 13:23:14.327 I/GonkMemoryPressure( 2483): Checking to see if memory pressure is over.
+04-27 13:23:14.327 I/GonkMemoryPressure( 2483): Memory pressure is over.
+04-27 13:23:14.997 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 13:23:15.077 I/Gecko   (   84): 
+04-27 13:23:15.077 I/Gecko   (   84): ###!!! [Parent][OnMaybeDequeueOne] Error: Channel error: cannot send/recv
+04-27 13:23:15.077 I/Gecko   (   84): 
+04-27 13:23:15.087 I/Gecko   (   84): 1398630195097	Marionette	INFO	sendToClient: {"from":"0","value":null}, {aaa6b337-39a0-4630-ae9c-9bc1151ca562}, {aaa6b337-39a0-4630-ae9c-9bc1151ca562}
+04-27 13:23:15.097 I/Gecko   (   84): 
+04-27 13:23:15.097 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-27 13:23:15.097 I/Gecko   (   84): 
+04-27 13:23:15.177 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-27 13:23:15.267 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:2379 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 13:23:15.317 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x46871bf0 from process 84 that was not created in current process: 84
+04-27 13:23:15.337 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4688e0b0 from process 84 that was not created in current process: 84
+04-27 13:23:15.417 I/Gecko   (   84): 1398630195428	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {38174d38-284e-4c4c-80ff-d4080a308f51}
+04-27 13:23:15.417 I/Gecko   (   84): 1398630195434	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:15.607 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4688e330 from process 84 that was not created in current process: 84
+04-27 13:23:15.607 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4688e150 from process 84 that was not created in current process: 84
+04-27 13:23:15.617 I/Gecko   (   84): 1398630195625	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {38174d38-284e-4c4c-80ff-d4080a308f51}, {38174d38-284e-4c4c-80ff-d4080a308f51}
+04-27 13:23:15.637 I/Gecko   (   84): 1398630195652	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {ce1967a7-3e4d-4c05-aea5-6f05eeb32cd5}
+04-27 13:23:15.727 I/Gecko   (   84): 1398630195737	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{fb8117e6-57c9-48a5-801d-9badb2238fe4}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {ce1967a7-3e4d-4c05-aea5-6f05eeb32cd5}, {ce1967a7-3e4d-4c05-aea5-6f05eeb32cd5}
+04-27 13:23:15.727 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-27 13:23:15.787 I/Gecko   (   84): 1398630195797	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {1e2c6d31-d571-42e5-a8ff-5b79e913fcac}
+04-27 13:23:15.787 I/Gecko   (   84): 1398630195803	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:15.897 I/Gecko   (   84): 1398630195909	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {1e2c6d31-d571-42e5-a8ff-5b79e913fcac}, {1e2c6d31-d571-42e5-a8ff-5b79e913fcac}
+04-27 13:23:15.897 I/Gecko   (   84): 1398630195915	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {d5616e4c-0d07-4812-9bb2-9dd6163edef7}
+04-27 13:23:15.907 I/Gecko   (   84): 1398630195918	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:16.007 I/Gecko   (   84): 1398630196021	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {d5616e4c-0d07-4812-9bb2-9dd6163edef7}, {d5616e4c-0d07-4812-9bb2-9dd6163edef7}
+04-27 13:23:16.007 I/Gecko   (   84): 1398630196026	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {5ba25945-d5e4-4f53-a416-8d6dd53d8a55}
+04-27 13:23:16.057 I/Gecko   (   84): 1398630196075	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{fb8117e6-57c9-48a5-801d-9badb2238fe4}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {5ba25945-d5e4-4f53-a416-8d6dd53d8a55}, {5ba25945-d5e4-4f53-a416-8d6dd53d8a55}
+04-27 13:23:16.067 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-27 13:23:16.077 I/Gecko   (   84): 1398630196092	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{fb8117e6-57c9-48a5-801d-9badb2238fe4}"}}, id: {e37dc732-457f-4b68-9f57-242f44cb2cd3}
+04-27 13:23:16.097 I/Gecko   (   84): 1398630196107	Marionette	INFO	Switched to frame: {"frameValue":"{fb8117e6-57c9-48a5-801d-9badb2238fe4}"}
+04-27 13:23:16.097 I/Gecko   (   84): 1398630196110	Marionette	INFO	trying remote frame 0
+04-27 13:23:16.097 I/Gecko   (   84): 1398630196111	Marionette	INFO	trying remote frame 1
+04-27 13:23:16.107 I/Gecko   (   84): 1398630196118	Marionette	INFO	trying remote frame 2
+04-27 13:23:16.107 I/Gecko   (   84): 1398630196119	Marionette	INFO	trying remote frame 3
+04-27 13:23:16.107 I/Gecko   (   84): 1398630196119	Marionette	INFO	deleting frame
+04-27 13:23:16.107 I/Gecko   (   84): 1398630196124	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-27 13:23:16.797 I/Gecko   (   84): 1398630196813	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {e37dc732-457f-4b68-9f57-242f44cb2cd3}, {e37dc732-457f-4b68-9f57-242f44cb2cd3}
+04-27 13:23:17.267 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:2379 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 13:23:17.267 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 2379!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-27 13:23:17.307 I/Gecko   (   84): 1398630197318	Marionette	INFO	sendToClient: {"from":"0","value":[]}, {bcfaedd8-087e-4cb9-aa18-c7bdd6bf8549}, {bcfaedd8-087e-4cb9-aa18-c7bdd6bf8549}
+04-27 13:23:17.377 E/GeckoConsole( 2483): Content JS ERROR at app://homescreen.gaiamobile.org/gaia_build_defer_index.js:390 in loadSVConfFileError: Failed parsing singleVariant configuration file [js/singlevariantconf.json]:  [Exception... "File error: Not found"  nsresult: "0x80520012 (NS_ERROR_FILE_NOT_FOUND)"  location: "JS frame :: app://homescreen.gaiamobile.org/gaia_build_defer_index.js :: loadFile :: line 382"  data: no]
+04-27 13:23:17.387 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-27 13:23:17.387 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-27 13:23:17.417 I/Gecko   (   84): 1398630197426	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {cbc2302b-9b9d-4cdb-8188-8a7c911e893b}, {cbc2302b-9b9d-4cdb-8188-8a7c911e893b}
+04-27 13:23:17.417 I/Gecko   (   84): 1398630197433	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {239d31f1-4f52-4851-9bc8-f108423f6518}
+04-27 13:23:17.437 I/Gecko   (   84): 1398630197451	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:17.557 I/Gecko   (   84): 1398630197569	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {239d31f1-4f52-4851-9bc8-f108423f6518}, {239d31f1-4f52-4851-9bc8-f108423f6518}
+04-27 13:23:17.557 I/Gecko   (   84): 1398630197574	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {251075b4-22f5-423c-a9fe-6b8dbdcbe28d}
+04-27 13:23:17.557 I/Gecko   (   84): 1398630197576	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-27 13:23:17.677 I/Gecko   (   84): 1398630197688	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {251075b4-22f5-423c-a9fe-6b8dbdcbe28d}, {251075b4-22f5-423c-a9fe-6b8dbdcbe28d}
+04-27 13:23:17.677 I/Gecko   (   84): 1398630197694	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":30000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"GaiaApps.launchWithManifestURL('http://25.mippin.com/mip/raw/mippins/2/5/html5/app.webapp')","line":106}}, id: {e4ca4692-90a2-4449-ae96-e8c2933c6878}
+04-27 13:23:17.967 I/Gonk    (   84): Setting nice for pid 2521 to 18
+04-27 13:23:17.967 I/Gonk    (   84): Changed nice for pid 2521 from 0 to 18.
+04-27 13:23:17.997 E/GeckoConsole(   84): Content JS LOG at dummy file:334 in GaiaApps.launch: launching app with name 'Kiss And Makeup'
+04-27 13:23:18.247 I/Gonk    (   84): Setting nice for pid 2521 to 18
+04-27 13:23:18.247 I/Gonk    (   84): Changed nice for pid 2521 from 18 to 18.
+04-27 13:23:18.247 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:2521 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 13:23:18.247 I/Gonk    (   84): Setting nice for pid 2521 to 1
+04-27 13:23:18.267 I/Gonk    (   84): Changed nice for pid 2521 from 18 to 1.
+04-27 13:23:18.577 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x436f98d0 coming from different process: 84
+04-27 13:23:18.587 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x441a6d30 coming from different process: 84
+04-27 13:23:18.717 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x441a6f10 coming from different process: 84
+04-27 13:23:18.747 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x441a6fb0 coming from different process: 84
+04-27 13:23:18.847 D/Sensors (   84): activate handle=0; drv=0
+04-27 13:23:18.857 D/Sensors (   84): Lis3dhSensor: Control set 1
+04-27 13:23:18.857 D/Sensors (   84): Lis3dhSensor: mEnabled = 1
+04-27 13:23:18.887 I/Gonk    (   84): Setting nice for pid 2483 to 18
+04-27 13:23:18.887 I/Gonk    (   84): Changed nice for pid 2483 from 1 to 18.
+04-27 13:23:19.897 I/Gecko   ( 2521): ###################################### forms.js loaded
+04-27 13:23:19.917 I/Gecko   ( 2521): ############################### browserElementPanning.js loaded
+04-27 13:23:19.957 I/Gecko   ( 2521): ######################## BrowserElementChildPreload.js loaded
+04-27 13:23:20.007 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 13:23:22.387 I/log     ( 2548): <4>0[ 1141.492036] select 2483 (Homescreen), adj 8, size 6085, to kill 
+04-27 13:23:22.437 I/Gecko   (   84): 
+04-27 13:23:22.437 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-27 13:23:22.437 I/Gecko   (   84): 
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property 'user-select'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 20 column: 12 source: "	user-select: none;	"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 49 column: 19 source: "	-moz-border-radius: 4px;"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 56 column: 16 source: "	-moz-box-shadow:  0px 2px 5px 0px rgba(255, 255, 255, 0.6);"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 61 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#000000), color-stop(100%,#636363)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 62 column: 13 source: "	background: -webkit-linear-gradient(top,  #000000 1%,#636363 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 74 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#b22323), color-stop(50%,#ff3030), color-stop(51%,#e82727), color-stop(100%,#e29191)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 75 column: 13 source: "	background: -webkit-linear-gradient(top,  #b22323 0%,#ff3030 50%,#e82727 51%,#e29191 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 98 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c5d5f2), color-stop(28%,#4f76be), color-stop(61%,#1a4f75), color-stop(100%,#135ce2)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 99 column: 13 source: "	background: -webkit-linear-gradient(top,  #c5d5f2 0%,#4f76be 28%,#1a4f75 61%,#135ce2 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 118 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(2%,#eeeeee), color-stop(98%,#cccccc), color-stop(100%,#a3a3a3)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 119 column: 13 source: "	background: -webkit-linear-gradient(top, #ffffff 0%,#eeeeee 2%,#cccccc 98%,#a3a3a3 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 128 column: 16 source: "	-moz-box-shadow: 0 0 4px rgba(0,0,0,0.5);"}]
+04-27 13:23:22.517 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 219 column: 18 source: "  	-moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.3);"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 254 column: 16 source: "	-moz-box-shadow: none;"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 411 column: 16 source: "	-moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.4);"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background-repeat'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 423 column: 20 source: "	background-repeat: none;"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 460 column: 16 source: "	-moz-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 723 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#cccccc)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 724 column: 13 source: "	background: -webkit-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 725 column: 13 source: "	background: -o-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* Opera 11.10+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 726 column: 13 source: "	background: -ms-linear-gradient(top,  #ffffff 0%,#cccccc 100%); /* IE10+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 728 column: 9 source: "	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cccccc',GradientType=0 ); /* IE6-9 */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 736 column: 19 source: "	-moz-border-radius: 2px;"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 743 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#777777)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 744 column: 13 source: "	background: -webkit-linear-gradient(top,  #555555 0%,#777777 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 745 column: 13 source: "	background: -o-linear-gradient(top,  #555555 0%,#777777 100%); /* Opera 11.10+ */"}]
+04-27 13:23:22.537 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 746 column: 13 source: "	background: -ms-linear-gradient(top,  #555555 0%,#777777 100%); /* IE10+ */"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 748 column: 9 source: "	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#777777',GradientType=0 ); /* IE6-9 */		"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 754 column: 13 source: "	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#555555), color-stop(100%,#777777)); /* Chrome,Safari4+ */"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 755 column: 13 source: "	background: -webkit-linear-gradient(top,  #555555 0%,#777777 100%); /* Chrome10+,Safari5.1+ */"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 756 column: 13 source: "	background: -o-linear-gradient(top,  #555555 0%,#777777 100%); /* Opera 11.10+ */"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 757 column: 13 source: "	background: -ms-linear-gradient(top,  #555555 0%,#777777 100%); /* IE10+ */"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Expected 'none' or URL but found 'progid'.  Error in parsing value for 'filter'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 759 column: 9 source: "	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#555555', endColorstr='#777777',GradientType=0 ); /* IE6-9 */	"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 775 column: 19 source: "	-moz-border-radius: 2px 0 0 2px;"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 781 column: 19 source: "	-moz-border-radius: 0 0 0 0;"}]
+04-27 13:23:22.547 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/mippin.css" line: 786 column: 19 source: "	-moz-border-radius: 0 2px 2px 0;"}]
+04-27 13:23:22.557 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 80 column: 17 source: "		-moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);"}]
+04-27 13:23:22.557 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 242 column: 17 source: "		-moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);"}]
+04-27 13:23:22.567 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 292 column: 20 source: "		-moz-border-radius: 0;"}]
+04-27 13:23:22.567 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 300 column: 17 source: "		-moz-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);"}]
+04-27 13:23:22.567 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 362 column: 17 source: "		-moz-box-shadow: none;"}]
+04-27 13:23:22.567 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 524 column: 17 source: "		-moz-box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.1);"}]
+04-27 13:23:22.567 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-27 13:23:22.567 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 630 column: 17 source: "		-moz-box-shadow: inset 0px 4px 4px -2px rgba(0, 0, 0, 0.1);"}]
+04-27 13:23:22.577 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 669 column: 17 source: "		-moz-box-shadow: -6px 2px 8px -2px rgba(0, 0, 0, 0.2);"}]
+04-27 13:23:22.577 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/layout.css" line: 701 column: 17 source: "		-moz-box-shadow: 6px 2px 8px -2px rgba(0, 0, 0, 0.2);"}]
+04-27 13:23:22.577 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 37 column: 17 source: "		-moz-box-shadow: 50px 0 50px -50px rgba(0, 0, 0, 0.5) inset;"}]
+04-27 13:23:22.587 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 205 column: 17 source: "		-moz-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.3);"}]
+04-27 13:23:22.587 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:2483 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 13:23:22.597 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-background-size'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 248 column: 22 source: "		-moz-background-size: 40px 40px;"}]
+04-27 13:23:22.597 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 477 column: 17 source: "		-moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);"}]
+04-27 13:23:22.597 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 505 column: 17 source: "		-moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);"}]
+04-27 13:23:22.597 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 518 column: 17 source: "		-moz-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, .6);"}]
+04-27 13:23:22.597 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 537 column: 17 source: "		-moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);"}]
+04-27 13:23:22.607 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 566 column: 17 source: "		-moz-box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.6);"}]
+04-27 13:23:22.607 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property '-moz-box-shadow'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/ios.css" line: 579 column: 17 source: "		-moz-box-shadow: inset 0px 2px 4px 0px rgba(0, 0, 0, .6);"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property 'user-select'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 9 column: 12 source: "	user-select:none;"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 11 column: 11 source: "	box-sizing:border-box;"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Unknown property 'touch-callout'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 13 column: 14 source: "	touch-callout:none;"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 19 column: 18 source: "	background-image:-webkit-gradient(linear,0 0,0 100%,color-stop(0,#fff),color-stop(0.02,#eee),color-stop(0.98,#ccc),color-stop(1,#a3a3a3));"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 57 column: 18 source: "	background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0,rgba(204,204,204,0)),color-stop(0.4,rgba(204,204,204,0)),color-stop(0.4,#ccc));"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 77 column: 18 source: "	background-image:-webkit-gradient(linear,0 0,100% 100%,color-stop(0,rgba(238,238,238,0)),color-stop(0.4,rgba(238,238,238,0)),color-stop(0.4,#eee));"}]
+04-27 13:23:22.617 E/GeckoConsole( 2521): [JavaScript Warning: "Expected media feature name but found '-webkit-min-device-pixel-ratio'." {file: "http://25.mippin.com/mip/raw/mippins/2/5/html5/add2home.css" line: 163 column: 16 source: "@media all and (-webkit-min-device-pixel-ratio: 2) {"}]
+04-27 13:23:23.337 I/Gonk    (   84): Setting nice for pid 2549 to 18
+04-27 13:23:23.337 I/Gonk    (   84): Changed nice for pid 2549 from 0 to 18.
+04-27 13:23:24.587 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:2483 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-27 13:23:24.587 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 2483!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-27 13:23:25.017 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-27 13:23:27.147 E/GeckoConsole( 2521): Content JS LOG at http://25.mippin.com/mip/raw/mippins/2/5/html5/Model.js:238 in Model.db.getFontSize: medium
+04-27 13:23:27.177 E/GeckoConsole( 2521): Content JS LOG at http://25.mippin.com/mip/raw/mippins/2/5/html5/Model.js:146 in Model.analytics.sendPageview: send pageview0/index
+04-27 13:23:35.097 I/GonkMemoryPressure( 2521): Checking to see if memory pressure is over.
+04-27 13:23:35.167 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-27 13:23:35.777 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-27 13:23:36.007 I/GonkMemoryPressure( 2521): Memory pressure is over.
+04-27 13:23:36.407 I/GonkMemoryPressure( 2549): Checking to see if memory pressure is over.
+04-27 13:23:40.967 I/GonkMemoryPressure( 2549): Memory pressure is over.
+04-27 13:23:40.987 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-27 13:23:40.987 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-27 13:23:41.017 I/GonkMemoryPressure( 2521): Checking to see if memory pressure is over.
+04-27 13:23:41.017 I/GonkMemoryPressure( 2521): Memory pressure is over.
+04-27 13:23:46.017 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-27 13:23:46.017 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-27 13:23:46.017 I/GonkMemoryPressure( 2521): Checking to see if memory pressure is over.
+04-27 13:23:46.017 I/GonkMemoryPressure( 2521): Memory pressure is over.
+04-27 13:23:49.177 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x1ebb608)  (NOT REGISTERED) 
+04-27 13:23:49.367 I/GonkMemoryPressure( 2549): Checking to see if memory pressure is over.
+04-27 13:23:51.777 I/ServiceManager(   77): service 'media.resource_manager' died
+04-27 13:23:51.777 I/ServiceManager(   77): service 'permission' died
+04-27 13:23:51.877 I/GonkMemoryPressure( 2521): Checking to see if memory pressure is over.
+04-27 13:23:51.877 I/GonkMemoryPressure( 2521): Memory pressure is over.
+04-27 13:23:51.907 I/GonkMemoryPressure( 2549): Memory pressure is over.
+04-27 13:23:51.957 I/Gecko   ( 2549): 
+04-27 13:23:51.957 I/Gecko   ( 2549): ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+04-27 13:23:51.957 I/Gecko   ( 2549): 
+04-27 13:23:52.007 I/ServiceManager(   77): service 'media.audio_flinger' died
+04-27 13:23:52.007 I/ServiceManager(   77): service 'media.player' died
+04-27 13:23:52.007 I/ServiceManager(   77): service 'media.camera' died
+04-27 13:23:52.007 I/ServiceManager(   77): service 'media.audio_policy' died

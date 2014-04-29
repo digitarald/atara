@@ -19,6 +19,8 @@ function normalizeSlug(slug) {
 	return slug.replace(/_\d+$/g, '');
 }
 
+var ignoreReasons = /MULTIPLE_APPS_PER_ORIGIN_FORBIDDEN|REINSTALL_FORBIDDEN/;
+
 function fetch() {
 	var results = {};
 	var i = 0;
@@ -54,13 +56,16 @@ function fetch() {
 			run.from = file;
 			run.logcat = path.dirname(file) + '/' + entry.logcat;
 			if (!run.status) {
+				if (ignoreReasons.test(entry.status)) {
+					continue;
+				}
 				run.reason = entry.status.substr(8);
 				app.failed++;
 			} else {
 				app.passed++;
 				app.screenshots.push('/' + path.dirname(file) + '/' + entry.screenshot);
 			}
-			app.status = app.passed >= app.failed;
+			app.status = app.passed && app.passed >= app.failed;
 			app.runs.push(run);
 		}
 	});
@@ -79,8 +84,8 @@ app.get('/', function(req, res) {
 	_.forEach(results, function(app) {
 		inputCount++;
 		if (app.runs.length) {
-				runCount++;
-			}
+			runCount++;
+		}
 		if (!app.passed) {
 			failedCount++;
 			return;
@@ -130,7 +135,10 @@ app.get('/csv', function(req, res) {
 		}
 	});
 
-	json2csv({data: mapped, fields: Object.keys(mapped[0])}, function(err, csv) {
+	json2csv({
+		data: mapped,
+		fields: Object.keys(mapped[0])
+	}, function(err, csv) {
 		res.send(csv);
 	});
 });

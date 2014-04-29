@@ -1,0 +1,834 @@
+--------- beginning of /dev/log/system
+04-25 11:07:35.860 I/Vold    (   78): Vold 2.1 (the revenge) firing up
+04-25 11:07:35.910 D/Vold    (   78): Volume sdcard state changing -1 (Initializing) -> 0 (No-Media)
+04-25 11:07:35.970 D/Vold    (   78): Volume sdcard state changing 0 (No-Media) -> 2 (Pending)
+04-25 11:07:35.970 D/Vold    (   78): Volume sdcard state changing 2 (Pending) -> 1 (Idle-Unmounted)
+04-25 11:07:40.940 D/VoldCmdListener(   78): volume list
+04-25 11:07:40.950 D/VoldCmdListener(   78): volume mount sdcard
+04-25 11:07:40.950 I/Vold    (   78): /dev/block/vold/179:1 being considered for volume sdcard
+04-25 11:07:40.950 D/Vold    (   78): Volume sdcard state changing 1 (Idle-Unmounted) -> 3 (Checking)
+04-25 11:07:40.950 W/Vold    (   78): Skipping fs checks
+04-25 11:07:40.980 I/Vold    (   78): Device /dev/block/vold/179:1, target /mnt/sdcard mounted @ /mnt/secure/staging
+04-25 11:07:40.990 D/Vold    (   78): Volume sdcard state changing 3 (Checking) -> 4 (Mounted)
+--------- beginning of /dev/log/main
+04-25 11:07:42.380 D/SPRDENG (  168): eng_servermodem_comm: use SIM1 /dev/CHNPTY13
+04-25 11:07:42.380 D/SPRDENG (  168): AT > AT+SNVM=0,401
+04-25 11:07:42.380 D/SPRDENG (  168): 41
+04-25 11:07:42.380 D/SPRDENG (  168): 54
+04-25 11:07:42.380 D/SPRDENG (  168): 2b
+04-25 11:07:42.380 D/SPRDENG (  168): 53
+04-25 11:07:42.380 D/SPRDENG (  168): 4e
+04-25 11:07:42.380 D/SPRDENG (  168): 56
+04-25 11:07:42.380 D/SPRDENG (  168): 4d
+04-25 11:07:42.380 D/SPRDENG (  168): 3d
+04-25 11:07:42.380 D/SPRDENG (  168): 30
+04-25 11:07:42.380 D/SPRDENG (  168): 2c
+04-25 11:07:42.380 D/SPRDENG (  168): 34
+04-25 11:07:42.380 D/SPRDENG (  168): 30
+04-25 11:07:42.380 D/SPRDENG (  168): 31
+04-25 11:07:42.380 D/SPRDENG (  168): eng_modem2server: use SIM1 /dev/CHNPTY13
+04-25 11:07:42.380 D/SPRDENG (  168): AT < 
+04-25 11:07:42.380 D/SPRDENG (  168): +SNVM: 8,FFFFFFFFFFFF2500
+04-25 11:07:42.380 D/SPRDENG (  168): 
+04-25 11:07:42.380 D/SPRDENG (  168): OK
+04-25 11:07:42.380 D/SPRDENG (  168): 
+04-25 11:07:42.380 D/BTWIFIMAC(   94): recv_from_modem: Receive 1 Modem Response
+04-25 11:07:42.380 D/BTWIFIMAC(   94): read_btwifimac_from_modem: BT timeout=35, response=
+04-25 11:07:42.380 D/BTWIFIMAC(   94): +SNVM: 8,FFFFFFFFFFFF2500
+04-25 11:07:42.380 D/BTWIFIMAC(   94): 
+04-25 11:07:42.380 D/BTWIFIMAC(   94): OK
+04-25 11:07:42.380 D/BTWIFIMAC(   94): 
+04-25 11:07:42.480 D/BTWIFIMAC(   94): get_macaddress: mac address is FF:FF:FF:FF:FF:FF
+04-25 11:07:42.480 D/BTWIFIMAC(   94): ===========WIFI MAC===========
+04-25 11:07:42.480 D/BTWIFIMAC(   94): read_btwifimac_from_modem: send 39,1,AT+SNVM=0,409
+04-25 11:07:42.480 D/BTWIFIMAC(   94): send_to_modem
+04-25 11:07:42.480 D/BTWIFIMAC(   94): recv_from_modem: Waiting modem response ... fd=7
+04-25 11:07:42.480 D/SPRDENG (  168): eng_servermodem_comm: use SIM1 /dev/CHNPTY13
+04-25 11:07:42.480 D/SPRDENG (  168): AT > AT+SNVM=0,409
+04-25 11:07:42.480 D/SPRDENG (  168): 41
+04-25 11:07:42.480 D/SPRDENG (  168): 54
+04-25 11:07:42.480 D/SPRDENG (  168): 2b
+04-25 11:07:42.480 D/SPRDENG (  168): 53
+04-25 11:07:42.480 D/SPRDENG (  168): 4e
+04-25 11:07:42.480 D/SPRDENG (  168): 56
+04-25 11:07:42.480 D/SPRDENG (  168): 4d
+04-25 11:07:42.480 D/SPRDENG (  168): 3d
+04-25 11:07:42.480 D/SPRDENG (  168): 30
+04-25 11:07:42.480 D/SPRDENG (  168): 2c
+04-25 11:07:42.480 D/SPRDENG (  168): 34
+04-25 11:07:42.480 D/SPRDENG (  168): 30
+04-25 11:07:42.480 D/SPRDENG (  168): 39
+04-25 11:07:42.480 D/SPRDENG (  168): eng_modem2server: use SIM1 /dev/CHNPTY13
+04-25 11:07:42.480 D/SPRDENG (  168): AT < 
+04-25 11:07:42.480 D/SPRDENG (  168): +SNVM: 20,FFFFFFFFFFFF0000000000000000000000000000
+04-25 11:07:42.480 D/SPRDENG (  168): 
+04-25 11:07:42.480 D/SPRDENG (  168): OK
+04-25 11:07:42.480 D/SPRDENG (  168): 
+04-25 11:07:42.480 D/BTWIFIMAC(   94): recv_from_modem: Receive 1 Modem Response
+04-25 11:07:42.480 D/BTWIFIMAC(   94): read_btwifimac_from_modem: WIFI timeout=60, response=
+04-25 11:07:42.480 D/BTWIFIMAC(   94): +SNVM: 20,FFFFFFFFFFFF0000000000000000000000000000
+04-25 11:07:42.480 D/BTWIFIMAC(   94): 
+04-25 11:07:42.480 D/BTWIFIMAC(   94): OK
+04-25 11:07:42.480 D/BTWIFIMAC(   94): 
+04-25 11:07:42.480 D/BTWIFIMAC(   94): get_macaddress: mac address is FF:FF:FF:FF:FF:FF
+04-25 11:07:42.480 D/BTWIFIMAC(   94): bt_ok:0 wifi_ok:0 
+04-25 11:07:42.480 D/BTWIFIMAC(   94): +mac_rand+
+04-25 11:07:42.480 D/BTWIFIMAC(   94): mac_rand: /data/rand_mac.txt exists
+04-25 11:07:42.480 D/BTWIFIMAC(   94): mac_rand: read /data/rand_mac.txt 00:65:51:4d:eb:0e;00:df:2e:66:ac:0a
+04-25 11:07:42.480 D/BTWIFIMAC(   94): mac_rand: read btmac=00:65:51:4d:eb:0e, wifimac=00:df:2e:66:ac:0a
+04-25 11:07:42.480 D/BTWIFIMAC(   94): property ro.mac.wifi=00:df:2e:66:ac:0a, ro.mac.bluetooth=00:65:51:4d:eb:0e
+04-25 11:07:42.480 D/BTWIFIMAC(   94): write_mac2file: mac=00:df:2e:66:ac:0a, fd[/data/wifimac.txt]=9
+04-25 11:07:42.490 D/BTWIFIMAC(   94): write_mac2file: mac=00:65:51:4d:eb:0e, fd[/data/btmac.txt]=9
+04-25 11:07:42.490 D/BTWIFIMAC(   94): begin to run  trout_genpskey
+04-25 11:07:42.490 D/BTWIFIMAC(   94): run trout_genpskey, ret=0
+04-25 11:07:42.510 D/pskey_bt(  329): set BT mac
+04-25 11:07:42.510 D/pskey_bt(  329): main, bt_mac from nv:
+04-25 11:07:42.510 D/pskey_bt(  329): get_pskey_from_file
+04-25 11:07:42.510 D/pskey_bt(  329): open bt pskey structure file fd=7
+04-25 11:07:42.510 D/pskey_bt(  329): buf from pskey file:2048
+04-25 11:07:42.510 D/pskey_bt(  329): parser_pskey_info
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:0
+04-25 11:07:42.510 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:1
+04-25 11:07:42.510 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:1
+04-25 11:07:42.510 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:1
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.510 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.510 D/pskey_bt(  329): char:C, C
+04-25 11:07:42.510 D/pskey_bt(  329): char:B, B
+04-25 11:07:42.510 D/pskey_bt(  329): char:A, A
+04-25 11:07:42.510 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x18cba80
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:18cba80
+04-25 11:07:42.510 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.510 D/pskey_bt(  329): char:f, f
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x1f00
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:1f00
+04-25 11:07:42.510 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.510 D/pskey_bt(  329): char:E, E
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x1e
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:1e
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): char:B, B
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): char:C, C
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x7b007c
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:7b007c
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): char:A, A
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x37007a
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:37007a
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): char:6, 6
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x350036
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:350036
+04-25 11:07:42.510 D/pskey_bt(  329): char:2, 2
+04-25 11:07:42.510 D/pskey_bt(  329): char:9, 9
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): char:4, 4
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x290034
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:290034
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:A, A
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:2, 2
+04-25 11:07:42.510 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xa0028
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:a0028
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:6, 6
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:9, 9
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x60009
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:60009
+04-25 11:07:42.510 D/pskey_bt(  329): end of buff, str=},
+04-25 11:07:42.510 D/pskey_bt(  329): {0x0B,0x0A,0x09, 0x08, 0x07},
+04-25 11:07:42.510 D/pskey_bt(  329): {0xFF, 0xFF, 0x8D, 0xFE, 0x9B, 0x3F, 0x79, 0x83,
+04-25 11:07:42.510 D/pskey_bt(  329):   0xFF, 0xA7, 0xFF, 0x7F, 0x00, 0xE0, 0xF7, 0x3E},
+04-25 11:07:42.510 D/pskey_bt(  329): {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+04-25 11:07:42.510 D/pskey_bt(  329): 0,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 5,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xE,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000000,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000154,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xFFFFFFFF,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x100,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xA0,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xDC,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x20,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x55,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x64,
+04-25 11:07:42.510 D/pskey_bt(  329): 0,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x8,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x13C,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x2,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xD704,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x88888888,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x6,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x0,
+04-25 11:07:42.510 D/pskey_bt(  329): {0x0001,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:B, B
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xb
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:b
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:A, A
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xa
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:a
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:9, 9
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x9
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:9
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x8
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:8
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x7
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u32: here:7
+04-25 11:07:42.510 D/pskey_bt(  329): end of buff, str=},
+04-25 11:07:42.510 D/pskey_bt(  329): {0xFF, 0xFF, 0x8D, 0xFE, 0x9B, 0x3F, 0x79, 0x83,
+04-25 11:07:42.510 D/pskey_bt(  329):   0xFF, 0xA7, 0xFF, 0x7F, 0x00, 0xE0, 0xF7, 0x3E},
+04-25 11:07:42.510 D/pskey_bt(  329): {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+04-25 11:07:42.510 D/pskey_bt(  329): 0,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 5,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xE,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000000,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000154,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xFFFFFFFF,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x100,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xA0,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xDC,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x20,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x55,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x64,
+04-25 11:07:42.510 D/pskey_bt(  329): 0,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x8,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x13C,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x2,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xD704,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x88888888,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x6,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x0,
+04-25 11:07:42.510 D/pskey_bt(  329): {0x0001,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.510 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.510 D/pskey_bt(  329): char:D, D
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x8d
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:8d
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:E, E
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xfe
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:fe
+04-25 11:07:42.510 D/pskey_bt(  329): char:9, 9
+04-25 11:07:42.510 D/pskey_bt(  329): char:B, B
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x9b
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:9b
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x3f
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:3f
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): char:9, 9
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x79
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:79
+04-25 11:07:42.510 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x83
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:83
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.510 D/pskey_bt(  329): char:A, A
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xa7
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:a7
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x7f
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:7f
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:0
+04-25 11:07:42.510 D/pskey_bt(  329): char:E, E
+04-25 11:07:42.510 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xe0
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:e0
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xf7
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:f7
+04-25 11:07:42.510 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.510 D/pskey_bt(  329): char:E, E
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0x3e
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:3e
+04-25 11:07:42.510 D/pskey_bt(  329): end of buff, str=},
+04-25 11:07:42.510 D/pskey_bt(  329): {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF},
+04-25 11:07:42.510 D/pskey_bt(  329): 0,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 5,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xE,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 1,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000000,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x50000154,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xFFFFFFFF,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x100,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xA0,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xDC,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x20,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x55,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x64,
+04-25 11:07:42.510 D/pskey_bt(  329): 0,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x8,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x13C,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x2,
+04-25 11:07:42.510 D/pskey_bt(  329): 0xD704,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x88888888,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x6,
+04-25 11:07:42.510 D/pskey_bt(  329): 0x0,
+04-25 11:07:42.510 D/pskey_bt(  329): {0x0001,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.510 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.510 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xff
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:ff
+04-25 11:07:42.520 D/pskey_bt(  329): end of buff, str=},
+04-25 11:07:42.520 D/pskey_bt(  329): 0,
+04-25 11:07:42.520 D/pskey_bt(  329): 1,
+04-25 11:07:42.520 D/pskey_bt(  329): 5,
+04-25 11:07:42.520 D/pskey_bt(  329): 0xE,
+04-25 11:07:42.520 D/pskey_bt(  329): 1,
+04-25 11:07:42.520 D/pskey_bt(  329): 1,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x50000000,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x50000150,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x50000154,
+04-25 11:07:42.520 D/pskey_bt(  329): 0xFFFFFFFF,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x100,
+04-25 11:07:42.520 D/pskey_bt(  329): 0xA0,
+04-25 11:07:42.520 D/pskey_bt(  329): 0xDC,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x20,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x55,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x64,
+04-25 11:07:42.520 D/pskey_bt(  329): 0,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x8,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x13C,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x2,
+04-25 11:07:42.520 D/pskey_bt(  329): 0xD704,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x88888888,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x6,
+04-25 11:07:42.520 D/pskey_bt(  329): 0x0,
+04-25 11:07:42.520 D/pskey_bt(  329): {0x0001,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000,0x0000
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:1
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x5
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:5
+04-25 11:07:42.520 D/pskey_bt(  329): char:E, E
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xe
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:e
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:1
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u8: here:1
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x50000000
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:50000000
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x50000150
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:50000150
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x50000150
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:50000150
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:4, 4
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x50000154
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:50000154
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): char:F, F
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xffffffff
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:ffffffff
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x100
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:100
+04-25 11:07:42.520 D/pskey_bt(  329): char:A, A
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xa0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:a0
+04-25 11:07:42.520 D/pskey_bt(  329): char:D, D
+04-25 11:07:42.520 D/pskey_bt(  329): char:C, C
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xdc
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:dc
+04-25 11:07:42.520 D/pskey_bt(  329): char:2, 2
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x20
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:20
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): char:5, 5
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x55
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:55
+04-25 11:07:42.520 D/pskey_bt(  329): char:6, 6
+04-25 11:07:42.520 D/pskey_bt(  329): char:4, 4
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x64
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:64
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x8
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:8
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): char:3, 3
+04-25 11:07:42.520 D/pskey_bt(  329): char:C, C
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x13c
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:13c
+04-25 11:07:42.520 D/pskey_bt(  329): char:2, 2
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x2
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:2
+04-25 11:07:42.520 D/pskey_bt(  329): char:D, D
+04-25 11:07:42.520 D/pskey_bt(  329): char:7, 7
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:4, 4
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0xd704
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:d704
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): char:8, 8
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x88888888
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:88888888
+04-25 11:07:42.520 D/pskey_bt(  329): char:6, 6
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x6
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:6
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u16: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:1, 1
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x1
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:1
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): char:0, 0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): get_one_item(data) = 0x0
+04-25 11:07:42.520 D/pskey_bt(  329): get_next_u32: here:0
+04-25 11:07:42.520 D/pskey_bt(  329): leave out tmp_buff=
+04-25 11:07:42.520 D/pskey_bt(  329): parse pskey success, tmp_buff=0x10fd120
+04-25 11:07:42.520 D/pskey_bt(  329): ret get pskey from file =0
+04-25 11:07:42.520 D/pskey_bt(  329): data/btmac.txt does not exist 0 
+04-25 11:07:42.620 D/pskey_bt(  329): tmp_mac:0065514deb0e
+04-25 11:07:42.620 D/pskey_bt(  329): e  
+04-25 11:07:42.620 D/pskey_bt(  329): eb  
+04-25 11:07:42.620 D/pskey_bt(  329): 4d  
+04-25 11:07:42.620 D/pskey_bt(  329): 51  
+04-25 11:07:42.620 D/pskey_bt(  329): 65  
+04-25 11:07:42.620 D/pskey_bt(  329): 0  
+04-25 11:07:42.850 I/nsVolume(   84): nsVolume: sdcard state Mounted @ '/mnt/sdcard' gen 1 locked 0 fake 0 media 1 sharing 0 formatting 0
+04-25 11:07:42.850 I/AutoMounter(   84): UpdateState: umsAvail:1 umsEnabled:1 mode:0 usbCablePluggedIn:1 tryToShare:0
+04-25 11:07:42.850 I/AutoMounter(   84): UpdateState: Volume sdcard is Mounted and inserted @ /mnt/sdcard gen 1 locked 0 sharing n
+04-25 11:07:42.850 I/AutoMounter(   84): UpdateState: umsAvail:1 umsEnabled:1 mode:0 usbCablePluggedIn:1 tryToShare:0
+04-25 11:07:42.850 I/AutoMounter(   84): UpdateState: Volume sdcard is Mounted and inserted @ /mnt/sdcard gen 1 locked 0 sharing n
+04-25 11:07:42.950 I/Gonk    (   84): RIL[0]: OnConnectSuccess
+04-25 11:07:43.130 I/Gonk    (   84): RIL[1]: OnConnectSuccess
+04-25 11:07:43.330 I/Gecko   (   84): 1398449263339	Marionette	DEBUG	accepted connection on 127.0.0.1:43247
+04-25 11:07:43.650 E/bluedroid(   84): test bt_is_enabled
+04-25 11:07:44.400 D/NetUtils(   84): failed to remove default route for wlan0: No such device
+04-25 11:07:44.410 W/WifiHW  (   84): wifi_load_driver enter 262
+04-25 11:07:44.410 W/WifiHW  (   84): DRIVER_MODULE_PATH= DRIVER_MODULE_ARG= 
+04-25 11:07:44.410 W/WifiHW  (   84): driver insmod complete 
+04-25 11:07:44.410 W/WifiHW  (   84): Driver() loaded succesffuly
+04-25 11:07:44.640 W/WifiHW  (   87): wifi_change_fw_path: /system/lib/modules/itm_sta.ko
+04-25 11:07:44.640 D/WifiHW  (   87): Unable to unload driver module "itm_ap.ko": No such file or directory
+04-25 11:07:44.840 D/WifiHW  (   87): Unable to unload driver module "itm_sta.ko": No such file or directory
+04-25 11:07:45.040 W/WifiHW  (   87): insmod filename=/system/lib/modules/itm_sta.ko args= 
+04-25 11:07:45.180 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 3, index 0
+04-25 11:07:45.180 E/AudioPolicyManagerBase(   89): checkAndSetVolume stream=3, index=0, output=1, device=2
+04-25 11:07:45.180 E/AudioPolicyManagerBase(   89): computeVolume, streamDesc=0x1cb7bf0
+04-25 11:07:45.180 V/AudioPolicyManagerBase(   89): setStreamVolume() for output 1 stream 3, volume 0.000000, delay 0
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 1, index 0
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): checkAndSetVolume stream=1, index=0, output=1, device=2
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): computeVolume, streamDesc=0x1cb7bb8
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolume() for output 1 stream 1, volume 0.000000, delay 0
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 5, index 0
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): checkAndSetVolume stream=5, index=0, output=1, device=2
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): computeVolume, streamDesc=0x1cb7c28
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolume() for output 1 stream 5, volume 0.000000, delay 0
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 2, index 0
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): checkAndSetVolume stream=2, index=0, output=1, device=2
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): computeVolume, streamDesc=0x1cb7bd4
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolume() for output 1 stream 2, volume 0.000000, delay 0
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 4, index 15
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): checkAndSetVolume stream=4, index=15, output=1, device=2
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): computeVolume, streamDesc=0x1cb7c0c
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): VOLUME vol index=[66 100 100], dB=[-10.2 0.0 0.0] ampl=1.00000
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 0, index 5
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): checkAndSetVolume stream=0, index=5, output=1, device=2
+04-25 11:07:45.190 E/AudioPolicyManagerBase(   89): computeVolume, streamDesc=0x1cb7b9c
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): VOLUME vol index=[66 100 100], dB=[-17.0 0.0 0.0] ampl=1.00000
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): setStreamVolumeIndex() stream 6, index 15
+04-25 11:07:45.190 V/AudioPolicyManagerBase(   89): checkAndSetVolume() cannot set stream 6 volume with force use = 0 for comm
+04-25 11:07:45.630 I/Gecko   (   84): -*- RadioInterface[0]: _lastKnownHomeNetwork: 310-410
+04-25 11:07:46.070 E/Profiler(  348): BEGIN mozilla_sampler_init
+04-25 11:07:46.070 E/Profiler(  348): BPUnw: [1 total] thread_register_for_profiling(me=0x40131488, stacktop=0xbef5c9b7)
+04-25 11:07:46.070 E/Profiler(  348): SPS:
+04-25 11:07:46.070 E/Profiler(  348): SPS: Unwind mode       = pseudo
+04-25 11:07:46.070 E/Profiler(  348): SPS: Sampling interval = 0 ms (zero means "platform default")
+04-25 11:07:46.070 E/Profiler(  348): SPS: Entry store size  = 0 (zero means "platform default")
+04-25 11:07:46.070 E/Profiler(  348): SPS: UnwindStackScan   = 0 (max dubious frames per unwind).
+04-25 11:07:46.070 E/Profiler(  348): SPS: Use env var MOZ_PROFILER_MODE=help for further information.
+04-25 11:07:46.070 E/Profiler(  348): SPS:
+04-25 11:07:46.070 E/Profiler(  348): Registering start signal
+04-25 11:07:46.160 I/Gecko   (   84): -*- RadioInterface[1]: _lastKnownHomeNetwork: 214-07
+04-25 11:07:46.360 I/Gecko   (   84): -*- RadioInterface[0]: _lastKnownHomeNetwork: 310-410
+04-25 11:07:46.420 I/VolumeManager(   84): SetSharingMode for volume sdcard to 1 canBeShared = 1
+04-25 11:07:46.420 I/AutoMounter(   84): UpdateState: umsAvail:1 umsEnabled:1 mode:0 usbCablePluggedIn:1 tryToShare:0
+04-25 11:07:46.420 I/AutoMounter(   84): UpdateState: Volume sdcard is Mounted and inserted @ /mnt/sdcard gen 1 locked 0 sharing y
+04-25 11:07:46.560 E/GeckoConsole(  348): Could not read chrome manifest 'file:///system/b2g/chrome.manifest'.
+04-25 11:07:46.800 I/Gecko   (   84): ###################################### forms.js loaded
+04-25 11:07:46.820 I/Gecko   (   84): ############################### browserElementPanning.js loaded
+04-25 11:07:46.910 I/Gecko   (   84): ######################## BrowserElementChildPreload.js loaded
+04-25 11:07:47.000 I/Gecko   (   84): *** UTM:SVC TimerManager:registerTimer - id: user-agent-updates-timer
+04-25 11:07:47.000 E/GeckoConsole(   84): UTM:SVC TimerManager:registerTimer - id: user-agent-updates-timer
+04-25 11:07:47.330 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x174af48)  (NOT REGISTERED) 
+04-25 11:07:47.890 D/SoftapController(   87): Softap fwReload - Ok
+04-25 11:07:47.890 E/BandwidthController(   87): No such iface wlan0 to delete
+04-25 11:07:48.320 E/GeckoConsole(   84): [JavaScript Warning: "Error in parsing value for 'font-weight'.  Declaration dropped." {file: "app://system.gaiamobile.org/style/shrinking_ui/shrinking_ui.css" line: 9 column: 15 source: "  font-weight: medium;"}]
+04-25 11:07:48.800 D/Sensors (   84): activate handle=0; drv=0
+04-25 11:07:48.800 D/Sensors (   84): Lis3dhSensor: Control set 0
+04-25 11:07:48.800 D/Sensors (   84): Lis3dhSensor: mEnabled = 0
+04-25 11:07:48.810 I/Gecko   (   84): MobileConnection initialized
+04-25 11:07:48.810 I/Gecko   (   84): MobileConnection initialized
+04-25 11:07:49.350 I/Gecko   (   84): Attempting load of libEGL.so
+04-25 11:07:49.400 D/libEGL  (   84): loaded /system/lib/egl/libEGL_mali.so
+04-25 11:07:49.440 D/libEGL  (   84): loaded /system/lib/egl/libGLESv1_CM_mali.so
+04-25 11:07:49.440 D/libEGL  (   84): loaded /system/lib/egl/libGLESv2_mali.so
+04-25 11:07:49.470 I/HWComposer(   84): Creating new instance
+04-25 11:07:49.470 E/HWComposer(   84): Failed to initialize hwc
+04-25 11:07:49.530 E/GeckoConsole(   84): OpenGL compositor Initialized Succesfully.
+04-25 11:07:49.530 E/GeckoConsole(   84): Version: OpenGL ES 2.0 Spreadtrum Build
+04-25 11:07:49.530 E/GeckoConsole(   84): Vendor: ARM
+04-25 11:07:49.530 E/GeckoConsole(   84): Renderer: Mali-300
+04-25 11:07:49.530 E/GeckoConsole(   84): FBO Texture Target: TEXTURE_2D
+04-25 11:07:50.000 I/Gonk    (   84): Setting nice for pid 360 to 18
+04-25 11:07:50.000 I/Gonk    (   84): Changed nice for pid 360 from 0 to 18.
+04-25 11:07:50.170 I/Gecko   (   84): 1398449270185	Marionette	DEBUG	accepted connection on 127.0.0.1:43248
+04-25 11:07:50.360 E/WifiHW  (   84): Leo ensure_config_file_exists config_file=/data/misc/wifi/wpa_supplicant.conf
+04-25 11:07:50.370 E/WifiHW  (   84): daemon_cmd=wpa_supplicant:-iwlan0 -c/data/misc/wifi/wpa_supplicant.conf
+04-25 11:07:51.140 I/power   (   84): *** set_screen_state 1
+04-25 11:07:51.140 D/Sensors (   84): activate handle=3; drv=1
+04-25 11:07:51.140 D/Sensors (   84): SensorTMD2771::setEnable=0= en=1; newState=1; what=0; mEnabled=0
+04-25 11:07:51.300 D/Sensors (   84): taos ---Light::TAOS_IOCTL_ALS_ON=== err=0
+04-25 11:07:51.300 D/Sensors (   84): SensorTMD2771::setEnable=1= en=1; newState=1; what=0; mEnabled=1
+04-25 11:07:51.300 D/Sensors (   84): SensorTMD2771::getEnable===mEnabled=0x1; enable=1
+04-25 11:07:51.300 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+04-25 11:07:51.390 I/Gecko   (   84): ############################### browserElementPanning.js loaded
+04-25 11:07:51.430 E/slog    (  317): handle_top_logdir: slog use external storage [17]
+04-25 11:07:51.490 I/Gecko   (   84): ######################## BrowserElementChildPreload.js loaded
+04-25 11:07:51.550 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: system-message-listener-ready
+04-25 11:07:51.750 D/Sensors (   84): SensorTMD2771::readEvents()======data_fd=53,count=16
+04-25 11:07:51.750 D/Sensors (   84): SensorTMD2771::processEvent()=====code=40::value=311 
+04-25 11:07:51.750 D/Sensors (   84): SensorTMD2771: mPendingEvents[Light].light = 311.000000
+04-25 11:07:53.140 W/WifiHW  (   84): wifi_command: LOG_LEVEL
+04-25 11:07:53.140 W/WifiHW  (   84): wifi_command: STATUS
+04-25 11:07:53.560 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x1752648)  (NOT REGISTERED) 
+04-25 11:07:53.560 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x1752688)  (NOT REGISTERED) 
+04-25 11:07:53.570 W/WifiHW  (   84): wifi_command: LIST_NETWORKS
+04-25 11:07:53.570 W/WifiHW  (   84): wifi_command: DRIVER MACADDR
+04-25 11:07:53.680 E/GeckoConsole(   84): [JavaScript Warning: "Error in parsing value for 'padding'.  Declaration dropped." {file: "app://callscreen.gaiamobile.org/style/oncall.css" line: 280 column: 13 source: "    padding: none;"}]
+04-25 11:07:53.890 I/Gecko   (   84): MobileConnection initialized
+04-25 11:07:53.890 I/Gecko   (   84): MobileConnection initialized
+04-25 11:07:54.000 I/Gecko   (   84): 1398449274017	Marionette	INFO	loaded marionette-listener.js
+04-25 11:07:54.010 I/Gecko   (   84): 1398449274025	Marionette	INFO	sendToClient: {"from":"0","value":"3-b2g"}, {5f310690-8705-4efb-9726-570244e40c0b}, {5f310690-8705-4efb-9726-570244e40c0b}
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 ssid
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 bssid
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 psk
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key0
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key1
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key2
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key3
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_tx_keyidx
+04-25 11:07:54.030 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 priority
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 key_mgmt
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 scan_ssid
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 disabled
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 identity
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 password
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 auth_alg
+04-25 11:07:54.040 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 phase1
+04-25 11:07:54.050 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 phase2
+04-25 11:07:54.050 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 eap
+04-25 11:07:54.050 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 pin
+04-25 11:07:54.050 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 pcsc
+04-25 11:07:54.270 V/AudioPolicyManagerBase(   89): getDeviceForStrategy() from cache strategy 0, device 2
+04-25 11:07:54.270 V/AudioPolicyManagerBase(   89): getOutput() stream 3, samplingRate 0, format 0, channels 3, flags 0
+04-25 11:07:54.330 W/WifiHW  (   84): wifi_command: ENABLE_NETWORK 0
+04-25 11:07:54.330 W/WifiHW  (   84): wifi_command: AP_SCAN 1
+04-25 11:07:54.700 W/WifiHW  (   84): wifi_command: SAVE_CONFIG
+04-25 11:07:54.850 I/Gecko   (   84): 1398449274864	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{92165e8e-2881-469b-b452-b46cd7184cab}"}}, {45fbd447-0aa3-4348-ac54-392c78e5d9fe}, {45fbd447-0aa3-4348-ac54-392c78e5d9fe}
+04-25 11:07:54.930 I/Gecko   (   84): 1398449274939	Marionette	INFO	sendToClient: {"from":"0","value":false}, {fc5628a2-798a-4334-91bd-009348fa51e7}, {fc5628a2-798a-4334-91bd-009348fa51e7}
+04-25 11:07:55.080 I/Gecko   (   84): 1398449275098	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{92165e8e-2881-469b-b452-b46cd7184cab}"}}, {28eef55e-5eb3-4bf3-a771-ca3703f6e5b8}, {28eef55e-5eb3-4bf3-a771-ca3703f6e5b8}
+04-25 11:07:55.300 I/Gecko   (   84): 1398449275316	Marionette	INFO	sendToClient: {"from":"0","value":false}, {4bfbdc93-031a-4071-a5e7-4752cefacacf}, {4bfbdc93-031a-4071-a5e7-4752cefacacf}
+04-25 11:07:56.160 I/Gecko   (   84): 1398449276173	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{92165e8e-2881-469b-b452-b46cd7184cab}"}}, {3dc757f2-ab3e-4556-8239-e94a7da0edf4}, {3dc757f2-ab3e-4556-8239-e94a7da0edf4}
+04-25 11:07:56.220 I/Gecko   (   84): 1398449276232	Marionette	INFO	sendToClient: {"from":"0","value":false}, {24d03e02-6386-4422-9856-7488fda939bc}, {24d03e02-6386-4422-9856-7488fda939bc}
+04-25 11:07:56.370 I/Gecko   (   84): 1398449276380	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{92165e8e-2881-469b-b452-b46cd7184cab}"}}, {30ab9b41-eb98-43aa-bf2a-715b7b43a061}, {30ab9b41-eb98-43aa-bf2a-715b7b43a061}
+04-25 11:07:56.420 I/Gecko   (   84): 1398449276436	Marionette	INFO	sendToClient: {"from":"0","value":false}, {86cbfc97-e045-482a-b539-29e509119b0d}, {86cbfc97-e045-482a-b539-29e509119b0d}
+04-25 11:07:56.540 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: accessibility-screenreader
+04-25 11:07:56.580 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+04-25 11:07:56.830 W/WifiHW  (   84): wifi_command: DRIVER SCAN-ACTIVE
+04-25 11:07:56.970 W/WifiHW  (   84): wifi_command: SCAN
+04-25 11:07:57.030 W/WifiHW  (   84): wifi_command: DRIVER SCAN-PASSIVE
+04-25 11:07:57.040 I/Gecko   (   84): 1398449277057	Marionette	INFO	sendToClient: {"from":"0","value":{"ELEMENT":"{92165e8e-2881-469b-b452-b46cd7184cab}"}}, {1bc15452-1313-4e08-8cd2-821aee0f658f}, {1bc15452-1313-4e08-8cd2-821aee0f658f}
+04-25 11:07:57.290 I/Gecko   (   84): 1398449277307	Marionette	INFO	sendToClient: {"from":"0","value":true}, {7899a8c2-d504-4e88-b2b5-997a7386151e}, {7899a8c2-d504-4e88-b2b5-997a7386151e}
+04-25 11:07:57.590 I/FMRadio (   84): FMRadio is initialized.
+04-25 11:07:57.610 E/GeckoConsole(   84): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:23 in set_vpm_error: Error setting voice privacy.
+04-25 11:07:57.610 E/GeckoConsole(   84): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:23 in set_vpm_error: Error setting voice privacy.
+04-25 11:07:57.880 E/GeckoConsole(   84): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:42 in set_vpm_error: Error roaming preference.
+04-25 11:07:57.890 E/GeckoConsole(   84): Content JS ERROR at app://system.gaiamobile.org/js/telephony_settings.js:42 in set_vpm_error: Error roaming preference.
+04-25 11:07:58.580 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: inputmethod-update-layouts
+04-25 11:07:58.680 I/Gecko   (   84): ############################### browserElementPanning.js loaded
+04-25 11:07:58.730 I/Gecko   (   84): ######################## BrowserElementChildPreload.js loaded
+04-25 11:07:58.800 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: inputmethod-update-layouts
+04-25 11:07:59.720 E/GeckoConsole(   84): [JavaScript Warning: "Error in parsing value for 'font-weight'.  Declaration dropped." {file: "app://keyboard.gaiamobile.org/style/keyboard.css" line: 133 column: 15 source: "  font-weight: medium;"}]
+04-25 11:07:59.860 I/Gecko   (   84): 1398449279872	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {c606882d-729b-4cc7-9dc8-0657b7efadfd}, {c606882d-729b-4cc7-9dc8-0657b7efadfd}
+04-25 11:07:59.930 I/Gecko   (   84): 1398449279943	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {1e78bd40-180a-4453-8378-9559a9bb5b50}
+04-25 11:07:59.950 I/Gecko   (   84): 1398449279964	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 11:08:00.060 W/WifiHW  (   84): wifi_command: SCAN_RESULTS
+04-25 11:08:00.070 W/WifiHW  (   84): wifi_command: DRIVER SCAN-PASSIVE
+04-25 11:08:00.090 I/Gecko   (   84): 1398449280100	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {1e78bd40-180a-4453-8378-9559a9bb5b50}, {1e78bd40-180a-4453-8378-9559a9bb5b50}
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 ssid
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 bssid
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 psk
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key0
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key1
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key2
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key3
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_tx_keyidx
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 priority
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 key_mgmt
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 scan_ssid
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 disabled
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 identity
+04-25 11:08:00.110 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 password
+04-25 11:08:00.120 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 auth_alg
+04-25 11:08:00.120 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 phase1
+04-25 11:08:00.120 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 phase2
+04-25 11:08:00.120 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 eap
+04-25 11:08:00.120 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 pin
+04-25 11:08:00.120 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 pcsc
+04-25 11:08:00.150 I/Gecko   (   84): 1398449280165	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"GaiaLockScreen.unlock()","line":810}}, id: {19e074eb-8d53-49df-a530-0a24427ff436}
+04-25 11:08:00.270 I/Gonk    (   84): Setting nice for pid 360 to 18
+04-25 11:08:00.270 I/Gonk    (   84): Changed nice for pid 360 from 18 to 18.
+04-25 11:08:00.270 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:360 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-25 11:08:00.280 I/Gonk    (   84): Setting nice for pid 360 to 1
+04-25 11:08:00.280 I/Gonk    (   84): Changed nice for pid 360 from 18 to 1.
+04-25 11:08:00.450 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 ssid
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 bssid
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 psk
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key0
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key1
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key2
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_key3
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 wep_tx_keyidx
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 priority
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 key_mgmt
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 scan_ssid
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 disabled
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 identity
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 password
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 auth_alg
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 phase1
+04-25 11:08:00.460 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 phase2
+04-25 11:08:00.470 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 eap
+04-25 11:08:00.470 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 pin
+04-25 11:08:00.470 W/WifiHW  (   84): wifi_command: GET_NETWORK 0 pcsc
+04-25 11:08:00.510 I/Gecko   (   84): 1398449280523	Marionette	INFO	sendToClient: {"from":"0","value":{"passed":0,"failed":0,"failures":[]}}, {19e074eb-8d53-49df-a530-0a24427ff436}, {19e074eb-8d53-49df-a530-0a24427ff436}
+04-25 11:08:00.820 I/Gecko   (   84): 1398449280833	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {b410a782-f0fc-4052-a0f7-a82da5a333d0}, {b410a782-f0fc-4052-a0f7-a82da5a333d0}
+04-25 11:08:00.840 I/GeckoDump(   84): FTU manifest cannot be found skipping.
+04-25 11:08:01.320 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4427f8d0 coming from different process: 84
+04-25 11:08:01.330 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4427f970 coming from different process: 84
+04-25 11:08:01.480 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4427fc90 coming from different process: 84
+04-25 11:08:01.480 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4427fd80 coming from different process: 84
+04-25 11:08:01.600 I/Gecko   (   84): 1398449281610	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {ae2f43ad-f83d-415f-ba2a-9f1498102935}
+04-25 11:08:01.660 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+04-25 11:08:01.680 I/GeckoDump(   84): XXX FIXME : Got a mozContentEvent: nfc-hardware-state-change
+04-25 11:08:01.810 E/Profiler(   84): BPUnw: [1 total] thread_unregister_for_profiling(me=0x174a1c8)  (NOT REGISTERED) 
+04-25 11:08:02.010 I/Gecko   (   84): 1398449282028	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-25 11:08:02.040 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4427f970 from process 84 that was not created in current process: 84
+04-25 11:08:02.040 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4427f8d0 from process 84 that was not created in current process: 84
+04-25 11:08:02.050 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4427fd80 from process 84 that was not created in current process: 84
+04-25 11:08:02.050 E/[Gralloc-ERROR](   84): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4427fc90 from process 84 that was not created in current process: 84
+04-25 11:08:02.330 I/Gecko   (   84): 1398449282342	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {ae2f43ad-f83d-415f-ba2a-9f1498102935}, {ae2f43ad-f83d-415f-ba2a-9f1498102935}
+04-25 11:08:03.355 I/Gecko   (  360): ###################################### forms.js loaded
+04-25 11:08:03.375 I/Gecko   (  360): ############################### browserElementPanning.js loaded
+04-25 11:08:03.395 I/Gecko   (  360): ######################## BrowserElementChildPreload.js loaded
+04-25 11:08:04.309 I/Gecko   (   84): 1398449284328	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('http://zombies-cant-jump.tresensa.com/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {b4e6acac-5196-4cbb-bb57-67de0710398c}
+04-25 11:08:04.319 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4327a100 coming from different process: 84
+04-25 11:08:04.319 E/[Gralloc-ERROR](   84): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x4327a1a0 coming from different process: 84
+04-25 11:08:04.409 I/Gecko   (   84): 1398449284425	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"TypeError: app is null","status":17,"stacktrace":"execute_async_script @app_checker.py, line 129\ninline javascript, line 221\nsrc: \"      appName = app.manifest.name;\""}}, {b4e6acac-5196-4cbb-bb57-67de0710398c}, {b4e6acac-5196-4cbb-bb57-67de0710398c}

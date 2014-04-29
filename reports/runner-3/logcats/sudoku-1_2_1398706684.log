@@ -1,0 +1,204 @@
+--------- beginning of /dev/log/main
+04-28 16:15:58.870 I/Gecko   (   81): 1398716158860	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {94826de9-ab87-4c17-a3e5-a8bb0b82d3f7}, {94826de9-ab87-4c17-a3e5-a8bb0b82d3f7}
+04-28 16:15:58.890 I/Gecko   (   81): 1398716158896	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {ed2c743b-547f-4ca6-ab41-0283f8e14b33}
+04-28 16:15:58.900 I/Gecko   (   81): 1398716158910	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:15:59.350 I/Gecko   (   81): 1398716159356	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {ed2c743b-547f-4ca6-ab41-0283f8e14b33}, {ed2c743b-547f-4ca6-ab41-0283f8e14b33}
+04-28 16:15:59.370 I/Gecko   (   81): 1398716159377	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {4cc14585-e5fb-4f9a-8bff-b3748cfe9907}
+04-28 16:15:59.680 E/GeckoConsole(   81): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'http://sudoku.tresensa.com' is displayed
+04-28 16:15:59.680 I/Gecko   (   81): 1398716159685	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{817917cc-014e-49cf-9ed5-b280cb3fff5a}"},"src":"http://sudoku.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa","name":"Sudoku by TreSensa","origin":"http://sudoku.tresensa.com"}}, {4cc14585-e5fb-4f9a-8bff-b3748cfe9907}, {4cc14585-e5fb-4f9a-8bff-b3748cfe9907}
+04-28 16:15:59.680 I/Gecko   (   81): 1398716159692	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {780d1b67-414d-4af3-b4c6-65bbef7009bc}
+04-28 16:15:59.680 I/Gecko   (   81): 1398716159693	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:15:59.790 I/Gecko   (   81): 1398716159796	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {780d1b67-414d-4af3-b4c6-65bbef7009bc}, {780d1b67-414d-4af3-b4c6-65bbef7009bc}
+04-28 16:15:59.800 I/Gecko   (   81): 1398716159804	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {d3b6bf7f-d9a6-45e3-bfc5-ede031351fc7}
+04-28 16:16:00.080 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=31, pid=1290] Changing priority from MASTER:CPU_NORMAL to FOREGROUND:CPU_NORMAL.
+04-28 16:16:00.080 I/Gonk    (   81): Setting nice for pid 1290 to 1
+04-28 16:16:00.080 I/Gonk    (   81): Changed nice for pid 1290 from 0 to 1.
+04-28 16:16:00.080 I/Gecko:ProcessPriorityManager(   81): [Sudoku by TreSensa, child-id=28, pid=1209] Changing priority from FOREGROUND:CPU_LOW to FOREGROUND:CPU_NORMAL.
+04-28 16:16:00.090 I/Gonk    (   81): Setting nice for pid 1209 to 1
+04-28 16:16:00.090 I/Gonk    (   81): Changed nice for pid 1209 from 18 to 1.
+04-28 16:16:00.090 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+04-28 16:16:00.090 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+04-28 16:16:00.150 I/Gecko   (   81): [Parent 81] WARNING: waitpid failed pid:1290 errno:10: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-28 16:16:00.460 I/Gecko:ProcessPriorityManager(   81): Add ChildID(28) into LRU pool
+04-28 16:16:00.470 I/Gecko:ProcessPriorityManager(   81): [Sudoku by TreSensa, child-id=28, pid=1209] Changing priority from FOREGROUND:CPU_NORMAL to BACKGROUND:CPU_NORMAL.
+04-28 16:16:00.470 I/Gonk    (   81): Setting nice for pid 1209 to 18
+04-28 16:16:00.470 I/Gonk    (   81): Changed nice for pid 1209 from 1 to 18.
+04-28 16:16:00.540 D/Sensors (   81): activate handle=0; drv=0
+04-28 16:16:00.540 D/Sensors (   81): Lis3dhSensor: Control set 0
+04-28 16:16:00.540 D/Sensors (   81): Lis3dhSensor: mEnabled = 0
+04-28 16:16:01.460 I/InputReader(   81): Reconfiguring input devices.  changes=0x00000004
+04-28 16:16:01.460 I/InputReader(   81): Device reconfigured: id=6, name='ms-msg21xx', size 320x480, orientation 0, mode 1, display id 0
+04-28 16:16:01.490 I/Gecko   (   81): 
+04-28 16:16:01.490 I/Gecko   (   81): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-28 16:16:01.490 I/Gecko   (   81): 
+04-28 16:16:01.560 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x43486600 coming from different process: 81
+04-28 16:16:01.570 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x43486e20 coming from different process: 81
+04-28 16:16:01.710 I/Gecko   (   81): 
+04-28 16:16:01.710 I/Gecko   (   81): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-28 16:16:01.710 I/Gecko   (   81): 
+04-28 16:16:01.830 I/Gecko:ProcessPriorityManager(   81): Remove ChildID(28) from LRU pool
+04-28 16:16:01.830 I/Gecko:ProcessPriorityManager(   81): [child-id=28, pid=-1] Destroying ParticularProcessPriorityManager.
+04-28 16:16:01.920 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:01.980 I/Gecko   (   81): 1398716161984	Marionette	INFO	sendToClient: {"from":"0","value":null}, {d3b6bf7f-d9a6-45e3-bfc5-ede031351fc7}, {d3b6bf7f-d9a6-45e3-bfc5-ede031351fc7}
+04-28 16:16:02.070 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4a0976f0 from process 81 that was not created in current process: 81
+04-28 16:16:02.070 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4a097650 from process 81 that was not created in current process: 81
+04-28 16:16:02.070 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4538a650 from process 81 that was not created in current process: 81
+04-28 16:16:02.070 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x4538a470 from process 81 that was not created in current process: 81
+04-28 16:16:02.070 I/Gecko   (   81): [Parent 81] WARNING: waitpid failed pid:1209 errno:10: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-28 16:16:02.120 I/Gecko   (   81): 1398716162130	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {739a7718-72fe-4e4a-b229-67ca4dcd5c73}
+04-28 16:16:02.140 I/Gecko   (   81): 1398716162148	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:16:02.240 I/Gecko   (   81): 1398716162250	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {739a7718-72fe-4e4a-b229-67ca4dcd5c73}, {739a7718-72fe-4e4a-b229-67ca4dcd5c73}
+04-28 16:16:02.250 I/Gecko   (   81): 1398716162257	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {575b3b5f-71c4-4771-9979-a19a0c27bb5b}
+04-28 16:16:02.320 I/Gecko   (   81): 1398716162332	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{acc38faf-6bbe-4343-afcd-dd47aee7d8aa}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {575b3b5f-71c4-4771-9979-a19a0c27bb5b}, {575b3b5f-71c4-4771-9979-a19a0c27bb5b}
+04-28 16:16:02.340 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x448ed970 coming from different process: 81
+04-28 16:16:02.340 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x448eda10 coming from different process: 81
+04-28 16:16:02.350 E/GeckoConsole(   81): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-28 16:16:02.380 I/Gecko   (   81): 1398716162391	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {d35886df-4040-4dd8-b395-0060d2ee27db}
+04-28 16:16:02.380 I/Gecko   (   81): 1398716162393	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:16:02.470 I/Gecko   ( 1290): ###################################### forms.js loaded
+04-28 16:16:02.490 I/Gecko   (   81): 1398716162498	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {d35886df-4040-4dd8-b395-0060d2ee27db}, {d35886df-4040-4dd8-b395-0060d2ee27db}
+04-28 16:16:02.540 I/Gecko   (   81): 1398716162547	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {f0638524-9e2e-42d2-be87-f4520e736eb4}
+04-28 16:16:02.540 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x448eda10 from process 81 that was not created in current process: 81
+04-28 16:16:02.550 I/Gecko   ( 1290): ############################### browserElementPanning.js loaded
+04-28 16:16:02.550 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x448ed970 from process 81 that was not created in current process: 81
+04-28 16:16:02.550 I/Gecko   (   81): 1398716162559	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:16:02.670 I/Gecko   (   81): 1398716162675	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {f0638524-9e2e-42d2-be87-f4520e736eb4}, {f0638524-9e2e-42d2-be87-f4520e736eb4}
+04-28 16:16:02.680 I/Gecko   (   81): 1398716162687	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {827b737e-72a8-4a02-9678-7ee2227facae}
+04-28 16:16:02.740 E/GeckoConsole(   81): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-28 16:16:02.750 I/Gecko   (   81): 1398716162760	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{acc38faf-6bbe-4343-afcd-dd47aee7d8aa}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {827b737e-72a8-4a02-9678-7ee2227facae}, {827b737e-72a8-4a02-9678-7ee2227facae}
+04-28 16:16:02.770 I/Gecko   (   81): 1398716162784	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{acc38faf-6bbe-4343-afcd-dd47aee7d8aa}"}}, id: {3630063b-a24d-4c5f-b23a-541224494f96}
+04-28 16:16:02.780 I/Gecko   (   81): 1398716162791	Marionette	INFO	Switched to frame: {"frameValue":"{acc38faf-6bbe-4343-afcd-dd47aee7d8aa}"}
+04-28 16:16:02.800 I/Gecko   (   81): 1398716162810	Marionette	INFO	trying remote frame 0
+04-28 16:16:02.800 I/Gecko   (   81): 1398716162811	Marionette	INFO	deleting frame
+04-28 16:16:02.800 I/Gecko   (   81): 1398716162811	Marionette	INFO	trying remote frame 1
+04-28 16:16:02.800 I/Gecko   (   81): 1398716162812	Marionette	INFO	trying remote frame 2
+04-28 16:16:02.800 I/Gecko   (   81): 1398716162813	Marionette	INFO	trying remote frame 3
+04-28 16:16:02.820 I/Gecko   (   81): 1398716162827	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-28 16:16:02.900 I/Gecko   ( 1290): ######################## BrowserElementChildPreload.js loaded
+04-28 16:16:03.730 I/Gecko   (   81): 1398716163742	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {3630063b-a24d-4c5f-b23a-541224494f96}, {3630063b-a24d-4c5f-b23a-541224494f96}
+04-28 16:16:03.980 I/Gecko   (   81): 1398716163985	Marionette	INFO	sendToClient: {"from":"0","value":[]}, {7754c700-67ff-4770-b04a-224f74ef73fa}, {7754c700-67ff-4770-b04a-224f74ef73fa}
+04-28 16:16:04.070 I/Gecko   (   81): [Parent 81] WARNING: waitpid failed pid:1209 errno:10: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-28 16:16:04.070 I/Gecko   (   81): [Parent 81] WARNING: Failed to deliver SIGKILL to 1209!(3).: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-28 16:16:04.120 I/Gecko   (   81): 1398716164128	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {91e99830-d121-44f5-86b6-b0adb3ce8fba}, {91e99830-d121-44f5-86b6-b0adb3ce8fba}
+04-28 16:16:04.130 I/Gecko   (   81): 1398716164135	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {79688ccd-5d28-44df-aefb-cfecd7ed224e}
+04-28 16:16:04.140 I/Gecko   (   81): 1398716164144	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:16:04.240 I/Gecko   (   81): 1398716164249	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {79688ccd-5d28-44df-aefb-cfecd7ed224e}, {79688ccd-5d28-44df-aefb-cfecd7ed224e}
+04-28 16:16:04.250 I/Gecko   (   81): 1398716164255	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {b2cdc563-bebf-40bb-92db-70810c024a9d}
+04-28 16:16:04.250 I/Gecko   (   81): 1398716164257	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:16:04.400 I/Gecko   (   81): 1398716164406	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {b2cdc563-bebf-40bb-92db-70810c024a9d}, {b2cdc563-bebf-40bb-92db-70810c024a9d}
+04-28 16:16:04.400 I/Gecko   (   81): 1398716164412	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":30000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"GaiaApps.launchWithManifestURL('http://sudoku.tresensa.com/manifest.webapp')","line":106}}, id: {9de42296-547a-43c3-a8ad-ebe718e6bca7}
+04-28 16:16:04.500 E/GeckoConsole(   81): Content JS LOG at dummy file:334 in GaiaApps.launch: launching app with name 'Sudoku by TreSensa'
+04-28 16:16:04.650 D/Sensors (   81): activate handle=0; drv=0
+04-28 16:16:04.660 D/Sensors (   81): Lis3dhSensor: Control set 1
+04-28 16:16:04.660 D/Sensors (   81): Lis3dhSensor: mEnabled = 1
+04-28 16:16:04.840 I/InputReader(   81): Reconfiguring input devices.  changes=0x00000004
+04-28 16:16:04.840 I/InputReader(   81): Device reconfigured: id=6, name='ms-msg21xx', size 320x480, orientation 1, mode 1, display id 0
+04-28 16:16:04.900 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x432c0bf0 coming from different process: 81
+04-28 16:16:04.900 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x432c0ce0 coming from different process: 81
+04-28 16:16:05.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x43486e20 from process 81 that was not created in current process: 81
+04-28 16:16:05.110 E/[Gralloc-ERROR](   81): int gralloc_unregister_buffer(const gralloc_module_t*, const native_handle_t*):274 Trying to unregister buffer 0x43486600 from process 81 that was not created in current process: 81
+04-28 16:16:05.250 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x432c4880 coming from different process: 81
+04-28 16:16:05.260 E/[Gralloc-ERROR](   81): int gralloc_register_buffer(const gralloc_module_t*, const native_handle_t*):79 Unable to register handle 0x432c4ce0 coming from different process: 81
+04-28 16:16:05.310 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=32, pid=1333] Creating ParticularProcessPriorityManager.
+04-28 16:16:05.310 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=32, pid=1333] Done starting up.  mHoldsCPUWakeLock=0, mHoldsHighPriorityWakeLock=0
+04-28 16:16:05.310 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=32, pid=1333] Changing priority from UNKNOWN:CPU_NORMAL to MASTER:CPU_NORMAL.
+04-28 16:16:05.310 I/Gonk    (   81): Setting nice for pid 1333 to 0
+04-28 16:16:05.320 I/Gonk    (   81): Changed nice for pid 1333 from 0 to 0.
+04-28 16:16:05.320 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=31, pid=1290] Changing priority from FOREGROUND:CPU_NORMAL to FOREGROUND:CPU_LOW.
+04-28 16:16:05.320 I/Gonk    (   81): Setting nice for pid 1290 to 18
+04-28 16:16:05.320 I/Gonk    (   81): Changed nice for pid 1290 from 1 to 18.
+04-28 16:16:05.320 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+04-28 16:16:05.350 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=31, pid=1290] Changing priority from FOREGROUND:CPU_LOW to BACKGROUND_HOMESCREEN:CPU_LOW.
+04-28 16:16:05.360 I/Gonk    (   81): Setting nice for pid 1290 to 18
+04-28 16:16:05.360 I/Gonk    (   81): Changed nice for pid 1290 from 18 to 18.
+04-28 16:16:05.360 I/Gecko:ProcessPriorityManager(   81): [Sudoku by TreSensa, child-id=32, pid=1333] Changing priority from MASTER:CPU_NORMAL to FOREGROUND:CPU_NORMAL.
+04-28 16:16:05.360 I/Gonk    (   81): Setting nice for pid 1333 to 1
+04-28 16:16:05.360 I/Gonk    (   81): Changed nice for pid 1333 from 0 to 1.
+04-28 16:16:05.360 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=31, pid=1290] Changing priority from BACKGROUND_HOMESCREEN:CPU_LOW to BACKGROUND_HOMESCREEN:CPU_NORMAL.
+04-28 16:16:05.370 I/Gonk    (   81): Setting nice for pid 1290 to 18
+04-28 16:16:05.370 I/Gonk    (   81): Changed nice for pid 1290 from 18 to 18.
+04-28 16:16:05.370 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+04-28 16:16:05.370 I/Gecko   (   81): [Parent 81] WARNING: waitpid failed pid:1333 errno:10: file /var/lib/jenkins/jobs/B2G.v1.3.0.Tarako/workspace/gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-28 16:16:06.130 I/Gecko   ( 1333): ###################################### forms.js loaded
+04-28 16:16:06.150 I/Gecko   ( 1333): ############################### browserElementPanning.js loaded
+04-28 16:16:06.380 I/Gecko   ( 1333): ######################## BrowserElementChildPreload.js loaded
+04-28 16:16:06.930 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 49 column: 22 source: "    -moz-border-radius: 10px;"}]
+04-28 16:16:06.940 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:06.970 E/GeckoConsole( 1333): [JavaScript Warning: "Expected color but found 'bottom'.  Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 60 column: 38 source: "    background-image: linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 75%);"}]
+04-28 16:16:06.970 E/GeckoConsole( 1333): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 61 column: 22 source: "    background-image: -o-linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 75%);"}]
+04-28 16:16:06.970 E/GeckoConsole( 1333): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 63 column: 22 source: "    background-image: -webkit-linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 75%);"}]
+04-28 16:16:06.970 E/GeckoConsole( 1333): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 64 column: 22 source: "    background-image: -ms-linear-gradient(bottom, rgb(143,220,255) 0%, rgb(0,153,255) 75%);"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 65 column: 22 source: "    background-image: -webkit-gradient("}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Error in parsing value for 'background-image'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 72 column: 22 source: "    background-image: -ms-linear-gradient(top, #009AFF 0%, #8FDBFF 100%);"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 74 column: 22 source: "    -moz-border-radius: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius-topleft'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 94 column: 30 source: "    -moz-border-radius-topleft: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius-topright'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 95 column: 31 source: "    -moz-border-radius-topright: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 118 column: 22 source: "    -moz-border-radius: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 135 column: 22 source: "    -moz-border-radius: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius-topleft'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 185 column: 30 source: "    -moz-border-radius-topleft: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius-topright'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 186 column: 31 source: "    -moz-border-radius-topright: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 232 column: 22 source: "    -moz-border-radius: 10px;"}]
+04-28 16:16:06.980 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-border-radius'.  Declaration dropped." {file: "http://sudoku.tresensa.com/1.5.1/leaderboard/css/game_specific.css" line: 254 column: 22 source: "    -moz-border-radius: 10px;"}]
+04-28 16:16:07.140 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-tap-highlight-color'.  Declaration dropped." {file: "http://sudoku.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa" line: 58 column: 312 source: "html,body{margin:0;padding:0;font-family:Arial;font-size:12px;color:#fff;background:#000 url(background.jpg);-webkit-text-size-adjust:none;-webkit-tap-highlight-color:transparent}#game_canvas{z-index:1;overflow:hidden;image-rendering:optimizeSpeed;-webkit-tap-highlight-color:transparent;-moz-tap-highlight-color:transparent;-webkit-user-select:none;-webkit-transform:translateZ(0);-ms-touch-action:none}#wrong_orientation{background:#000;position:absolute;top:0;left:0;z-index:2;width:100%;height:100%;display:none}#wrong_orientation img{display:block;margin:0 auto;width:80%}"}]
+04-28 16:16:08.040 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: GameLoader started
+04-28 16:16:08.040 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Google Analytics loaded
+04-28 16:16:08.040 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Loading minified game code from js/game.min.js
+04-28 16:16:08.040 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Calling head.js.apply to load all javascript libraries
+04-28 16:16:09.590 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: All javascript libraries loaded
+04-28 16:16:09.590 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: loading partner adapter and 3rd party libs...
+04-28 16:16:09.620 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-filter'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 47 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-bottom:10px;height:55px;line-height:55px;backgrou
+04-28 16:16:09.620 E/GeckoConsole( 1333): [JavaScript Warning: "Expected 'none' or URL but found 'blur('.  Error in parsing value for 'filter'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 109 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-
+04-28 16:16:09.620 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property 'box-sizing'.  Declaration dropped." {file: "http://sdk.tresensa.com/tgs/css/tgs-0.3.7.css" line: 1 column: 779 source: ".tgs-blur{-webkit-filter:blur(12px);-moz-filter:blur(12px);-o-filter:blur(12px);-ms-filter:blur(12px);filter:blur(12px)}.tgs-ad-frame{background:#fff;padding:25px;-webkit-border-radius:10px;border-radius:10px;min-width:300px;min-height:250px}.tgs-ad-frame.fullscreen{width:100%!important;height:100%!important;-webkit-border-radius:0;border-radius:0;padding:0}.tgs-ad-frame.fullscreen span{display:none}.tgs-ad-frame span{position:absolute;width:100%;height:25px;line-height:25px;text-align:center;bottom:0;left:0;color:#666;font-size:12px}#tgs-leaderboard-container{width:100%;height:100%;position:absolute;z-index:1000}#tgs-leaderboard-container iframe{width:100%;height:100%;border:0;overflow:hidden}.tgs-btn{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box;overflow:hidden;margin-bottom:10px;height:55px;line-height:55px;backgrou
+04-28 16:16:10.470 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=33, pid=1356] Creating ParticularProcessPriorityManager.
+04-28 16:16:10.470 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=33, pid=1356] Done starting up.  mHoldsCPUWakeLock=0, mHoldsHighPriorityWakeLock=0
+04-28 16:16:10.470 I/Gecko:ProcessPriorityManager(   81): [(Preallocated), child-id=33, pid=1356] Changing priority from UNKNOWN:CPU_NORMAL to MASTER:CPU_NORMAL.
+04-28 16:16:10.470 I/Gonk    (   81): Setting nice for pid 1356 to 0
+04-28 16:16:10.470 I/Gonk    (   81): Changed nice for pid 1356 from 0 to 0.
+04-28 16:16:10.470 I/Gecko:ProcessPriorityManager(   81): [Homescreen, child-id=31, pid=1290] Changing priority from BACKGROUND_HOMESCREEN:CPU_NORMAL to BACKGROUND_HOMESCREEN:CPU_LOW.
+04-28 16:16:10.470 I/Gonk    (   81): Setting nice for pid 1290 to 18
+04-28 16:16:10.470 I/Gonk    (   81): Changed nice for pid 1290 from 18 to 18.
+04-28 16:16:10.470 I/Gecko:ProcessPriorityManager(   81): [Sudoku by TreSensa, child-id=32, pid=1333] Changing priority from FOREGROUND:CPU_NORMAL to FOREGROUND:CPU_LOW.
+04-28 16:16:10.470 I/Gonk    (   81): Setting nice for pid 1333 to 18
+04-28 16:16:10.470 I/Gonk    (   81): Changed nice for pid 1333 from 1 to 18.
+04-28 16:16:10.490 I/Gecko:ProcessPriorityManager(   81): KillBackgroundApps
+04-28 16:16:11.150 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: creating generic adapter...
+04-28 16:16:11.170 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: detected Facebook library...
+04-28 16:16:11.170 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: PartnerBridge.onFacebookLibraryLoaded called, Facebook library loaded successfully
+04-28 16:16:11.960 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:12.060 E/GeckoConsole( 1333): [JavaScript Warning: "Unknown property '-moz-tap-highlight-color'.  Declaration dropped." {file: "http://sudoku.tresensa.com/index.html?dst=A0008&moregames=https%3A%2F%2Fmarketplace.firefox.com%2Fsearch%3Fq%3Dtresensa" line: 0 column: 147 source: " z-index: 1; overflow: hidden; -webkit-user-select: none; -ms-touch-action:none; -webkit-tap-highlight-color: transparent; -moz-tap-highlight-color: transparent; -webkit-transform: translateZ(0);"}]
+04-28 16:16:12.690 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: game-partner info received
+04-28 16:16:12.700 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: initiating connection to partner...
+04-28 16:16:12.710 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: Calling FB.init, appId = 108814912617972
+04-28 16:16:12.710 E/GeckoConsole( 1333): Content JS WARN at http://connect.facebook.net/en_US/all.js:53 in i: The "fb-root" div has not been created, auto-creating
+04-28 16:16:12.710 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: user id is: 6dca649b-3921-4e02-812a-e2b69e1f8876
+04-28 16:16:12.800 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: fetching complete game state...
+04-28 16:16:12.800 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgs/tgs-0.3.min.js:5 in TGS.Debug.Log: TGS: there was no local TGS.DataStore data
+04-28 16:16:12.800 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tge/tge-1.0.min.js:3 in TGE.Debug.Log: TGE: automatically instantiating GoogleAnalytics object with label 'Sudoku'
+04-28 16:16:12.800 E/GeckoConsole( 1333): Content JS LOG at http://sdk.tresensa.com/tgl/tgl-1.0.min.js:3 in TGL.Debug.Log: TGL: Launching SudokuGame
+04-28 16:16:13.150 E/GeckoConsole( 1333): [JavaScript Warning: "Content Security Policy: allow directive is deprecated, use the equivalent default-src directive instead"]
+04-28 16:16:13.230 E/GeckoConsole( 1333): [JavaScript Warning: "The X-Content-Security-Policy and X-Content-Security-Report-Only headers will be deprecated in the future. Please use the Content-Security-Policy and Content-Security-Report-Only headers with CSP spec compliant syntax instead." {file: "https://s-static.ak.facebook.com/connect/xd_arbiter/dgdTycPTSRj.js?version=40#channel=f3a9503c95e346&origin=http%3A%2F%2Fsudoku.tresensa.com" line: 0}]
+04-28 16:16:13.370 I/Gecko   ( 1333): Attempting load of libEGL.so
+04-28 16:16:13.590 D/libEGL  ( 1333): loaded /system/lib/egl/libEGL_mali.so
+04-28 16:16:13.620 D/libEGL  ( 1333): loaded /system/lib/egl/libGLESv1_CM_mali.so
+04-28 16:16:13.630 D/libEGL  ( 1333): loaded /system/lib/egl/libGLESv2_mali.so
+04-28 16:16:14.070 I/Gecko   ( 1333): SharedSurface_Gralloc::Create -------
+04-28 16:16:17.420 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:19.720 I/Gecko   ( 1333): SharedSurface_Gralloc::Create: success -- surface 0x43017a40, GraphicBuffer 0x4454bb80.
+04-28 16:16:22.540 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:28.170 I/GonkMemoryPressure(   81): Checking to see if memory pressure is over.
+04-28 16:16:28.170 I/GonkMemoryPressure(   81): Memory pressure is over.
+04-28 16:16:28.170 I/GonkMemoryPressure( 1290): Checking to see if memory pressure is over.
+04-28 16:16:28.170 I/GonkMemoryPressure( 1290): Memory pressure is over.
+04-28 16:16:28.170 I/GonkMemoryPressure( 1356): Checking to see if memory pressure is over.
+04-28 16:16:28.170 I/GonkMemoryPressure( 1356): Memory pressure is over.
+04-28 16:16:28.190 I/GonkMemoryPressure( 1333): Checking to see if memory pressure is over.
+04-28 16:16:28.190 I/GonkMemoryPressure( 1333): Memory pressure is over.
+04-28 16:16:31.190 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:34.550 I/Gecko   (   81): 1398716194537	Marionette	INFO	sendToClient: {"from":"0","error":{"message":"timed out","status":28,"stacktrace":null}}, {9de42296-547a-43c3-a8ad-ebe718e6bca7}, {9de42296-547a-43c3-a8ad-ebe718e6bca7}
+04-28 16:16:35.080 I/Gecko   (   81): 1398716195086	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {2a754088-a738-4bc2-bf4a-b109e15afba8}
+04-28 16:16:35.120 I/Gecko   (   81): 1398716195133	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-28 16:16:35.910 I/Gecko   (   81): 1398716195922	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {2a754088-a738-4bc2-bf4a-b109e15afba8}, {2a754088-a738-4bc2-bf4a-b109e15afba8}
+04-28 16:16:35.930 I/Gecko   (   81): 1398716195937	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":60000,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"\n        GaiaApps.locateWithManifestURL('http://sudoku.tresensa.com/manifest.webapp',\n                                       null,\n                                       function uninstall(app) {\n                                       navigator.mozApps.mgmt.uninstall(app);\n                                       marionetteScriptFinished(true);\n                                       });\n        ","line":129}}, id: {f0221ea8-15b4-4236-ac03-7126d877f25d}
+04-28 16:16:38.790 I/Gecko   (   81): -- webapps.js uninstall http://sudoku.tresensa.com/manifest.webapp
+04-28 16:16:38.850 W/WifiHW  (   81): wifi_command: SIGNAL_POLL
+04-28 16:16:41.270 I/Gecko   (   81): 1398716201280	Marionette	INFO	sendToClient: {"from":"0","value":true}, {f0221ea8-15b4-4236-ac03-7126d877f25d}, {f0221ea8-15b4-4236-ac03-7126d877f25d}

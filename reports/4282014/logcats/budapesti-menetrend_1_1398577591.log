@@ -1,0 +1,783 @@
+--------- beginning of /dev/log/main
+04-26 22:47:39.250 I/Gecko   (   84): 
+04-26 22:47:39.250 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:39.250 I/Gecko   (   84): 
+04-26 22:47:39.360 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-26 22:47:39.370 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1694 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 22:47:39.790 I/Gecko   (   84): 1398577659802	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {1a8182e2-ca8e-4912-a4e9-20e2cd8014de}, {1a8182e2-ca8e-4912-a4e9-20e2cd8014de}
+04-26 22:47:40.990 I/Gecko   (   84): 1398577661003	Marionette	INFO	sendToClient: {"from":"0","value":"app://{326c723c-4663-4746-8623-641101e669f0}/index.html#/"}, {84daf046-caf8-4eef-bcf7-c62ceadf2cce}, {84daf046-caf8-4eef-bcf7-c62ceadf2cce}
+04-26 22:47:41.030 I/Gecko   (   84): 1398577661041	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"app_checker.py","script":"return window.document.readyState;","line":191}}, id: {d4e90539-021b-4a52-9863-750e52c3a5d4}
+04-26 22:47:41.070 I/Gecko   (   84): 1398577661089	Marionette	INFO	sendToClient: {"from":"0","value":"complete"}, {d4e90539-021b-4a52-9863-750e52c3a5d4}, {d4e90539-021b-4a52-9863-750e52c3a5d4}
+04-26 22:47:41.080 I/Gecko   (   84): 1398577661099	Marionette	INFO	sendToClient: {"from":"0","value":"app://{326c723c-4663-4746-8623-641101e669f0}/index.html#/"}, {85588b1b-a9b6-4416-9f5f-528efa214cc7}, {85588b1b-a9b6-4416-9f5f-528efa214cc7}
+04-26 22:47:41.120 I/Gecko   ( 1609): Attempting load of libEGL.so
+04-26 22:47:41.250 D/libEGL  ( 1609): loaded /system/lib/egl/libEGL_mali.so
+04-26 22:47:41.290 D/libEGL  ( 1609): loaded /system/lib/egl/libGLESv1_CM_mali.so
+04-26 22:47:41.290 D/libEGL  ( 1609): loaded /system/lib/egl/libGLESv2_mali.so
+04-26 22:47:41.330 I/Gecko   ( 1609): SharedSurface_Gralloc::Create -------
+04-26 22:47:41.370 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1694 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 22:47:41.370 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1694!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-26 22:47:41.400 I/Gecko   ( 1609): SharedSurface_Gralloc::Create: success -- surface 0x4435ebc0, GraphicBuffer 0x44302200.
+04-26 22:47:46.880 I/Gecko   (   84): 1398577666877	Marionette	INFO	sendToClient: {"from":"0","value":"iVBORw0KGgoAAAANSUhEUgAAAUAAAAHMCAYAAACk4nEJAAAgAElEQVR4nO2deVxU1f//D6jYR9Psp1mfvn0+ZZ80FQGRYZkFZgFEccV9pywXckuxXNJMc6u00spMc8ndyjYrSzNLrVxSS3HPLNM2yw1RQJnX74/hXu65MyjoINB9PR+P82DmrO/XOfe+5sy9FxDmRBfCbWaYE5MRbnPBnJise+3SvHfB7Cyoo5RJyempE+70rh/udPmsK/chvy9oI48bbjMj3OaSyqmDOqiDOoqjQ/hqrP70EiUPqA6izXNqgnV6B6gNWpoALzHeY6l1vCbT9yRQB3VQB3VcSYeQO0rWDe5xUEmM08drp9y592udcK8JK3Bq77FcXpOp/QSQP22ogzqogzqKrkPIgxb+WtmKagcOV8WY84PNr6fdrvpwcX1fvifEt5PrJ9Zne+qgDuqgjiLoEPptob4zOTDvAOVBzJrrAskFrwvZyurHlNrlu3+BIO8trPZTgzqogzqoo7g6hNnhhDmhOcwOJ8KV1wnNPYHlv/bKczhhTtDU1bQrSM78+nJdX/2H2/Lr5vfjcWgnwm3Ogr6U+BxyntondVAHdVBHMXWIxlYnYhKaS8lXXkxCczR2OOUyh1PTJgaN898rddT3aj2nj36cav7VUmNrTEF/+rGpgzqogzqKqUOogTmc+Q1i1GDV91JDrRBdgLp6SiosSG19fV8xavD6/p0aMU7dpFMHdVAHdRRdh9cOUHFdbyFOKTCPG3sGVwZRnLsg0AIBMZIA7c/mcj1fE+dwek262qcyQdRBHdRxw3REOhLRolO3cq9DSAGoAeoFODUByS7d2KoEEKML3PvTQN4O+3JozbbXoQncK6bmPvulDuqgjhujI9KRiPhW7cu9DvUrsLxN1W9bm2u2mj7c3KEP2FuA9nu9l1Af7dX6+oPFV13V6amDOqjjRugw2e
+04-26 22:47:46.930 I/GonkMemoryPressure(   84): Checking to see if memory pressure is over.
+04-26 22:47:46.930 I/GonkMemoryPressure(   84): Memory pressure is over.
+04-26 22:47:46.940 I/GonkMemoryPressure( 1609): Checking to see if memory pressure is over.
+04-26 22:47:46.950 I/GonkMemoryPressure( 1609): Memory pressure is over.
+04-26 22:47:47.130 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 22:47:47.370 I/Gonk    (   84): Setting nice for pid 1709 to 18
+04-26 22:47:47.370 I/Gonk    (   84): Changed nice for pid 1709 from 0 to 18.
+04-26 22:47:48.020 I/Gecko   (   84): 1398577668030	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {f40b7a82-5e08-494f-b7cd-9a94e3586377}, {f40b7a82-5e08-494f-b7cd-9a94e3586377}
+04-26 22:47:48.040 I/Gecko   (   84): 1398577668054	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {6533b10d-feb8-410c-9867-4e94a065b72d}
+04-26 22:47:48.070 I/Gecko   (   84): 1398577668083	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:48.300 I/Gecko   (   84): 1398577668310	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {6533b10d-feb8-410c-9867-4e94a065b72d}, {6533b10d-feb8-410c-9867-4e94a065b72d}
+04-26 22:47:48.300 I/Gecko   (   84): 1398577668317	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {5f0b4275-9e73-4129-9d5f-451f91689f25}
+04-26 22:47:48.540 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://{326c723c-4663-4746-8623-641101e669f0}' is displayed
+04-26 22:47:48.540 I/Gecko   (   84): 1398577668558	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{885eb07d-c8f4-4ab3-a744-027ab53f968c}"},"src":"app://{326c723c-4663-4746-8623-641101e669f0}/index.html","name":"Budapesti menetrend","origin":"app://{326c723c-4663-4746-8623-641101e669f0}"}}, {5f0b4275-9e73-4129-9d5f-451f91689f25}, {5f0b4275-9e73-4129-9d5f-451f91689f25}
+04-26 22:47:48.550 I/Gecko   (   84): 1398577668569	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {e598eefa-61cc-4f44-b420-f6785a6fcbd6}
+04-26 22:47:48.560 I/Gecko   (   84): 1398577668572	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:48.660 I/Gecko   (   84): 1398577668676	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {e598eefa-61cc-4f44-b420-f6785a6fcbd6}, {e598eefa-61cc-4f44-b420-f6785a6fcbd6}
+04-26 22:47:48.670 I/Gecko   (   84): 1398577668682	Marionette	DEBUG	Got request: execute, data: {"to":"0","sessionId":"3-b2g","name":"executeScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"window.wrappedJSObject.dispatchEvent(new Event('home'));","line":788}}, id: {0a6b5dff-e981-4d62-b5c1-e075cdc312bd}
+04-26 22:47:48.820 I/Gonk    (   84): Setting nice for pid 1709 to 18
+04-26 22:47:48.820 I/Gonk    (   84): Changed nice for pid 1709 from 18 to 18.
+04-26 22:47:48.820 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1709 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 22:47:48.820 I/Gonk    (   84): Setting nice for pid 1709 to 1
+04-26 22:47:48.820 I/Gonk    (   84): Changed nice for pid 1709 from 18 to 1.
+04-26 22:47:48.870 D/Sensors (   84): activate handle=0; drv=0
+04-26 22:47:48.870 D/Sensors (   84): Lis3dhSensor: Control set 0
+04-26 22:47:48.870 D/Sensors (   84): Lis3dhSensor: mEnabled = 0
+04-26 22:47:49.040 I/Gecko   (   84): 1398577669053	Marionette	INFO	sendToClient: {"from":"0","value":null}, {0a6b5dff-e981-4d62-b5c1-e075cdc312bd}, {0a6b5dff-e981-4d62-b5c1-e075cdc312bd}
+04-26 22:47:49.200 I/Gecko   (   84): 1398577669211	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {1692fd54-585a-4891-b252-01a1398b12e7}
+04-26 22:47:49.200 I/Gecko   (   84): 1398577669215	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:49.300 I/Gecko   (   84): 1398577669318	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {1692fd54-585a-4891-b252-01a1398b12e7}, {1692fd54-585a-4891-b252-01a1398b12e7}
+04-26 22:47:49.310 I/Gecko   (   84): 1398577669323	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {1d1a7e63-c07b-4058-bd39-b9c1e9f2cde9}
+04-26 22:47:49.440 I/Gecko   (   84): 1398577669453	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{db584464-2e1c-467d-80f8-166357d722dc}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {1d1a7e63-c07b-4058-bd39-b9c1e9f2cde9}, {1d1a7e63-c07b-4058-bd39-b9c1e9f2cde9}
+04-26 22:47:49.440 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-26 22:47:49.450 I/Gecko   (   84): 1398577669467	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {0059000a-bf97-4b9b-a748-e988b8035af0}
+04-26 22:47:49.450 I/Gecko   (   84): 1398577669468	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:49.560 I/Gecko   (   84): 1398577669571	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {0059000a-bf97-4b9b-a748-e988b8035af0}, {0059000a-bf97-4b9b-a748-e988b8035af0}
+04-26 22:47:49.570 I/Gecko   (   84): 1398577669588	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {4f3bbb04-fdf6-47c5-a23e-cbe8decbc6fe}
+04-26 22:47:49.580 I/Gecko   (   84): 1398577669595	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:49.680 I/Gecko   (   84): 1398577669698	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {4f3bbb04-fdf6-47c5-a23e-cbe8decbc6fe}, {4f3bbb04-fdf6-47c5-a23e-cbe8decbc6fe}
+04-26 22:47:49.690 I/Gecko   (   84): 1398577669704	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"return GaiaApps.displayedApp();","line":66}}, id: {9513b04c-e75d-454b-93cc-34560914de02}
+04-26 22:47:49.790 E/GeckoConsole(   84): Content JS LOG at dummy file:392 in GaiaApps.displayedApp: app with origin 'app://homescreen.gaiamobile.org' is displayed
+04-26 22:47:49.790 I/Gecko   (   84): 1398577669803	Marionette	INFO	sendToClient: {"from":"0","value":{"frame":{"ELEMENT":"{db584464-2e1c-467d-80f8-166357d722dc}"},"src":"app://homescreen.gaiamobile.org/index.html#root","name":"Homescreen","origin":"app://homescreen.gaiamobile.org"}}, {9513b04c-e75d-454b-93cc-34560914de02}, {9513b04c-e75d-454b-93cc-34560914de02}
+04-26 22:47:49.810 I/Gecko   (   84): 1398577669821	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"focus":true,"element":"{db584464-2e1c-467d-80f8-166357d722dc}"}}, id: {bb93adc2-92ea-4517-9bec-a7f019e04a35}
+04-26 22:47:49.900 I/Gecko   (   84): 1398577669913	Marionette	INFO	Switched to frame: {"frameValue":"{db584464-2e1c-467d-80f8-166357d722dc}"}
+04-26 22:47:50.610 I/Gecko   (   84): 1398577670626	Marionette	INFO	trying remote frame 0
+04-26 22:47:50.660 I/Gecko   (   84): 1398577670678	Marionette	INFO	trying remote frame 1
+04-26 22:47:50.670 I/Gecko   (   84): 1398577670684	Marionette	INFO	trying remote frame 2
+04-26 22:47:50.690 I/Gecko   (   84): 1398577670705	Marionette	INFO	frame-manager load script: [object ChromeMessageSender]
+04-26 22:47:51.650 I/GonkMemoryPressure( 1709): Checking to see if memory pressure is over.
+04-26 22:47:51.650 I/GonkMemoryPressure( 1709): Memory pressure is over.
+04-26 22:47:53.030 I/Gonk    (   84): Setting nice for pid 1609 to 18
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1610 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1611 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1612 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1613 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1614 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1615 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1616 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1682 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1683 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1686 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1687 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1688 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1689 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1690 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1704 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1705 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Unable to get nice for tid=1706 (pid=1609); error 3.  This isn't necessarily a problem; it could be a benign race condition.
+04-26 22:47:53.120 I/Gonk    (   84): Changed nice for pid 1609 from 1 to 18.
+04-26 22:47:53.120 I/Gecko   (   84): 
+04-26 22:47:53.120 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.120 I/Gecko   (   84): 
+04-26 22:47:53.120 I/Gecko   (   84): 
+04-26 22:47:53.120 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.120 I/Gecko   (   84): 
+04-26 22:47:53.120 I/Gecko   (   84): 
+04-26 22:47:53.120 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.120 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.240 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.240 I/Gecko   (   84): 
+04-26 22:47:53.250 I/Gecko   (   84): 
+04-26 22:47:53.250 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.250 I/Gecko   (   84): 
+04-26 22:47:53.250 I/Gecko   (   84): 
+04-26 22:47:53.250 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.250 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.280 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.280 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.290 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.290 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.300 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.300 I/Gecko   (   84): 
+04-26 22:47:53.330 I/Gecko   (   84): 
+04-26 22:47:53.330 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.330 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.340 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.340 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.370 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.370 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.380 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.380 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.440 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.440 I/Gecko   (   84): 
+04-26 22:47:53.480 I/Gecko   (   84): 
+04-26 22:47:53.480 I/Gecko   (   84): ###!!! [Parent][MessageChannel] Error: Channel error: cannot send/recv
+04-26 22:47:53.480 I/Gecko   (   84): 
+04-26 22:47:53.600 I/GeckoDump(   84): Crash reporter : Can't fetch app.reportCrashes. Exception: [Exception... "Component returned failure code: 0x8000ffff (NS_ERROR_UNEXPECTED) [nsIPrefBranch.getBoolPref]"  nsresult: "0x8000ffff (NS_ERROR_UNEXPECTED)"  location: "JS frame :: chrome://browser/content/shell.js :: shell_reportCrash :: line 7"  data: no]
+04-26 22:47:53.610 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.610 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.610 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.610 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.610 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.610 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.620 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.670 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.670 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.670 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.680 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.680 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.690 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.690 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.690 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.690 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.690 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.690 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.700 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1609 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.700 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.710 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.720 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.730 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.730 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.740 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.750 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.760 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.770 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.770 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.770 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.770 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.770 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.790 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.800 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.810 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.820 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.820 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.830 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.830 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.830 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.840 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.850 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.850 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.850 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.850 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.850 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.850 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.860 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.860 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.860 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.860 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.860 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.860 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.870 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.870 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.880 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.890 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.900 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.900 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.900 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.900 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.900 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.900 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.910 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.930 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.950 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.960 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.980 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:53.980 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:53.980 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.000 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.010 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.020 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.030 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.030 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.050 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.060 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.070 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.080 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.080 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.090 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.100 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.110 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.110 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.110 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.110 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.120 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.130 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.130 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.130 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.130 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.130 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.140 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.140 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.140 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:54.210 I/Gonk    (   84): Setting nice for pid 1719 to 18
+04-26 22:47:54.210 I/Gonk    (   84): Changed nice for pid 1719 from 0 to 18.
+04-26 22:47:54.280 E/GeckoConsole(   84): [JavaScript Error: "sandbox is null" {file: "chrome://marionette/content/marionette-listener.js" line: 52}]
+04-26 22:47:54.280 E/GeckoConsole(   84): [JavaScript Error: "AbortError"]
+04-26 22:47:55.410 I/Gecko   ( 1709): ###################################### forms.js loaded
+04-26 22:47:55.430 I/Gecko   ( 1709): ############################### browserElementPanning.js loaded
+04-26 22:47:55.450 I/Gecko   ( 1709): ######################## BrowserElementChildPreload.js loaded
+04-26 22:47:55.700 I/Gecko   (   84): [Parent 84] WARNING: waitpid failed pid:1609 errno:10: file ../../../gecko/ipc/chromium/src/base/process_util_posix.cc, line 254
+04-26 22:47:55.700 I/Gecko   (   84): [Parent 84] WARNING: Failed to deliver SIGKILL to 1609!(3).: file ../../../gecko/ipc/chromium/src/chrome/common/process_watcher_posix_sigchld.cc, line 118
+04-26 22:47:56.500 I/Gecko   (   84): 1398577676518	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {bb93adc2-92ea-4517-9bec-a7f019e04a35}, {bb93adc2-92ea-4517-9bec-a7f019e04a35}
+04-26 22:47:56.760 I/Gecko   (   84): 1398577676772	Marionette	INFO	sendToClient: {"from":"0","value":"app://homescreen.gaiamobile.org/index.html#root"}, {93b0647e-3277-4725-838e-2950c20d59ad}, {93b0647e-3277-4725-838e-2950c20d59ad}
+04-26 22:47:56.760 I/Gecko   (   84): 1398577676778	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {9657a805-2d13-46bc-a3af-4a4ba600d848}
+04-26 22:47:56.810 I/Gecko   (   84): 1398577676821	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:56.970 I/Gecko   (   84): 1398577676982	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {9657a805-2d13-46bc-a3af-4a4ba600d848}, {9657a805-2d13-46bc-a3af-4a4ba600d848}
+04-26 22:47:56.970 I/Gecko   (   84): 1398577676987	Marionette	DEBUG	Got request: switchToFrame, data: {"to":"0","sessionId":"3-b2g","name":"switchToFrame","parameters":{"id":null,"focus":true}}, id: {1d750048-9ca1-4e2e-983d-d87e2ac8f432}
+04-26 22:47:56.970 I/Gecko   (   84): 1398577676989	Marionette	INFO	Switched to frame: {"frameValue":null}
+04-26 22:47:57.080 I/Gecko   (   84): 1398577677092	Marionette	INFO	sendToClient: {"from":"0","ok":true}, {1d750048-9ca1-4e2e-983d-d87e2ac8f432}, {1d750048-9ca1-4e2e-983d-d87e2ac8f432}
+04-26 22:47:57.080 I/Gecko   (   84): 1398577677098	Marionette	DEBUG	Got request: executeWithCallback, data: {"to":"0","sessionId":"3-b2g","name":"executeAsyncScript","parameters":{"specialPowers":false,"scriptTimeout":null,"newSandbox":true,"args":[],"filename":"gaia_test.py","script":"GaiaApps.killAll()","line":91}}, id: {f3b14b46-75ee-46cd-a544-c3e9f81f3c0a}
+04-26 22:47:57.400 E/GeckoConsole(   84): Content JS LOG at dummy file:266 in GaiaApps.kill: terminating app with origin 'app://browser.gaiamobile.org'
+04-26 22:47:57.400 E/GeckoConsole(   84): Content JS LOG at dummy file:258 in GaiaApps.kill/gt_onAppTerminated/<: app with origin 'app://browser.gaiamobile.org' has terminated
+04-26 22:47:57.770 I/Gecko   (   84): 1398577677783	Marionette	INFO	sendToClient: {"from":"0","value":true}, {f3b14b46-75ee-46cd-a544-c3e9f81f3c0a}, {f3b14b46-75ee-46cd-a544-c3e9f81f3c0a}
+04-26 22:47:58.290 V/AudioPolicyManagerBase(   91): startOutput() output 1, stream 1, session 4
+04-26 22:47:58.290 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 1
+04-26 22:47:58.290 V/AudioPolicyManagerBase(   91): getDeviceForStrategy() from cache strategy 0, device 2
+04-26 22:47:58.290 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 2
+04-26 22:47:58.290 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 2 delayMs 0
+04-26 22:47:58.290 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 2 or null device for output 1
+04-26 22:47:58.290 E/AudioPolicyManagerBase(   91): checkAndSetVolume stream=1, index=0, output=1, device=2
+04-26 22:47:58.290 E/AudioPolicyManagerBase(   91): computeVolume, streamDesc=0x1c5bbb8
+04-26 22:47:58.330 W/AudioFlinger(   91): Thread AudioOut_1 cannot connect to the power manager service
+04-26 22:47:58.340 V/AudioPolicyManagerBase(   91): stopOutput() output 1, stream 1, session 4
+04-26 22:47:58.340 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 0
+04-26 22:47:58.340 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 0
+04-26 22:47:58.340 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 0 delayMs 290
+04-26 22:47:58.340 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 0 or null device for output 1
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): startOutput() output 1, stream 1, session 4
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 1
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): getDeviceForStrategy() from cache strategy 0, device 2
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 2
+04-26 22:47:58.350 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 2 delayMs 0
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 2 or null device for output 1
+04-26 22:47:58.350 E/AudioPolicyManagerBase(   91): checkAndSetVolume stream=1, index=0, output=1, device=2
+04-26 22:47:58.350 E/AudioPolicyManagerBase(   91): computeVolume, streamDesc=0x1c5bbb8
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): stopOutput() output 1, stream 1, session 4
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): changeRefCount() stream 1, count 0
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): getNewDevice() selected device 0
+04-26 22:47:58.350 D/AudioPolicyManagerBase(   91): setOutputDevice() output 1 device 0 delayMs 290
+04-26 22:47:58.350 V/AudioPolicyManagerBase(   91): setOutputDevice() setting same device 0 or null device for output 1
+04-26 22:47:58.360 V/AudioPolicyManagerBase(   91): releaseOutput() 1
+04-26 22:47:58.370 W/WifiHW  (   84): wifi_command: SIGNAL_POLL
