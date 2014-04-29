@@ -1,0 +1,65 @@
+doctype html
+html(lang="en")
+	head
+		title Report
+		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
+		link(rel='stylesheet', href='/static/index.css')
+	body
+		.container#results
+			.page-header
+				h1 Report
+					small#filters.pull-right
+						input.form-control.search(type='search', placeholder='Search by name or #id')
+						span.btn.btn-default.disabled= inputCount
+						| &nbsp;
+						small.text-muted Filter:
+						| &nbsp;
+						button.btn.btn-success.active(data-filter='pass')= passedCount
+						| &nbsp;
+						button.btn.btn-warning.active(data-filter='fail')= failedCount
+						| &nbsp;
+						button.btn.btn-danger.active(data-filter='missing')= missingCount
+			table.table.table-hover
+				thead
+					th.sort(data-sort='idx') #
+					th.sort(data-sort='status') Status
+					th.sort(data-sort='name') App
+					th Runs
+					th Screenshots
+				tbody.list
+					each app, slug in results
+						tr(id='app-' + app.idx, class=app.runs.length ? (app.status ? 'success' : 'warning') : 'danger')
+							td
+								a.label.label-default.idx(href='#app-' + app.idx)= '#' + app.idx
+							td
+								if app.runs.length
+									if app.status
+										span.label.label-success.status pass
+									else
+										span.label.label-warning.status fail
+								else
+									span.label.label-danger.status missing
+								| &nbsp;
+							th
+								a.name(href='http://marketplace.firefox.com/app/' + app.name + '/')= app.name
+							td.runs
+								ul
+									each run in app.runs
+										li
+											if run.status
+												a.label.label-success(href=run.logcat, target='_blank') PASS
+											else
+												a.label.label-warning(href=run.logcat, target='_blank') FAIL
+												| &nbsp;
+												small.text-muted= run.reason
+											| &nbsp;
+							td.screenshots
+								ul
+									each screenshot in app.screenshots
+										li
+											a(href=screenshot, target='_blank')
+												img(src=screenshot)
+		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.mobile.js')
+		script(src='//cdn.jsdelivr.net/list.js/0.2.1/list.js')
+		script(src='//cdn.jsdelivr.net/list.js/0.2.1/plugins/fuzzy/list.fuzzySearch.js')
+		script(src='/static/index.js')
