@@ -9,11 +9,13 @@ var path = require('path');
 var fs = require('fs');
 var _ = require('lodash');
 var json2csv = require('json2csv');
+var bodyParser = require('body-parser');
 
 var app = express();
 app.set('views', __dirname);
 app.set('view engine', 'jade');
 
+app.use(bodyParser());
 app.use(connect.compress());
 app.use(express.static(__dirname));
 
@@ -21,12 +23,13 @@ function normalizeSlug(slug) {
 	return slug.replace(/_\d+$/g, '');
 }
 
-var ignoreReasons = /MULTIPLE_APPS_PER_ORIGIN_FORBIDDEN|REINSTALL_FORBIDDEN/;
+var ignoreReasons = /MULTIPLE_APPS_PER_ORIGIN_FORBIDDEN|REINSTALL_FORBIDDEN|Didn't\sinstall\sthe\sapp\sin\stime/;
+
+var all = JSON.parse(fs.readFileSync('reports/manifest.json'));
 
 function fetch() {
 	var results = {};
 	var i = 0;
-	var all = JSON.parse(fs.readFileSync('reports/manifest.json'));
 	_.forEach(all, function(app) {
 		var slug = normalizeSlug(app.app_name);
 		results[slug] = {
@@ -109,13 +112,39 @@ app.get('/', function(req, res) {
 	});
 });
 
+app.get('/retest', function(req, res) {
+	var results = fetch();
+	var filtered = all.filter(function(app) {
+		var slug = normalizeSlug(app.app_name);
+		return !results[slug].passed;
+	})
+	res.send(filtered);
+});
+
+app.post('/export', function(req, res) {
+	var mapped = [];
+	_.forEach(req.body.app, function(result, slug) {
+		mapped.push({
+			app: slug,
+			result: result
+		});
+	});
+
+	json2csv({
+		data: mapped,
+		fields: Object.keys(mapped[0])
+	}, function(err, csv) {
+		res.set('Content-Disposition', 'attachment; filename="export.csv"');
+		res.send(csv);
+	});
+});
+
 app.get('/json', function(req, res) {
 	res.send(fetch());
 });
 
 app.get('/csv', function(req, res) {
 	var results = fetch();
-	res.set('Content-Disposition', 'attachment; filename="result.csv"');
 
 	var mapped = _.map(results, function(result) {
 		var logcats = [];
@@ -141,6 +170,7 @@ app.get('/csv', function(req, res) {
 		data: mapped,
 		fields: Object.keys(mapped[0])
 	}, function(err, csv) {
+		res.set('Content-Disposition', 'attachment; filename="result.csv"');
 		res.send(csv);
 	});
 });
