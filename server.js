@@ -10,6 +10,7 @@ var fs = require('fs');
 var _ = require('lodash');
 var json2csv = require('json2csv');
 var bodyParser = require('body-parser');
+var crypto = require('crypto');
 
 var app = express();
 app.set('views', __dirname);
@@ -23,7 +24,7 @@ function normalizeSlug(slug) {
 	return slug.replace(/_\d+$/g, '');
 }
 
-var ignoreReasons = /MULTIPLE_APPS_PER_ORIGIN_FORBIDDEN|REINSTALL_FORBIDDEN|Didn't\sinstall\sthe\sapp\sin\stime/;
+var ignoreReasons = /MULTIPLE_APPS_PER_ORIGIN_FORBIDDEN|REINSTALL_FORBIDDEN|NETWORK_ERROR|TimeoutException/;
 
 var all = JSON.parse(fs.readFileSync('reports/manifest.json'));
 
@@ -44,15 +45,33 @@ function fetch() {
 		};
 	});
 
-	var files = glob.sync('reports/*/*.json');
+	var checksums = [];
+
+	function checksum(str, algorithm, encoding) {
+		return crypto
+			.createHash(algorithm || 'md5')
+			.update(str, 'utf8')
+			.digest(encoding || 'hex')
+	}
+
+	var files = glob.sync('reports/*/test_results*.json');
 	files.forEach(function(file) {
 		var data = fs.readFileSync(file);
+
+		var checks = checksum(data);
+		if (checksums.indexOf(checks) != -1) {
+			console.warn('Skipped file %s', file);
+			return;
+		}
+		checksums.push(checks);
+
 		var partial = JSON.parse(data);
+		var skipped = [];
 		for (var name in partial) {
 			var slug = normalizeSlug(name);
 			var app = results[slug];
 			if (!app) {
-				console.warn('Skipped %s from %s', slug, file);
+				skipped.push(slug);
 				continue;
 			}
 			var entry = partial[name];
@@ -70,53 +89,66 @@ function fetch() {
 				app.passed++;
 				app.screenshots.push('/' + path.dirname(file) + '/' + entry.screenshot);
 			}
-			app.status = app.passed && app.passed >= app.failed;
 			app.runs.push(run);
+			app.status = (app.passed && app.passed >= app.failed)
+				? 1
+				: ((app.runs.length < 2) ? -1 : 0);
+		}
+		if (skipped.length) {
+			console.warn('Read %s, skipped %s', file, skipped.join(', '));
 		}
 	});
 	return results;
 }
 
 app.get('/', function(req, res) {
-	// res.setHeader('content-type', 'text/plain');
 	var results = fetch();
 
 	var inputCount = 0;
 	var runCount = 0;
 	var passedCount = 0;
 	var failedCount = 0;
+	var retestCount = 0;
+	var missingCount = 0;
 
 	_.forEach(results, function(app) {
 		inputCount++;
 		if (app.runs.length) {
 			runCount++;
-		}
-		if (!app.passed) {
-			failedCount++;
-			return;
-		}
-		if (app.status) {
-			passedCount++;
 		} else {
+			missingCount++;
+		}
+		if (app.status == 1) {
+			passedCount++;
+		} else if (!app.status) {
 			failedCount++;
+		} else if (app.status == -1) {
+			retestCount++;
 		}
 	});
 
-	res.render('index', {
+	var data = {
 		results: results,
 		inputCount: inputCount,
 		runCount: runCount,
-		missingCount: inputCount - runCount,
+		missingCount: missingCount,
 		passedCount: passedCount,
+		retestCount: retestCount,
 		failedCount: failedCount
-	});
+	};
+
+	if (req.query.json) {
+		return res.send(data);
+	}
+
+	res.render('index', data);
 });
 
 app.get('/retest', function(req, res) {
 	var results = fetch();
 	var filtered = all.filter(function(app) {
 		var slug = normalizeSlug(app.app_name);
-		return !results[slug].passed;
+		return results[slug].retest;
 	})
 	res.send(filtered);
 });

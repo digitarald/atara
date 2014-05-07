@@ -4,22 +4,26 @@ html(lang="en")
 		title Report
 		link(rel='stylesheet', href='//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css')
 		link(rel='stylesheet', href='/static/index.css')
+		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.mobile.js')
+		script(src='//cdn.jsdelivr.net/list.js/0.2.1/list.js')
+		script(src='//cdn.jsdelivr.net/list.js/0.2.1/plugins/fuzzy/list.fuzzySearch.js')
+		script(src='/static/index.js')
 	body
-		form(method='post', action='/export')
-			.container#results
-				.page-header
-					h1 Tara Report
-						small#filters.pull-right
-							input.form-control.search(type='search', placeholder='Search by name or #id')
-							span.btn.btn-default.disabled= inputCount
-							| &nbsp;
-							small.text-muted Filter:
-							| &nbsp;
-							button.btn.btn-success.active(data-filter='pass')= passedCount
-							| &nbsp;
-							button.btn.btn-warning.active(data-filter='fail')= failedCount
-							| &nbsp;
-							button.btn.btn-danger.active(data-filter='missing')= missingCount
+		.container#results
+			.page-header
+				h1 Tara Report
+					small#filters.pull-right
+						input.form-control.search(type='search', placeholder='Search by name or #id')
+						span.btn.btn-default.disabled= inputCount
+						| &nbsp;
+						small.text-muted Filter:
+						| &nbsp;
+						button.btn.btn-success.active(data-filter='pass', title='Show/hide passed')= passedCount
+						| &nbsp;
+						button.btn.btn-warning.active(data-filter='fail', title='Show/hide failed')= failedCount
+						| &nbsp;
+						button.btn.btn-danger.active(data-filter='retest', title='Show/hide retest status')= retestCount
+			form(method='post', action='/export')
 				table.table.table-hover
 					thead
 						th.sort(data-sort='idx') #
@@ -30,7 +34,7 @@ html(lang="en")
 						th Decision
 					tbody.list
 						each app, slug in results
-							tr(id='app-' + app.idx, class=app.runs.length ? (app.status ? 'success' : 'warning') : 'danger')
+							tr(id='app-' + app.idx, class=app.status ? ((app.status == 1) ? 'success' : 'danger') : 'warning')
 								td
 									a.text-muted.idx(href='#app-' + app.idx)= app.idx
 								th
@@ -53,21 +57,16 @@ html(lang="en")
 												a(href=screenshot, target='_blank')
 													img(src=screenshot)
 								td
-									if app.runs.length
-										if app.status
-											span.label.label-success.status pass
-										else
-											span.label.label-warning.status fail
+									if app.status == 1
+										span.label.label-success.status pass
+									else if app.status == -1
+										span.label.label-danger.status retest
 									else
-										span.label.label-danger.status missing
+										span.label.label-warning.status fail
 								td
 									select.form-control(name='app[' + app.name + ']')
-										option(selected=app.status) PASS
-										option(selected=app.runs.length > 2 && !app.status) FAIL
-										option(selected=app.runs.length <= 2 && !app.status) RETEST
+										option(selected=app.status == 1) PASS
+										option(selected=app.status == 0) FAIL
+										option(selected=app.status == -1) RETEST
 				div
 					button.btn.btn-default.text-right(type='submit') Export
-		script(src='//cdnjs.cloudflare.com/ajax/libs/lodash.js/2.4.1/lodash.mobile.js')
-		script(src='//cdn.jsdelivr.net/list.js/0.2.1/list.js')
-		script(src='//cdn.jsdelivr.net/list.js/0.2.1/plugins/fuzzy/list.fuzzySearch.js')
-		script(src='/static/index.js')

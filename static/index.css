@@ -1,8 +1,15 @@
+body form {
+	display: none;
+}
+.is-loaded form {
+	display: block;
+}
+
 .runs ul {
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	max-width: 500px;
+	width: 450px;
 }
 .screenshots ul {
 	max-height: 115px;
@@ -12,15 +19,24 @@
 	margin: 0;
 	padding: 0;
 	width: 150px;
+	height: 110px;
 }
 .screenshots li {
 	margin: 0;
 	padding: 0;
+	display: none;
+}
+.screenshots li:nth-child(1), .screenshots li:nth-child(2), .screenshots li:nth-child(3) {
 	display: inline;
 }
+.list > tr:hover .screenshots li {
+	display: inline;
+}
+
 .screenshots img {
 	padding: 5px 5px;
-	width: 75px;
+	max-width: 100px;
+	max-height: 100px;
 }
 
 .page-header .search {

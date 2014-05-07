@@ -2,9 +2,8 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 	var resultList = new List('results', {
-		valueNames: ['name', 'runs', 'status'],
-		page: 5000,
-		indexAsync: true
+		valueNames: ['idx', 'name', 'status'],
+		page: 5000
 	});
 
 	var statusFilter = {};
@@ -31,4 +30,5 @@ document.addEventListener('DOMContentLoaded', function() {
 		})
 	};
 
+	document.body.classList.add('is-loaded');
 });
